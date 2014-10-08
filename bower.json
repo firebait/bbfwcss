@@ -15,13 +15,12 @@
     "dist/fonts"
   ],
   "ignore": [
+    "**/.*",
     "*/.*",
-    "*.json",
     "src",
     "*.md",
     "README",
-    "Gruntfile.js",
-    "bower.json"
+    "Gruntfile.js"
   ],
   "authors": [
     "Kerry Gould <kgould@set.tv>"
