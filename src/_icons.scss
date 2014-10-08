@@ -1,0 +1,20 @@
+///////////
+// ICONS //
+///////////
+
+// WE WILL BE USING "H6" FOR OUR ICON FONTS.
+@font-face {
+    font-family: "suit-icons";
+    src: url('fonts/set-icons4.ttf');
+}
+.font-icon{
+	font-family:"suit-icons";
+    font-weight: normal;
+	font-size:19px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+span.icon{
+    @extend .font-icon;
+    @extend .d-inline;
+}

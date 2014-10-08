@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Full Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+/*---------------------------------BASIC ELEMENTS------------------------------------*/
+body{
+	background-image: url(images/page_background.png);
+	background-repeat:repeat-x;
+	background-color: #636363;
+	background-attachment:fixed;
+	padding-top:50px;
+	padding-bottom:50px;
+	font-family:"Helvetica Neue", Times, serif;
+	font-size:13px;
+}
+
+p{
+}
+
+h4{
+	font-family:"DIN OT", "Helvetica Neue", Times, serif;
+	font-weight:700;
+	letter-spacing:.15em;
+	text-transform:uppercase;
+	color:#313233;
+	font-size:13px;
+	line-height:36px;
+	display:inline-block;
+}
+
+h6{
+	font-family:"set-icons4";
+	color:#313233;
+	font-size:14px;
+	line-height:36px;
+	display:inline;
+}
+
+.icon_spacer{
+	margin-right:10px;
+}
+
+.light{
+	color:#FFFFFF;
+}
+
+.right_align{
+	margin-left:250px;
+}
+
+.dot{
+	width:14px;
+	height:14px;
+	margin:11px 11px 6px 0px;
+	display:inline-block;
+	border-radius:7px;
+}
+
+/*---------------------------------DIVS------------------------------------*/
+
+#header{
+	position:fixed;
+	top:0px;
+	height:50px;
+	width:100%;
+	background-color:#313233;
+	z-index:1;
+}
+
+#header_box{
+	position:fixed;
+	top:0px;
+	height:50px;
+	width:100%;
+	background-color:#313233;
+	z-index:1;
+}
+
+.title_box{
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	height:36px;
+	padding:7px 30px;
+	width:980px;
+	background-color:#F7F7F7;
+}
+
+.content_box{
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+	padding:30px 0px 0px 30px;
+	width:1010px;
+	background-color:#FFF;
+	border-top:#E0E0E0 1px solid;
+}
+
+.color_swatch{
+	position:relative;
+	height:100px;
+	width:306px;
+	float:left;
+	margin:0px 30px 30px 0px;
+}
+
+.icon_box{
+	position:relative;
+	width:138px;
+	float:left;
+	margin:0px 30px 30px 0px;
+}
+
+.input_box{
+	text-decoration:none;
+	color:#b3b3b3;
+	padding:0px 10px;
+	line-height:36px;
+	border:#b3b3b3 1px solid;
+	margin:5px 30px 30px 0px;
+	display: inline-block;
+	width:435px;
+}
+a.input_box:hover{
+	border:#000 1px solid;
+}
+
+.input_box.focus{
+	color:black;
+	border:#32A1CC 1px solid;
+}
+.input_box.error{
+	color:#c8463c;
+	border:#c8463c 1px solid;
+}
+.input_box.disabled{
+	background-color:#f7f7f7;
+	color:#e0e0e0;
+	border:#e0e0e0 1px solid;
+}
+
+.primary_button{
+	font-family:"DIN OT", "Helvetica Neue", Times, serif;
+	font-weight:800;
+	text-decoration:none;
+	color:#FFF;
+	padding:0px 20px;
+	line-height:36px;
+	margin:5px 30px 30px 0px;
+	display: inline-block;
+	opacity:0.9;
+}
+a.primary_button:hover{
+	border:none;
+	opacity:1;
+}
+
+.secondary_button{
+	font-family:"DIN OT", "Helvetica Neue", Times, serif;
+	font-weight:800;
+	text-decoration:none;
+	color:#313233;
+	padding:0px 20px;
+	line-height:34px;
+	margin:5px 30px 30px 0px;
+	display: inline-block;
+	border:#313233 1px solid;
+	opacity:0.9;
+}
+a.secondary_button:hover{
+	color:#FFF;
+	background-color:#313233;
+	opacity:1;
+}
+
+.disabled_button{
+	font-family:"DIN OT", "Helvetica Neue", Times, serif;
+	font-weight:800;
+	background-color:#f7f7f7;
+	text-decoration:none;
+	color:#e0e0e0;
+	padding:0px 20px;
+	line-height:34px;
+	margin:5px 30px 30px 0px;
+	display: inline-block;
+	border:#e0e0e0 1px solid;
+	opacity:0.85;
+}
+
+.alert_box{
+	font-family:"DIN OT", "Helvetica Neue", Times, serif;
+	font-size:16px;
+	text-decoration:none;
+	color:#FFF;
+	padding:11px 20px;
+	line-height:36px;
+	margin:0px 0px 30px 120px;
+	display: inline-block;
+	width:700px;
+	opacity:0.85;
+}
+
+a.alert_box:hover{
+	border:none;
+	opacity:1;
+}
+
+
+
+/*--------------------------------------------COLORS---------------------------------------------*/
+
+.blue{
+	background-color:#32A1CC;
+}
+
+.purple{
+	background-color:#685b8b;
+}
+
+.green{
+	background-color:#40a880;
+}
+
+.yellow{
+	background-color:#dcb74f;
+}
+
+.orange{
+	background-color:#dd854e;
+}
+
+.red{
+	background-color:#c8463c;
+}
+
+.lightest_grey{
+	background-color:#F7F7F7;
+}
+
+.darkest_grey{
+	background-color:#313233;
+}
+
+.light_grey{
+	background-color:#E0E0E0;
+}
+
+.middle_grey{
+	background-color:#b3b3b3;
+}
+
+
+

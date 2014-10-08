@@ -1,0 +1,269 @@
+/////////////////
+// DATE PICKER //
+/////////////////
+
+.date-picker{
+    @extend .p-relative;
+
+    &:hover, &:focus{
+        .date-picker-trigger{
+            @extend .b-darkest-grey;
+            @extend .fc-darkest-grey;
+        }
+    }
+
+    &.error, &.error:focus {
+        .date-picker-trigger{
+            @extend .b-red;
+            @extend .fc-red;
+        }
+    }
+
+    .date-picker-trigger{
+        @extend .d-block;
+        @extend .bgc-white;
+        @extend .td-none;
+        @extend .fc-medium-grey;
+        @extend .b-medium-grey;
+        @extend .ta-center;
+        @extend .p-absolute;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding: 0px;
+        line-height: 34px;
+        height: 34px;
+        outline: none;
+        left: 0px;
+        top: 0px;
+        width: 34px;
+
+        &.disabled {
+            @extend .bgc-lightest-grey;
+            @extend .fc-medium-grey;
+            @extend .b-light-grey;
+        }
+    }
+
+    .date-picker-date{
+        padding-left: 40px;
+    }
+
+    @each $color in $colors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+
+        &.#{$key}.active {
+            .date-picker-trigger {
+                @extend .bgc-#{$key};
+                @extend .fc-white;
+                @extend .b-light-grey;
+            }
+
+            .date-picker-date {
+                @extend .b-light-grey;
+            }
+        }
+
+        &.error {
+            .date-picker-date {
+                @extend .b-red;
+            }
+        }
+    }
+}
+
+.pika-single {
+    @each $color in $colors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+        $r: nth($color, 3);
+        $g: nth($color, 4);
+        $b: nth($color, 5);
+
+        &.#{$key} {
+            @extend .p-reset;
+            @extend .b-light-grey;
+            @include box-shadow;
+
+            margin: -1px 0;
+
+            .pika-title {
+                @extend .bgc-#{$key};
+
+                .pika-label {
+                    @extend .bgc-#{$key};
+                    @extend .fc-white;
+                }
+            }
+
+            .pika-table {
+                th {
+                    @extend .fc-medium-grey;
+                    @extend .bgc-lightest-grey;
+                    @extend .bb-light-grey;
+                    @extend .font-default;
+                }
+                td{
+                    @extend .va-top;
+                }
+            }
+
+            .pika-prev, .pika-next {
+                @extend .fc-white;
+                @extend .bg-none;
+                text-indent: 0;
+                font-family: "suit-icons";
+                opacity: 1;
+            }
+
+            .pika-button {
+                background: $white;
+                text-align: center;
+            }
+
+            .is-today .pika-button {
+                @extend .fc-#{$key};
+            }
+
+            .is-selected .pika-button {
+                @extend .bgc-#{$key};
+                color: $white !important;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            // some !importants are used just because they are used on the original
+            // Pikadate css. There's no other way to override them.
+            .pika-button:hover {
+                background-color: rgba($r, $g, $b, 1) !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+/////////////////
+// TIME PICKER //
+/////////////////
+
+.time-picker{
+    @extend .p-relative;
+
+    &:hover, &:focus{
+        .time-picker-trigger{
+            @extend .b-darkest-grey;
+            @extend .fc-darkest-grey;
+        }
+    }
+
+    &.disabled:hover {
+        .time-picker-trigger{
+            @extend .bgc-lightest-grey;
+            @extend .fc-medium-grey;
+            @extend .b-light-grey;
+        }
+    }
+
+    &.error, &.error:focus {
+        .time-picker-trigger{
+            @extend .b-red;
+            @extend .fc-red;
+        }
+    }
+
+    .time-picker-trigger{
+        @extend .d-block;
+        @extend .bgc-white;
+        @extend .td-none;
+        @extend .fc-medium-grey;
+        @extend .b-medium-grey;
+        @extend .ta-center;
+        @extend .p-absolute;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding: 0px;
+        line-height: 34px;
+        height: 34px;
+        outline: none;
+        left: 0px;
+        top: 0px;
+        width: 34px;
+
+        &.disabled {
+            @extend .bgc-lightest-grey;
+            @extend .fc-medium-grey;
+            @extend .b-light-grey;
+        }
+    }
+
+    .time-picker-time{
+        padding-left: 40px;
+    }
+
+    @each $color in $colors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+
+        &.#{$key}.active {
+            .time-picker-trigger {
+                @extend .bgc-#{$key};
+                @extend .fc-white;
+                @extend .b-light-grey;
+            }
+
+            .time-picker-time {
+                @extend .b-light-grey;
+            }
+        }
+
+        &.#{$key}.error {
+            .time-picker-time {
+                @extend .b-red;
+            }
+        }
+    }
+}
+
+.ui-timepicker-wrapper {
+    z-index: 1100;
+
+    @each $color in $colors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+        $r: nth($color, 3);
+        $g: nth($color, 4);
+        $b: nth($color, 5);
+
+        @extend .bgc-white;
+        @include box-shadow;
+
+        overflow-y: auto;
+        height: 150px;
+        width: 120px;
+        outline: none;
+        margin-left: 34px;
+
+        &.#{$key} {
+            > ul {
+                list-style: none;
+
+                > li {
+                    @extend .p-10;
+                    @extend .fc-darkest-grey;
+
+                    &:hover, &.ui-timepicker-selected {
+                        @extend .bgc-#{$key};
+                        @extend .fc-white;
+                    }
+
+                    &.ui-timepicker-selected {
+                        @extend .fst-bold;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+body{
+    background-image: url(../images/page_background.png);
+    @extend .font-default;
+    @extend .fs-13;
+    @extend .fc-darkest-grey;
+    background-attachment: fixed;
+}
+body.light{
+    background-image: url(../images/page_background_light.png);
+}
+h1{
+    @extend .font-din;
+    @extend .fs-30;
+    @extend .tt-uppercase;
+}
+h2{
+    @extend .font-din;
+    @extend .fs-21;
+    @extend .tt-uppercase;
+    letter-spacing: .07em;
+}
+h3{
+    @extend .font-din;
+    @extend .fs-16;
+}
+h4{
+    @extend .font-din;
+    @extend .fs-13;
+    @extend .tt-uppercase;
+    letter-spacing: .15em;
+}
+
+///////////
+// LINKS //
+///////////
+a{
+    @extend .font-din;
+    font-size: inherit;
+    @extend .fc-blue;
+    @extend .td-none;
+    &:hover{
+        @extend .td-underline;
+        @extend .fc-darkest-grey;
+    }
+}
+
+////////////////////
+// LABEL IN FORMS //
+////////////////////
+form label{
+    @extend .mb-7;
+    @extend .d-block;
+}
+
+////////////////////
+// INPUT TEXT BOX //
+////////////////////
+.input-box{
+    @extend .d-block;
+    @extend .bgc-white;
+    @extend .td-none;
+    @extend .fc-darkest-grey;
+    @extend .b-medium-grey;
+    @extend .font-default;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px; 
+    line-height: 34px;
+    height: 34px;
+    outline: none;
+    
+    &:hover{
+        @extend .b-darkest-grey;
+    }
+    
+    &:focus{
+        @extend .fc-darkest-grey;
+    }
+}
+.input-box.error, .input-box.error:hover{
+    @extend .fc-red;
+    border: 1px solid $red;
+
+    &::-webkit-input-placeholder {
+        color: $red;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $red;  
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color: $red;  
+    }
+
+    :-ms-input-placeholder {  
+    color: $red;  
+    }
+    select, option { @extend .fc-red; }
+}
+.input-box[disabled], .input-box[disabled]:hover{ 
+    @extend .bgc-lightest-grey;
+    @extend .fc-medium-grey;
+    @extend .b-light-grey;
+    @extend .td-none;
+}
+.select-box select[disabled], .select-box:hover select[disabled],
+.select-box select[disabled] + h6, .select-box:hover select[disabled] + h6{
+    @extend .bgc-lightest-grey;
+    @extend .fc-medium-grey;
+    @extend .td-none;
+}
+////////////////
+// SEARCH BOX //
+////////////////
+.search-box{
+    background-image: url(../images/suit_sprite.png);
+    background-repeat: no-repeat;
+    background-position: right -38px;
+    padding-right: 36px;
+    padding-left: 10px;
+    &:hover{
+        background-position-y: -74px;
+    }
+    &::-webkit-search-cancel-button{
+        -webkit-appearance: none;
+    }
+}
+input[type=text], input[type=date], input[type=datetime], input[type=email], input[type=file], input[type=number], input[type=password], input[type=search], input[type=time]{
+    @extend .input-box;
+}
+input[type=search]{
+    @extend .search-box;
+}
+
+///////////////
+// TEXT AREA //
+///////////////
+textarea{
+    @extend .input-box;
+    height: 100px;
+    line-height: 18px;
+    padding-top: 9px;
+}
+
+////////////////
+// SELECT BOX //
+////////////////
+.select-box{
+    @extend .input-box;
+    @extend .of-hidden;
+    @extend .p-relative;
+    padding: 0;
+    select{
+        @extend .d-block;
+        @extend .bgc-white;
+        @extend .td-none;
+        @extend .fc-darkest-grey;
+        @extend .font-default;
+        box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        padding: 0px 34px 0 10px; 
+        line-height: 28px;
+        height: 32px;
+        outline: none;
+        border: none;
+        width: 110%;
+    }
+    span.icon{
+        @extend .p-absolute;
+        @extend .bgc-white;
+        right: 0px;
+        top: 0px;
+        width: 34px;
+        text-align: center;
+        pointer-events:none;
+        background-color:transparent;
+    }
+}  
+
+////////////
+// LABELS //
+////////////
+label.error{
+    @extend .fc-red;
+}
+

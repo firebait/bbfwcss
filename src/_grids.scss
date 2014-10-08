@@ -1,0 +1,186 @@
+///////////
+// GRIDS //
+///////////
+
+.grid1, .grid2, .grid3, .grid4, .grid6{
+    @extend .f-left;
+    @extend .p-relative;
+}
+
+.content-box{
+    .grid1, .grid2, .grid3, .grid4, .grid6{
+        @extend .p-15;
+    }
+
+    .grid1{
+        width: 980px;
+    }
+    .grid2{
+        width: 475px;
+        &.span2{
+            width: 980px;
+        }
+    }
+    .grid3{
+        width: 306px;
+        &.span2{
+            width: 642px
+        }
+        &.span3{
+            width: 980px
+        }
+    }
+    .grid4{
+        width: 222px;
+        &.span2{
+            width: 474px
+        }
+        &.span3{
+            width: 726px
+        }
+        &.span4{
+            width: 980px
+        }
+    }
+    .grid6{
+        width: 138px;
+        &.span2{
+            width: 306px
+        }
+        &.span3{
+            width: 474px
+        }
+        &.span4{
+            width: 642px
+        }
+        &.span5{
+            width: 810px
+        }
+        &.span6{
+            width: 980px
+        }
+    }
+}
+
+/////////////////////////
+// INVISIBLE CONTAINER //
+/////////////////////////
+
+.invisible-container{
+    .grid1, .grid2, .grid3, .grid4, .grid6{
+        @extend .m-10;
+    }
+    .grid1{
+        width: 1040px;
+    }
+    .grid2{
+        width: 510px; 
+        &.span2{
+            width: 1040px
+        }
+    }
+    .grid3{
+        width: 333px; 
+        &.span2{
+            width: 686px
+        }
+        &.span3{
+            width: 1040px
+        }
+    }
+    .grid4{
+        width: 245px;
+        &.span2{
+            width: 510px
+        }
+        &.span3{
+            width: 775px
+        }
+        &.span4{
+            width: 1040px
+        }
+    }
+    .grid6{
+        width: 156px;
+        &.span2{
+            width: 332px
+        }
+        &.span3{
+            width: 508px
+        }
+        &.span4{
+            width: 684px
+        }
+        &.span5{
+            width: 860px
+        }
+        &.span6{
+            width: 1040px
+        }
+    }
+}
+
+/////////////////
+// MODAL GRIDS //
+/////////////////
+
+.suit-modal{
+    .grid1{
+        width: 660px;
+    }
+    .grid2{
+        width:309px;
+        &.span2{
+            width: 660px;
+        }
+    }
+    .grid3{
+        width:200px;
+        &.span2{
+            width: 430px;
+        }
+        &.span3{
+            width: 660px;
+        }
+    }
+    .grid4{
+        width:140px;
+        &.span2{
+            width: 210px;
+        }
+        &.span3{
+            width: 480px;
+        }
+        &.span4{
+            width: 660px;
+        }
+    }
+}
+.suit-modal.small{
+    .grid1{
+        width: 297px;
+    }
+    .grid2{
+        width: 139px;
+    }
+}
+
+.suit-modal.large{
+    .grid1{
+        width: 90%;
+    }
+}
+
+/////////////////////////////
+// COMPONENTS INSIDE GRIDS //
+/////////////////////////////
+.grid1, .grid2, .grid3, .grid4, .grid6{    
+    .title-box, .content-box, .footer-box{
+        //margin: 0;
+        width: 100%;
+        //height: 50px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}

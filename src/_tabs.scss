@@ -1,0 +1,148 @@
+//////////
+// TABS //
+//////////
+.suit-tab{
+    width: 100%;
+    @each $color in $colors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+
+/////////////
+// DEFAULT //
+/////////////
+
+        .suit-tab-default-#{ $key }{
+            height: 50px;
+            line-height: 50px;
+            @extend .m-auto;
+            @extend .bgc-light-grey;
+            width: 1040px;
+            a.suit-tab-link{
+                @extend .d-inline-block;
+                @extend .pl-30;
+                @extend .pr-30;
+                @extend .p-relative;
+                @extend .fc-#{ $key };
+                &.active{
+                    @extend .fc-white;
+                    @extend .bgc-#{ $key };
+                    &:before{
+                        content: " ";
+                        @extend .p-absolute;
+                        height: 7px; 
+                        width: 15px;
+                        left: 50%;
+                        bottom: 0px;
+                        margin-left: -7px;
+                        background-image: url(../images/suit_sprite.png);
+                        background-position: -68px 0px;
+                    }
+                }
+            }
+        }
+
+///////////
+// TITLE //
+///////////
+
+        .suit-tab-title-#{ $key } {
+            @extend .suit-tab-default-#{ $key };
+            a:before{
+                display: none;
+            }
+        }
+        &.full-width{
+            @extend .bgc-light-grey;
+        }
+
+//////////////
+// VERTICAL //
+//////////////
+
+        .suit-tab-vertical-#{ $key } {
+            @extend .f-left;
+            padding: 0;
+            a.suit-tab-link{
+                @extend .grid4;
+                @extend .f-none;
+                @extend .bgc-lightest-grey;
+                @extend .bt-light-grey;
+                @extend .d-block;
+                @extend .p-relative;
+                @extend .fc-#{ $key };
+                height: 36px;
+                line-height: 36px;
+                &:first-child{
+                    @extend .b-none;
+                }
+                &.active{
+                    @extend .fc-white;
+                    @extend .bgc-#{ $key };
+                    &:before{
+                        content: " ";
+                        @extend .p-absolute;
+                        height: 14px; 
+                        width: 7px;
+                        right: 0;
+                        top: 50%;
+                        margin-top: -7px;
+                        background-image: url(../images/suit_sprite.png);
+                        background-position: -68px -7px;
+                    }
+                }
+            }
+        }
+    }
+//////////
+// MINI //
+//////////
+
+    .suit-tab-mini{
+        @extend .bb-medium-grey;
+        @extend .mb-15;
+        border-top: 1px solid transparent;
+        line-height: 34px;
+        a.suit-tab-link{
+            @extend .fc-dark-grey;
+            @extend .mr-30;
+            @extend .d-inline-block;
+            &.active{
+                @extend .fc-darkest-grey;
+                @extend .p-relative;
+                &:before{
+                    content: " ";
+                    @extend .p-absolute;
+                    height: 7px; 
+                    width: 12px;
+                    left: 50%;
+                    bottom: -1px;
+                    margin-left: -6px;
+                    background-image: url(../images/suit_sprite.png);
+                    background-position: -82px 0px;
+                }
+            }
+        }
+    }
+
+}
+
+///////////////////
+// INSIDE MODALS //
+///////////////////
+.suit-modal{
+    .suit-tab{
+        width: 100%;
+        @each $color in $colors {
+            $key: nth($color, 1);
+            $value: nth($color, 2);
+
+    /////////////
+    // DEFAULT //
+    /////////////
+
+            .suit-tab-default-#{ $key }{
+                width: 100%;
+            }
+        }
+    }
+}

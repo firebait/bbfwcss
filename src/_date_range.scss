@@ -1,0 +1,46 @@
+.date-range {
+    
+    padding-left: 34px;
+    .date-picker, .select-box {
+        @extend .f-left;
+        @extend .m-reset;
+        width: 33.33%;
+        a.date-picker-trigger {
+            @extend .p-absolute;
+            left: -33px;
+        }
+    }
+    &:hover, &:focus{
+        .date-picker-trigger{
+            @extend .b-medium-grey;
+            @extend .fc-darkest-grey;
+        }
+    }
+
+    .date-picker input {
+        @extend .pl-10;
+        &:hover, &:focus{
+            @extend .bl-none;
+            @extend .bt-medium-grey;
+            @extend .br-medium-grey;
+            @extend .bb-medium-grey;
+        }
+        @extend .bl-none;
+        @extend .bt-medium-grey;
+        @extend .br-medium-grey;
+        @extend .bb-medium-grey;
+    }
+
+    .select-box {
+        &:hover, &:focus{
+            @extend .bl-none;
+            @extend .bt-medium-grey;
+            @extend .br-medium-grey;
+            @extend .bb-medium-grey;
+        }
+        @extend .bl-none;
+        @extend .bt-medium-grey;
+        @extend .br-medium-grey;
+        @extend .bb-medium-grey;
+    }
+}

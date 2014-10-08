@@ -1,0 +1,98 @@
+////////////////
+// THUMBNAILS //
+////////////////
+
+.thumbnail{
+    .thumb-container {
+        @extend .p-relative;
+    }
+    @extend .grid4;
+    img {
+        @extend .d-block;
+        width: 100%;
+    }
+    .thumbnail-description{
+        @extend .bgc-white;
+        @extend .of-hidden;
+        padding: 20px 30px;
+    }
+    .slider {
+        @extend .p-absolute;
+        left: 10px;
+        width: 180px;
+     }
+    .thumbnail-duration{
+        @extend .p-absolute;
+        @extend .ta-center;
+        @extend .fc-white;
+        @extend .font-din;
+        right: 0;
+        width: 55px;;
+     }
+    .gradient-overlay, .slider, .thumbnail-duration {
+        opacity: 0;
+        -webkit-transition: opacity 0.2s ease-out;
+        -moz-transition: opacity 0.2s ease-out;
+        -o-transition: opacity 0.2s ease-out;
+        transition: opacity 0.2s ease-out;
+    }
+    &:hover{
+        .gradient-overlay, .slider, .thumbnail-duration {
+            opacity: 1;
+            -webkit-transition: opacity 0.2s ease-in;
+            -moz-transition: opacity 0.2s ease-in;
+            -o-transition: opacity 0.2s ease-in;
+            transition: opacity 0.2s ease-in;
+        }
+    }
+}
+
+.invisible-container {
+    .thumbnail{
+        .thumb-container {
+            @extend .p-relative;
+        }
+        .thumbnail-duration {
+            top: 114px;
+        }
+        .slider{
+            top: 108px;
+        }
+        img, .gradient-overlay {
+            height: 138px;
+        }
+    }
+}
+
+.content-box {
+    .thumbnail{
+        position: relative;
+        .thumbnail-duration {
+            right: 0;
+            top: 101px;
+        }
+        .slider{
+            width: 152px;
+            left: 10px;
+            top: 95px;
+        }
+        .gradient-overlay {
+            width: 222px;
+            top: 0;
+            left: 0;
+        }
+        img, .gradient-overlay {
+            height: 125px;
+        }
+    }
+}
+
+// Gradient overlay for thumbnails.
+.gradient-overlay, .gradient_overlay-hover:hover {
+    pointer-events: none;
+    background: url(../images/gradient_overlay.png) bottom left repeat-x;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

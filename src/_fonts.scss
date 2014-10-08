@@ -1,0 +1,117 @@
+///////////
+// FONTS //
+///////////
+.font-default{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+.font-din{
+	font-family:"ff-din-web", "Helvetica Neue", Arial, sans-serif;
+	font-weight:600;
+	font-size:13px;
+}
+
+//////////////////
+// TEXT HELPERS //
+//////////////////
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ws-nowrap{
+    white-space: nowrap;
+}
+
+//////////////////
+// FONT WEIGHTS //
+//////////////////
+.fst-lighter, a.fst-lighter{
+	font-style: normal;
+	font-weight: 100;
+}
+.fst-light,a.fst-light{
+	font-style: normal;
+	font-weight: 300;
+}
+.fst-light-italic,a.fst-light-italic{
+	font-style: italic;
+	font-weight: 300;
+}
+.fst-regular,a.fst-regular{
+	font-style: normal;
+	font-weight: 400;
+}
+.fst-italic,a.fst-italic{
+	font-style: italic;
+	font-weight: 400;
+}
+.fst-medium,a.fst-medium{
+	font-style: normal;
+	font-weight: 600;
+}
+.fst-medium-italic,a.fst-medium-italic{
+	font-style: italic;
+	font-weight: 600;
+}
+.fst-bold,a.fst-bold{
+	font-style: normal;
+	font-weight: 700;
+}
+.fst-bold-italic,a.fst-bold-italic{
+	font-style: italic;
+	font-weight: 700;
+}
+.fst-black,a.fst-black{
+	font-style: normal;
+	font-weight: 900;
+}
+
+/////////////////
+// FONT COLORS //
+/////////////////
+@each $color in $colors{
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    .fc-#{$key}, .fc-#{$key}-hover{ color: $value; }
+}
+
+////////////////
+// FONT SIZES //
+////////////////
+$font-sizes: 13 14 16 21 30;
+@each $size in $font-sizes {
+    .fs-#{$size}{ font-size: #{$size}px; }
+}
+.fs-30{ line-height: 30px; }
+
+/////////////////////////
+// TEXT TRANSFORMATION //
+/////////////////////////
+.td-underline{ text-decoration: underline; }
+.td-underline-hover:hover{ text-decoration: underline; }
+.td-none{ text-decoration: none; }
+.td-none-hover:hover{ text-decoration: none; }
+.tt-uppercase{ text-transform:uppercase; }
+.tt-uppercase-hover:hover{ text-transform:uppercase; }
+.tt-capitalize{ text-transform:capitalize; }
+.tt-capitalize-hover:hover{ text-transform:capitalize; }
+.tt-lowercase-hover:hover{ text-transform:lowercase; }
+
+///////////
+// LISTS //
+///////////
+.ls-none { list-style: none; }
+
+////////////////////
+// TEXT ALIGNMENT //
+///////////////////
+.ta-right{ text-align: right; }
+.ta-left{ text-align: left; }
+.ta-center{ text-align: center; }
+.ta-justify{ text-align: justify; }
+.va-top{ vertical-align: top; }
+.va-middle{ vertical-align: middle; }
+.va-bottom{ vertical-align: bottom; }

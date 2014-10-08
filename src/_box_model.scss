@@ -1,0 +1,96 @@
+///////////////
+// CLEAR FIX //
+///////////////
+.clear{ clear: both; }
+
+///////////////////////
+// ELEMENT RENDERING //
+///////////////////////
+.d-inline-block{ display: inline-block; }
+.d-block{ display: block; }
+.d-inline{ display: inline; }
+.d-none{ display: none; }
+.d-table{ display: table; }
+.v-hidden { visibility: hidden; }
+.v-visible { visibility: visible; }
+
+//////////////////////
+// ELEMENT FLOATING //
+//////////////////////
+.f-left{ float: left; }
+.f-right{ float: right; }
+.f-none{ float: none; }
+
+///////////////////////
+// ELEMENT POSITIONS //
+///////////////////////
+.p-relative{ position: relative; }
+.p-absolute{ position: absolute; }
+.p-fixed{ position: fixed; }
+
+///////////////////////
+//  TOP and LEFT //////
+///////////////////////
+$sizes: 7 10 15 20 25 30 40 60 80 100;
+@each $size in $sizes {
+    .top-#{$size}{top:#{$size}px;}
+    .left-#{$size}{left:#{$size}px;}
+    .right-#{$size}{right:#{$size}px;}
+    .bottom-#{$size}{bottom:#{$size}px;}
+}
+
+//////////////////////////////////
+/////Width and Height 100% ///////
+/////////////////////////////////
+.width-100-per{
+    width: 100%;
+}
+
+.height-100-per{
+    height: 100%;
+}
+
+///////////////
+// OVERFLOWS //
+///////////////
+.of-visible { overflow: visible; }
+.of-hidden { overflow: hidden; }
+.of-auto { overflow: auto; }
+
+/////////////
+// MARGINS //
+/////////////
+.m-reset{ margin: 0;}
+.m-auto, .m-auto{ margin: 0 auto; }
+$margins: 5 7 10 15 20 30 40 65 80 134;
+@each $margin in $margins {
+    .m-#{$margin}{margin:#{$margin}px;}
+    .mt-#{$margin}{margin-top:#{$margin}px;}
+    .mr-#{$margin}{margin-right:#{$margin}px;}
+    .mb-#{$margin}{margin-bottom:#{$margin}px;}
+    .ml-#{$margin}{margin-left:#{$margin}px;}
+}
+///////////////////
+// MARGIN RESETS //
+///////////////////
+.mt-reset { margin-top: 0; }
+.mr-reset { margin-right: 0; }
+.mb-reset { margin-bottom: 0; }
+.ml-reset { margin-left: 0; }
+
+//////////////
+// PADDINGS //
+//////////////
+.p-reset{ padding: 0;}
+.pt-reset{ padding-top: 0;}
+.pr-reset{ padding-right: 0;}
+.pb-reset{ padding-bottom: 0;}
+.pl-reset{ padding-left: 0;}
+$paddings:  5 7 10 15 20 30 40 65 80 134;
+@each $padding in $paddings {
+    .p-#{$padding}{padding:#{$padding}px;}
+    .pt-#{$padding}{padding-top:#{$padding}px;}
+    .pr-#{$padding}{padding-right:#{$padding}px;}
+    .pb-#{$padding}{padding-bottom:#{$padding}px;}
+    .pl-#{$padding}{padding-left:#{$padding}px;}
+}

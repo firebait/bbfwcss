@@ -1,0 +1,103 @@
+/////////////
+// BUTTONS //
+/////////////
+.btn{
+    @extend .d-inline-block;
+    @extend .font-din;
+    outline: none;
+    cursor: pointer;
+    line-height: 32px;
+    height: 34px;
+    box-sizing: border-box;
+}
+@each $color in $colors {
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    .btn-primary-#{$key} {
+        @extend .btn;
+        @extend .fc-white;
+        @extend .pl-20;
+        @extend .pr-20;
+        @extend .bgc-#{$key};
+        @extend .b-#{$key};
+        opacity: 0.9;
+    }
+    .btn-primary-#{$key}:hover {
+        @extend .td-none;
+        @extend .fc-white;
+        opacity: 1;
+    }
+    .btn-secondary-#{$key}{
+        @extend .btn;
+        @extend .bgc-white;
+        @extend .td-none;
+        @extend .fc-#{$key};
+        @extend .b-#{$key};
+        padding: 0 20px;
+    }
+    .btn-secondary-#{$key}:hover{
+        @extend .bgc-#{$key};
+        @extend .fc-white;
+        @extend .pl-20;
+        @extend .pr-20;
+        @extend .td-none;
+    }
+    .btn-icon-#{$key}{
+        @extend .btn;
+        @extend .bgc-white;
+        @extend .td-none;
+        @extend .fc-#{$key};
+        @extend .b-#{$key};
+        padding: 0 10px;
+        line-height: 34px;
+    }
+    .btn-icon-#{$key}:hover{
+        @extend .b-#{$key};
+        @extend .bgc-#{$key};
+        @extend .b-#{$key};
+        @extend .fc-white;
+        @extend .pl-10;
+        @extend .pr-10;
+        @extend .td-none;
+    }
+    .btn-toggle-#{$key}, .btn-toggle-#{$key}{
+        @extend .btn;
+        @extend .bgc-white;
+        @extend .td-none;
+        @extend .fc-#{$key};
+        @extend .b-#{$key};
+        padding: 0 20px;
+        line-height: 34px;
+    }
+    .btn-toggle-#{$key}.active, .btn-toggle-#{$key}.active:hover{
+        @extend .btn-primary-#{$key};
+        line-height: 34px;
+    }
+    .btn-primary-#{$key}[disabled], .btn-secondary-#{$key}[disabled], .btn-icon-#{$key}[disabled],
+    .btn-primary-#{$key}.disabled, .btn-secondary-#{$key}.disabled, .btn-icon-#{$key}.disabled,
+    .btn-primary-#{$key}[disabled]:hover, .btn-secondary-#{$key}[disabled]:hover, .btn-icon-#{$key}[disabled]:hover,
+    .btn-primary-#{$key}.disabled:hover, .btn-secondary-#{$key}.disabled:hover, .btn-icon-#{$key}.disabled:hover{
+        @extend .btn;
+        @extend .bgc-lightest-grey;
+        @extend .fc-medium-grey;
+        @extend .b-light-grey;
+        @extend .td-none;
+        opacity: 1;
+        padding: 0 20px;
+        line-height: 34px;
+    }
+    .btn-icon-#{$key}[disabled], .btn-icon-#{$key}[disabled]{
+        padding: 0 10px;
+    }
+    .btn-link-#{ $key }{
+        line-height: 36px;
+        @extend .p-10;
+        @extend .fc-#{ $key };
+        opacity: .9;
+        &:hover{
+            @extend .fc-#{ $key };
+            @extend .td-none;
+            opacity: 1;
+        }
+    }
+}

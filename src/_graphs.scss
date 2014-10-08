@@ -1,0 +1,67 @@
+.nvd3.nv-pie path{
+    stroke: transparent;
+    stroke-width: 0px;
+    stroke-opacity: 0;
+}
+
+g.nv-axis {
+    path.domain {
+        stroke: $medium-grey;
+    }
+    text {
+        fill: $medium-grey;
+    }
+}
+
+
+.graph-set-stacked-areagraph, .graph-set-linegraph {
+    height: 100%;
+    width: 100%;
+
+    .nv-x .tick line {
+        display: none;
+    }
+
+    .nvtooltip {
+        padding: 5px 10px;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+
+    line.nv-guideline {
+        stroke: #333;
+        stroke-width: 1;
+    }
+}
+
+#pacing-panel {
+    .pacing-graph-container  {
+        height: 40px;
+    }
+
+    .stacked-area-graph-container-area {
+        height: 55px;
+        width: 365px;
+        right: 0;
+    }
+
+    .stacked-graph-container {
+        height: 55px;
+        overflow: hidden;
+
+        #stacked-area-graph-container {
+            height: 30px;
+            overflow: hidden;
+        }
+    }
+
+    .graph-set-bulletgraph {
+        .nvd3.nv-bullet .nv-range {
+            fill: $medium-grey;
+        }
+
+        .nv-tick text {
+            fill: $dark-grey;
+        }
+    }
+}

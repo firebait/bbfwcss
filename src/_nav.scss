@@ -1,0 +1,62 @@
+/////////
+// NAV //
+/////////
+#main-header-content nav{
+    height: 50px;
+    line-height: 50px;
+    > ul > li{
+        @extend .p-relative;
+        @extend .f-left;
+        @extend .bgc-darkest-grey;
+        height: 50px;
+        line-height: 50px;
+        > a{
+            height: 50px;
+        }
+        > ul{
+            display: none;
+            min-width: 100%;
+        }
+        &:hover{
+            > a{
+                @extend .bgc-black;
+            }
+            > ul{
+                @extend .d-block;
+                @extend .bgc-darkest-grey;
+                @extend .p-absolute;
+                @include box-shadow-dark;
+
+                top: 48px;
+                left: 0px;
+                white-space: nowrap;
+                padding: 15px 0;
+                z-index: 1000;
+                > li{
+                    line-height: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+    li{
+        @extend .d-block;
+        list-style: none;
+        a{
+            @extend .d-block;
+            @extend .pl-30;
+            @extend .pr-30;
+            @extend .p-relative;
+            @extend .fc-light-grey;
+            @extend .tt-capitalize;
+        }
+        span.icon{
+            line-height: 45px;
+        }
+        a:hover, a.active{
+            @extend .bgc-black;
+            @extend .fc-white;
+            @extend .td-none;
+        }
+    }
+}

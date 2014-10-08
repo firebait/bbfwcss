@@ -1,0 +1,28 @@
+  ////////////////////////
+/////TYPEAHEAD//////////
+////////////////////////
+.tt-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  width: 100%;
+  height: 150px;
+  overflow-y: scroll;
+  z-index: 1001;
+  box-sizing: border-box;
+    .tt-dataset-name{
+        padding-left:10px;
+    }
+}
+
+.tt-suggestion.tt-cursor {
+  background-color: #E0E0E0;
+  margin-left:-10px;
+  padding-left:10px;
+}
+
+.twitter-typeahead{
+  width: 100%;
+}

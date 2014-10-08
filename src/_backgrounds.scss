@@ -1,0 +1,12 @@
+/////////////////
+// BACKGROUNDS //
+/////////////////
+.bg-none {
+    background: none;
+}
+
+@each $color in $colors{
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    .bgc-#{$key}, .bgc-#{$key}-hover:hover{ background-color: $value; }
+}

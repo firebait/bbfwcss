@@ -1,0 +1,330 @@
+.navigation-quick-nav{
+    position: absolute;
+    left:0px;
+    top:-30px;
+    -moz-box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.6);
+    z-index:3;
+
+    #show-all {
+        @extend .d-none;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: $darkest-grey;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .content-box{
+        width:500px;
+        display: block;
+    }
+    .gen-row{
+        padding:0px;
+        line-height: 37px;
+    }
+
+    .nav-adv .l-icon{
+        color: $blueberry;
+    }
+
+    .nav-camp-row{
+        display: inline-block;
+        .l-icon{
+            color: $blue;
+        }
+        position:relative;
+
+        .navigation-side-menu{
+            position: absolute;
+            color: $black;
+            z-index:1;
+            top:38px;
+            @include box-shadow;
+            width:300px;
+            left:443px;
+        }
+        .side-menu-row{
+            a, span.icon, span{
+            color: $black;
+            }
+        }
+    }
+
+
+    .nav-adv:hover{
+        background-color: $blueberry;
+        color: $white;
+        .icon{
+            color: $white;
+            display: inline-block;
+        }
+
+        a{
+            color: $black;
+        }
+    }
+
+    .nav-adv.active{
+        background-color: $blueberry;
+        color: $white;
+        .icon{
+            color: $white;
+            display: inline-block;
+        }
+
+        a{
+            color: $white;
+        }
+    }
+
+
+
+    .nav-camp-row:hover{
+        background-color: $blue;
+        color: $white;
+        .icon{
+            color: $white;
+            display: inline-block;
+        }
+
+        a{
+            color: $black;
+        }
+    }
+
+    .nav-camp-row.active{
+        background-color: $blue;
+        color: $white;
+        .icon{
+            color: $white;
+            display: inline-block;
+        }
+
+        a{
+            color:$white;
+        }
+
+        .side-menu-row{
+            a, span.icon, span{
+            color: $black;
+            }
+        }
+    }
+    .nav-lig{
+        border-left: 2px solid $light-grey;
+        margin-left: 8px;
+        padding-left: 16px;
+    }
+
+    .nav-pub{
+        border-left: 2px solid $light-grey;
+        margin-left: 8px;
+        padding-left: 16px;
+
+    }
+
+    .nav-pub-row{
+        display: inline-block;
+        .l-icon{
+            color: $green;
+        }
+    }
+
+    .nav-pub-row.active{
+        background-color: $green;
+        color: $white;
+        .icon{
+            color: $white;
+            display: inline-block;
+        }
+        a{
+            color: $white;
+        }
+    }
+
+    .nav-pub-row:hover{
+        background-color: $green;
+        color: $white;
+        .icon{
+            color: $white;
+            display: inline-block;
+        }
+        a{
+            color: $black;
+        }
+    }
+
+    .nav-li{
+        border-left: 2px solid $light-grey;
+        margin-left: 8px;
+    }
+
+    .nav-li-row, .nav-li-row-group, .nav-lig-row{
+        display: inline-block;
+        .l-icon{
+            color: $lime;
+        }
+        position:relative;
+
+        .side-menu-row{
+            a, span.icon, span{
+            color: $black;
+            }
+        }
+    }
+
+    .nav-li-row{
+        margin-left: 39px;
+        .navigation-side-menu{
+            position: absolute;
+            color: $black;
+            z-index:1;
+            top:38px;
+            @include box-shadow;
+            width:300px;
+            left:418px;
+        }
+    }
+
+    .nav-lig-row{
+        position:relative;
+        .navigation-side-menu{
+            position: absolute;
+            color: $black;
+            z-index:1;
+            top:38px;
+            @include box-shadow;
+            width:300px;
+            left:418px;
+        }
+    }
+
+    .nav-li-row-group{
+        position:relative;
+        .navigation-side-menu{
+            position: absolute;
+            color: $black;
+            z-index:1;
+            top:38px;
+            @include box-shadow;
+            width:300px;
+            left:393px;
+        }
+    }
+
+
+    .group-span{
+        border-left: 2px solid $light-grey;
+        margin-left: 24px;
+        padding-right: 38px;
+        display: inline-block;
+        height: 38px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        float: left;
+    }
+
+    .nav-li-row:hover, .nav-li-row-group:hover, .nav-lig-row:hover{
+        background-color: rgba(107, 178, 107, .4);
+        color: $black;
+        .icon{
+            color: $lime;
+            display: inline-block;
+        }
+        a{
+            color:$black;
+        }
+    }
+
+    .nav-lig-row.active, .nav-li-row.active, .nav-li-row-group.active{
+        background-color: rgba(107, 178, 107, .4);
+        color: $white;
+        .icon{
+            color: $lime;
+            display: inline-block;
+        }
+        a{
+            color: $white;
+        }
+
+        .side-menu-row{
+            a, span.icon, span{
+            color: $black;
+            }
+        }
+    }
+
+    .r-icon{
+        color: $white;
+        padding-right: 5px;
+        cursor: pointer;
+        position:relative;
+    }
+    .arrow{
+        cursor: pointer;
+    }
+    .li-children{
+        display: none;
+    }
+
+    .level1{
+        width:416px;
+    }
+
+    .level2{
+        width:390px;
+    }
+
+    .level3{
+        width: 364px;
+    }
+
+    .level-pub{
+        width: 417px;
+    }
+
+    .truncate{
+        color:$darkest-grey;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        line-height: 15px;
+    }
+}
+
+.navigation-side-menu{
+
+    @extend .bgc-white;
+    width:300px;
+    padding: 10px 0;
+
+    .side-menu-row{
+        padding: 0 15px;
+        a, span.icon, span{
+        color: $black;
+        }
+    }
+
+    .side-menu-row-lineItem:hover{
+        background-color: rgba(107, 178, 107, .4);
+    }
+    .side-menu-row-lineItemGroup:hover{
+        background-color: rgba(107, 178, 107, .4);
+    }
+    .side-menu-row-campaign:hover{
+        background-color: rgba(54, 160, 209, .4);
+    }
+
+    .side-menu-delete{
+        cursor:pointer;
+    }
+
+}

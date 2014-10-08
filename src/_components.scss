@@ -1,0 +1,285 @@
+.headers-layout{
+    @extend .bgc-darkest-grey;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    #main-header-content{
+        margin: 0 auto;
+        width: 1040px;
+    }
+    a#logo{
+        @extend .d-block;
+        background: url(../images/suit_sprite.png) no-repeat 0 7px transparent;
+        width: 68px;
+        height: 50px;
+    }
+}
+
+a.logo{
+        @extend .d-block;
+        background: url(../images/suit_sprite.png) no-repeat 0 7px transparent;
+        width: 68px;
+        height: 50px;
+}
+
+.title-box, .footer-box{
+    @extend .m-auto;
+    @extend .mt-20;
+    @extend .bgc-lightest-grey;
+    padding: 8px 30px;
+    width: 980px;
+    h4{
+        @extend .d-inline-block;
+        line-height: 34px;
+    }
+}
+
+.title-box{
+    @extend .bb-light-grey;
+    line-height: 34px;
+
+    h4 {
+        display: block;
+    }
+}
+
+// Color implementation of the title-boxes.
+@each $color in $colors {
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+
+    .title-box-#{ $key } {
+        @extend .title-box;
+        background-color: $value;
+    }
+
+    .full-width-title-box-#{ $key } {
+        @extend .full-width-title-box;
+        background-color: $value;
+    }
+}
+
+.footer-box{
+    @extend .bt-light-grey;
+}
+
+.content-box{
+    @extend .m-auto;
+    @extend .p-15;
+    @extend .bgc-white;
+    @extend .of-visible;
+    @extend .p-relative;
+    display: table;
+    width: 1010px;
+}
+
+.invisible-container{
+    width: 1060px;
+    @extend .m-auto;
+    @extend .of-hidden;
+}
+
+.full-width-content-box{
+    @extend .content-box;
+    padding: 0;
+    width: 100%;
+}
+.full-width-title-box{
+    @extend .title-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    .title-box{
+        margin: 0 auto;
+        border: 0;
+    }
+
+    h4 {
+        @extend .fc-dark-grey;
+    }
+}
+
+////////////////
+// TITLE LINE //
+////////////////
+@each $color in $colors {
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    hr.title-line-#{ $key } {
+        border: 0;
+        border-top: 5px solid $value;
+        margin: 0;
+        padding: 0;
+    }
+}
+hr.divider-line {
+    border: 0;
+    border-top: 1px solid $light-grey;
+    margin: 0;
+    padding: 0;
+}
+
+////////////
+// GRAPHS //
+////////////
+.graph-set-bargraph {
+    height: inherit;
+}
+
+/////////////////
+// BREADCRUMBS //
+/////////////////
+.suit-breadcrumbs {
+    @extend .title-box;
+    @extend .p-relative;
+    padding: 0 30px;
+
+    > ul {
+        list-style: none;
+        @extend .fc-dark-grey;
+        height: 50px;
+        line-height: 50px;
+
+        > li{
+            @extend .p-relative;
+            @extend .f-left;
+            height: 50px;
+            line-height: 50px;
+            max-width: 221px;
+
+            > a:not(.btn-icon-blue){
+                @extend .d-block;
+                @extend .truncate;
+                height: 50px;
+            }
+
+            @each $color in $colors {
+                $key: nth($color, 1);
+                $r: nth($color, 3);
+                $g: nth($color, 4);
+                $b: nth($color, 5);
+
+                // Active items
+                > a.active.section-#{$key} {
+                    @extend .fc-darkest-grey;
+                    span {
+                        @extend .fc-#{$key};
+                    }
+                }
+            }
+
+            > ul{
+                display: none;
+                //max-height: 221px;
+                //overflow-y: auto;
+            }
+
+            &:hover{
+                > ul{
+                    @extend .d-block;
+                    @extend .bgc-white;
+                    @extend .p-absolute;
+                    white-space: nowrap;
+                    top: 50px;
+                    padding: 15px 0;
+                    min-width: 300px;
+                    max-width: 333px;
+                    @include box-shadow;
+                    z-index: 1;
+                    > li{
+                        line-height: 50px;
+                        height: 50px;
+                    }
+                    a {
+                        @extend .d-block;
+                        @extend .pl-30;
+                        @extend .pr-30;
+                        @extend .fc-darkest-grey;
+                        @extend .truncate;
+                    }
+                }
+
+                @each $color in $colors {
+                    $key: nth($color, 1);
+                    $r: nth($color, 3);
+                    $g: nth($color, 4);
+                    $b: nth($color, 5);
+
+                    // Regular menu items
+                    > a.section-#{$key} {
+                        @extend .fc-darkest-grey;
+                        span {
+                            @extend .fc-#{$key};
+                        }
+                    }
+
+                    // Dropdown menu items
+                    &.dropdown-menu-#{$key} {
+                        > a.section-#{$key} {
+                            @extend .bgc-#{$key};
+                            @extend .fc-white;
+                            span {
+                                @extend .fc-white;
+                            }
+                        }
+                        >ul {
+                            z-index: 3;
+                        }
+                        >ul a:hover {
+                            background-color: rgba($r, $g, $b, .4);
+                        }
+                    }
+                }
+            }
+        }
+
+        li{
+            @extend .d-block;
+            list-style: none;
+
+            a{
+                @extend .d-inline-block;
+                @extend .td-none;
+                @extend .p-relative;
+                @extend .tt-capitalize;
+            }
+
+            a.btn-icon-blue {
+                height: auto;
+            }
+        }
+    }
+}
+
+//////////////
+// TOOLTIPS //
+//////////////
+.tooltip {
+    @extend .p-absolute;
+    @extend .d-none;
+    padding: 5px 0;
+    z-index: 9999; // so its on top of the modals as well
+    max-width: 500px;
+}
+.tooltip-content {
+    @extend .ta-left;
+    @extend .bgc-red;
+    @extend .fc-white;
+    @extend .pt-7;
+    @extend .pb-7;
+    @extend .pl-15;
+    @extend .pr-15;
+}
+.tooltip-arrow {
+    @extend .p-absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    bottom: 0;
+    left: 10px;
+
+    border-width: 5px 5px 0;
+    border-top-color: $red;
+}

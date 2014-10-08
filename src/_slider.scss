@@ -1,0 +1,24 @@
+.slider {
+    @extend .bgc-light-grey;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    margin-top: 15px;
+    .handle {
+        @extend .bgc-white;
+        @extend .fc-medium-grey;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        margin-top: -7px;
+    }
+    .disabled {
+        background: #898989;
+    }
+}

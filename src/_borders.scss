@@ -1,0 +1,18 @@
+/////////////
+// BORDERS //
+/////////////
+.b-none{ border: none; }
+.bt-none{ border-top: none; }
+.br-none{ border-right: none; }
+.bb-none{ border-bottom: none; }
+.bl-none{ border-left: none; }
+
+@each $color in $colors{
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    .b-#{$key}{ border: 1px solid $value;}
+    .bt-#{$key}{ border-top: 1px solid $value;}
+    .br-#{$key}{ border-right: 1px solid $value;}
+    .bb-#{$key}{ border-bottom: 1px solid $value;}
+    .bl-#{$key}{ border-left: 1px solid $value;}
+}

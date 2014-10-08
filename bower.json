@@ -1,0 +1,28 @@
+{
+  "name": "suit-styleguide",
+  "description": "Styleguide Framework for Suit",
+  "version": "0.0.1",
+  "dependencies": {
+    "font-awesome": "4.2.0"
+  },
+  "devDependencies": {
+    "font-awesome": "4.2.0"
+  },
+  "license": [
+    "OFL-1.1",
+    "MIT",
+    "CC-BY-3.0"
+  ],
+  "main": [
+    "./dist/*"
+  ],
+  "ignore": [
+    "*/.*",
+    "*.json",
+    "src",
+    "*.md"
+  ],
+  "authors": [
+    "Kerry Gould <kgould@set.tv>"
+  ]
+}
