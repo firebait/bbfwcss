@@ -19,7 +19,9 @@
     "*.json",
     "src",
     "*.md",
-    "README"
+    "README",
+    "Gruntfile.js",
+    "bower.json"
   ],
   "authors": [
     "Kerry Gould <kgould@set.tv>"
