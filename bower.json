@@ -15,9 +15,9 @@
     "dist/fonts"
   ],
   "ignore": [
-    "./.*",
+    "./.json",
     "*/.*",
-    "src",
+    "./src",
     "*.md",
     "README",
     "Gruntfile.js"
