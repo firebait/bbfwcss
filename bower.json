@@ -15,10 +15,6 @@
     "dist/fonts"
   ],
   "ignore": [
-    "./.json",
-    "*.json",
-    "**/.*",
-    ".gitignore",
     "src",
     "*.md",
     "README",
