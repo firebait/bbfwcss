@@ -16,8 +16,10 @@
   ],
   "ignore": [
     "./.json",
-    "*/.*",
-    "./src",
+    "*.json",
+    "**/.*",
+    ".gitignore",
+    "src",
     "*.md",
     "README",
     "Gruntfile.js"
