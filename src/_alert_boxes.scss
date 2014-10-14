@@ -7,10 +7,11 @@
     @extend .d-block;
     @extend .m-auto;
     @extend .fc-white;
-    @extend .font-din;
     @extend .fs-16;
     @extend .p-20;
     @extend .p-fixed;
+    @extend .gibson_semibold;
+    letter-spacing: 0.1em;
     left: 50%;
     margin-left: -350px;
     opacity: .9;

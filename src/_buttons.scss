@@ -3,7 +3,8 @@
 /////////////
 .btn{
     @extend .d-inline-block;
-    @extend .font-din;
+    @extend .gibson_semibold;
+    letter-spacing: 0.1em;
     outline: none;
     cursor: pointer;
     line-height: 32px;

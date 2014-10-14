@@ -9,32 +9,35 @@ body.light{
     background-image: url(../images/page_background_light.png);
 }
 h1{
-    @extend .font-din;
+    @extend .gibson_semibold;
+    letter-spacing: 0.1em;
     @extend .fs-30;
     @extend .tt-uppercase;
 }
 h2{
-    @extend .font-din;
+    @extend .gibson_semibold;
+    letter-spacing: 0.1em;
     @extend .fs-21;
     @extend .tt-uppercase;
     letter-spacing: .07em;
 }
 h3{
-    @extend .font-din;
+    @extend .gibson_semibold;
+    letter-spacing: 0.1em;
     @extend .fs-16;
 }
 h4{
-    @extend .font-din;
+    @extend .gibson_semibold;
+    letter-spacing: 0.1em;
     @extend .fs-13;
     @extend .tt-uppercase;
-    letter-spacing: .15em;
 }
 
 ///////////
 // LINKS //
 ///////////
 a{
-    @extend .font-din;
+    @extend .gibson_regular;
     font-size: inherit;
     @extend .fc-blue;
     @extend .td-none;

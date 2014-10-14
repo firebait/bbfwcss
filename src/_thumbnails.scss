@@ -25,7 +25,8 @@
         @extend .p-absolute;
         @extend .ta-center;
         @extend .fc-white;
-        @extend .font-din;
+        @extend .gibson_semibold;
+        letter-spacing: 0.1em;
         right: 0;
         width: 55px;;
      }

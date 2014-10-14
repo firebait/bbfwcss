@@ -40,6 +40,14 @@ module.exports = function (grunt) {
                     src: [
                         '*.{eot,svg,ttf,woff,otf}'
                     ]
+                },{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= suit.src %>/conv_fonts',
+                    dest: '<%= suit.dist %>/conv_fonts',
+                    src: [
+                        '*.{eot,svg,ttf,woff,otf}'
+                    ]
                 }]
             },
             awesome_fonts: {

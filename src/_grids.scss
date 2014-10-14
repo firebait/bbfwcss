@@ -1,7 +1,6 @@
 ///////////
 // GRIDS //
 ///////////
-
 .grid1, .grid2, .grid3, .grid4, .grid6{
     @extend .f-left;
     @extend .p-relative;
@@ -174,7 +173,7 @@
 /////////////////////////////
 // COMPONENTS INSIDE GRIDS //
 /////////////////////////////
-.grid1, .grid2, .grid3, .grid4, .grid6{    
+.grid1, .grid2, .grid3, .grid4, .grid6{
     .title-box, .content-box, .footer-box{
         //margin: 0;
         width: 100%;
@@ -184,3 +183,29 @@
         -webkit-box-sizing: border-box;
     }
 }
+
+/////////////////
+// FLUID GRID //
+///////////////
+
+$cols: 6;
+$fluid_gutter: 6%;
+.fluid-container {
+    padding: 0%;
+    clear: both;
+    @for $i from 1 through $cols {
+        $fluid_grid_width: 100% / $i - $fluid_gutter;
+        .grid#{$i} {
+            margin: 0px;
+            padding-left: $fluid_gutter / 2;
+            padding-right: $fluid_gutter / 2;
+            width: $fluid_grid_width;
+            @for $n from 1 through $i {
+                &.span#{$n} {
+                    width: $fluid_grid_width * $n + ($fluid_gutter * ($n - 1));
+                }
+            }
+        }
+    }
+}
+

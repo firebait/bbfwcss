@@ -23,6 +23,8 @@
                 @extend .pr-30;
                 @extend .p-relative;
                 @extend .fc-#{ $key };
+                @extend .fst-bold;
+                letter-spacing: 0.1em;
                 &.active{
                     @extend .fc-white;
                     @extend .bgc-#{ $key };

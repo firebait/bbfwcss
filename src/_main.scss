@@ -46,9 +46,8 @@ p{
 }
 
 h4{
-	font-family:"DIN OT", "Helvetica Neue", Times, serif;
-	font-weight:700;
-	letter-spacing:.15em;
+	@extend .gibson_semibold;
+	letter-spacing:.1em;
 	text-transform:uppercase;
 	color:#313233;
 	font-size:13px;
@@ -168,8 +167,8 @@ a.input_box:hover{
 }
 
 .primary_button{
-	font-family:"DIN OT", "Helvetica Neue", Times, serif;
-	font-weight:800;
+	@extend .gibson_semibold;
+	letter-spacing: 0.1em;
 	text-decoration:none;
 	color:#FFF;
 	padding:0px 20px;
@@ -184,8 +183,8 @@ a.primary_button:hover{
 }
 
 .secondary_button{
-	font-family:"DIN OT", "Helvetica Neue", Times, serif;
-	font-weight:800;
+	@extend .gibson_semibold;
+	letter-spacing: 0.1em;
 	text-decoration:none;
 	color:#313233;
 	padding:0px 20px;
@@ -202,8 +201,8 @@ a.secondary_button:hover{
 }
 
 .disabled_button{
-	font-family:"DIN OT", "Helvetica Neue", Times, serif;
-	font-weight:800;
+	@extend .gibson_semibold;
+	letter-spacing: 0.1em;
 	background-color:#f7f7f7;
 	text-decoration:none;
 	color:#e0e0e0;
@@ -216,7 +215,8 @@ a.secondary_button:hover{
 }
 
 .alert_box{
-	font-family:"DIN OT", "Helvetica Neue", Times, serif;
+	@extend .gibson_semibold;
+	letter-spacing: 0.1em;
 	font-size:16px;
 	text-decoration:none;
 	color:#FFF;
