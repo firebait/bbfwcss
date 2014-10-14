@@ -11,8 +11,7 @@
     "CC-BY-3.0"
   ],
   "main": [
-    "dist/suit-styleguide.css",
-    "dist/fonts"
+    "dist/suit-styleguide.css"
   ],
   "ignore": [
     "src",
