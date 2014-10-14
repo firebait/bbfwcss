@@ -1,5 +1,62 @@
 @charset "UTF-8";
 /* CSS Document */
+/* Font Loading */
+@font-face {
+  font-family: "Gibson_Bold";
+  src: url("./conv_fonts/Gibson_Bold.eot");
+  src: url("./conv_fonts/Gibson_Bold.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Bold.woff") format("woff"), url("./conv_fonts/Gibson_Bold.ttf") format("truetype"), url("./conv_fonts/Gibson_Bold.svg#Gibson_Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gibson_BoldItalic";
+  src: url("./conv_fonts/Gibson_BoldItalic.eot");
+  src: url("./conv_fonts/Gibson_BoldItalic.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_BoldItalic.woff") format("woff"), url("./conv_fonts/Gibson_BoldItalic.ttf") format("truetype"), url("./conv_fonts/Gibson_BoldItalic.svg#Gibson_BoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gibson_Italic";
+  src: url("./conv_fonts/Gibson_Italic.eot");
+  src: url("./conv_fonts/Gibson_Italic.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Italic.woff") format("woff"), url("./conv_fonts/Gibson_Italic.ttf") format("truetype"), url("./conv_fonts/Gibson_Italic.svg#Gibson_Italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gibson_Light";
+  src: url("./conv_fonts/Gibson_Light.eot");
+  src: url("./conv_fonts/Gibson_Light.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Light.woff") format("woff"), url("./conv_fonts/Gibson_Light.ttf") format("truetype"), url("./conv_fonts/Gibson_Light.svg#Gibson_Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gibson_LightIt";
+  src: url("./conv_fonts/Gibson_LightIt.eot");
+  src: url("./conv_fonts/Gibson_LightIt.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_LightIt.woff") format("woff"), url("./conv_fonts/Gibson_LightIt.ttf") format("truetype"), url("./conv_fonts/Gibson_LightIt.svg#Gibson_LightIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gibson_Regular";
+  src: url("./conv_fonts/Gibson_Regular.eot");
+  src: url("./conv_fonts/Gibson_Regular.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Regular.woff") format("woff"), url("./conv_fonts/Gibson_Regular.ttf") format("truetype"), url("./conv_fonts/Gibson_Regular.svg#Gibson_Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gibson_SemiBold";
+  src: url("./conv_fonts/Gibson_SemiBold.eot");
+  src: url("./conv_fonts/Gibson_SemiBold.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_SemiBold.woff") format("woff"), url("./conv_fonts/Gibson_SemiBold.ttf") format("truetype"), url("./conv_fonts/Gibson_SemiBold.svg#Gibson_SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gibson_SemiboldIt";
+  src: url("./conv_fonts/Gibson_SemiboldIt.eot");
+  src: url("./conv_fonts/Gibson_SemiboldIt.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_SemiboldIt.woff") format("woff"), url("./conv_fonts/Gibson_SemiboldIt.ttf") format("truetype"), url("./conv_fonts/Gibson_SemiboldIt.svg#Gibson_SemiboldIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* Full Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -645,62 +702,6 @@ button::-moz-focus-inner {
 
 .pl-134 {
   padding-left: 134px; }
-
-@font-face {
-  font-family: "Gibson_Bold";
-  src: url("./conv_fonts/Gibson_Bold.eot");
-  src: url("./conv_fonts/Gibson_Bold.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Bold.woff") format("woff"), url("./conv_fonts/Gibson_Bold.ttf") format("truetype"), url("./conv_fonts/Gibson_Bold.svg#Gibson_Bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Gibson_BoldItalic";
-  src: url("./conv_fonts/Gibson_BoldItalic.eot");
-  src: url("./conv_fonts/Gibson_BoldItalic.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_BoldItalic.woff") format("woff"), url("./conv_fonts/Gibson_BoldItalic.ttf") format("truetype"), url("./conv_fonts/Gibson_BoldItalic.svg#Gibson_BoldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Gibson_Italic";
-  src: url("./conv_fonts/Gibson_Italic.eot");
-  src: url("./conv_fonts/Gibson_Italic.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Italic.woff") format("woff"), url("./conv_fonts/Gibson_Italic.ttf") format("truetype"), url("./conv_fonts/Gibson_Italic.svg#Gibson_Italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Gibson_Light";
-  src: url("./conv_fonts/Gibson_Light.eot");
-  src: url("./conv_fonts/Gibson_Light.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Light.woff") format("woff"), url("./conv_fonts/Gibson_Light.ttf") format("truetype"), url("./conv_fonts/Gibson_Light.svg#Gibson_Light") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Gibson_LightIt";
-  src: url("./conv_fonts/Gibson_LightIt.eot");
-  src: url("./conv_fonts/Gibson_LightIt.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_LightIt.woff") format("woff"), url("./conv_fonts/Gibson_LightIt.ttf") format("truetype"), url("./conv_fonts/Gibson_LightIt.svg#Gibson_LightIt") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Gibson_Regular";
-  src: url("./conv_fonts/Gibson_Regular.eot");
-  src: url("./conv_fonts/Gibson_Regular.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Regular.woff") format("woff"), url("./conv_fonts/Gibson_Regular.ttf") format("truetype"), url("./conv_fonts/Gibson_Regular.svg#Gibson_Regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Gibson_SemiBold";
-  src: url("./conv_fonts/Gibson_SemiBold.eot");
-  src: url("./conv_fonts/Gibson_SemiBold.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_SemiBold.woff") format("woff"), url("./conv_fonts/Gibson_SemiBold.ttf") format("truetype"), url("./conv_fonts/Gibson_SemiBold.svg#Gibson_SemiBold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Gibson_SemiboldIt";
-  src: url("./conv_fonts/Gibson_SemiboldIt.eot");
-  src: url("./conv_fonts/Gibson_SemiboldIt.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_SemiboldIt.woff") format("woff"), url("./conv_fonts/Gibson_SemiboldIt.ttf") format("truetype"), url("./conv_fonts/Gibson_SemiboldIt.svg#Gibson_SemiboldIt") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 
 .gibson_regular, .fst-regular, a.fst-regular, .fst-medium, a.fst-medium, a {
   font-family: "Gibson_Regular", "Helvetica Neue", Arial, sans-serif; }

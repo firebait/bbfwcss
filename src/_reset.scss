@@ -1,6 +1,20 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Font Loading */
+$conv_fonts: Gibson_Bold, Gibson_BoldItalic, Gibson_Italic, Gibson_Light, Gibson_LightIt, Gibson_Regular, Gibson_SemiBold, Gibson_SemiboldIt;
+
+@each $cf in $conv_fonts {
+    @font-face {
+        font-family: '#{$cf}';
+        src: url("./conv_fonts/#{$cf}.eot");
+        src: url("./conv_fonts/#{$cf}.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/#{$cf}.woff") format("woff"), url("./conv_fonts/#{$cf}.ttf") format("truetype"), url("./conv_fonts/#{$cf}.svg##{$cf}") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+
 /* Full Reset */
 html, body{
     @extend .font-default;
