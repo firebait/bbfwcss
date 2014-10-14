@@ -648,57 +648,57 @@ button::-moz-focus-inner {
 
 @font-face {
   font-family: "Gibson_Bold";
-  src: url("../suit/styles/conv_fonts/Gibson_Bold.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_Bold.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_Bold.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_Bold.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_Bold.svg#Gibson_Bold") format("svg");
+  src: url("./conv_fonts/Gibson_Bold.eot");
+  src: url("./conv_fonts/Gibson_Bold.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Bold.woff") format("woff"), url("./conv_fonts/Gibson_Bold.ttf") format("truetype"), url("./conv_fonts/Gibson_Bold.svg#Gibson_Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gibson_BoldItalic";
-  src: url("../suit/styles/conv_fonts/Gibson_BoldItalic.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_BoldItalic.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_BoldItalic.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_BoldItalic.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_BoldItalic.svg#Gibson_BoldItalic") format("svg");
+  src: url("./conv_fonts/Gibson_BoldItalic.eot");
+  src: url("./conv_fonts/Gibson_BoldItalic.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_BoldItalic.woff") format("woff"), url("./conv_fonts/Gibson_BoldItalic.ttf") format("truetype"), url("./conv_fonts/Gibson_BoldItalic.svg#Gibson_BoldItalic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gibson_Italic";
-  src: url("../suit/styles/conv_fonts/Gibson_Italic.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_Italic.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_Italic.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_Italic.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_Italic.svg#Gibson_Italic") format("svg");
+  src: url("./conv_fonts/Gibson_Italic.eot");
+  src: url("./conv_fonts/Gibson_Italic.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Italic.woff") format("woff"), url("./conv_fonts/Gibson_Italic.ttf") format("truetype"), url("./conv_fonts/Gibson_Italic.svg#Gibson_Italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gibson_Light";
-  src: url("../suit/styles/conv_fonts/Gibson_Light.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_Light.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_Light.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_Light.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_Light.svg#Gibson_Light") format("svg");
+  src: url("./conv_fonts/Gibson_Light.eot");
+  src: url("./conv_fonts/Gibson_Light.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Light.woff") format("woff"), url("./conv_fonts/Gibson_Light.ttf") format("truetype"), url("./conv_fonts/Gibson_Light.svg#Gibson_Light") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gibson_LightIt";
-  src: url("../suit/styles/conv_fonts/Gibson_LightIt.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_LightIt.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_LightIt.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_LightIt.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_LightIt.svg#Gibson_LightIt") format("svg");
+  src: url("./conv_fonts/Gibson_LightIt.eot");
+  src: url("./conv_fonts/Gibson_LightIt.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_LightIt.woff") format("woff"), url("./conv_fonts/Gibson_LightIt.ttf") format("truetype"), url("./conv_fonts/Gibson_LightIt.svg#Gibson_LightIt") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gibson_Regular";
-  src: url("../suit/styles/conv_fonts/Gibson_Regular.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_Regular.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_Regular.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_Regular.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_Regular.svg#Gibson_Regular") format("svg");
+  src: url("./conv_fonts/Gibson_Regular.eot");
+  src: url("./conv_fonts/Gibson_Regular.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_Regular.woff") format("woff"), url("./conv_fonts/Gibson_Regular.ttf") format("truetype"), url("./conv_fonts/Gibson_Regular.svg#Gibson_Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gibson_SemiBold";
-  src: url("../suit/styles/conv_fonts/Gibson_SemiBold.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_SemiBold.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_SemiBold.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_SemiBold.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_SemiBold.svg#Gibson_SemiBold") format("svg");
+  src: url("./conv_fonts/Gibson_SemiBold.eot");
+  src: url("./conv_fonts/Gibson_SemiBold.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_SemiBold.woff") format("woff"), url("./conv_fonts/Gibson_SemiBold.ttf") format("truetype"), url("./conv_fonts/Gibson_SemiBold.svg#Gibson_SemiBold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gibson_SemiboldIt";
-  src: url("../suit/styles/conv_fonts/Gibson_SemiboldIt.eot");
-  src: url("../suit/styles/conv_fonts/Gibson_SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../suit/styles/conv_fonts/Gibson_SemiboldIt.woff") format("woff"), url("../suit/styles/conv_fonts/Gibson_SemiboldIt.ttf") format("truetype"), url("../suit/styles/conv_fonts/Gibson_SemiboldIt.svg#Gibson_SemiboldIt") format("svg");
+  src: url("./conv_fonts/Gibson_SemiboldIt.eot");
+  src: url("./conv_fonts/Gibson_SemiboldIt.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/Gibson_SemiboldIt.woff") format("woff"), url("./conv_fonts/Gibson_SemiboldIt.ttf") format("truetype"), url("./conv_fonts/Gibson_SemiboldIt.svg#Gibson_SemiboldIt") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -4392,11 +4392,11 @@ table.table-black {
       line-height: 45px; }
 
 body {
-  background-image: url(../images/page_background.png);
+  background-image: url(./images/page_background.png);
   background-attachment: fixed; }
 
 body.light {
-  background-image: url(../images/page_background_light.png); }
+  background-image: url(./images/page_background_light.png); }
 
 h1 {
   letter-spacing: 0.1em; }
@@ -4438,7 +4438,7 @@ a {
     color: #c8463c; }
 
 .search-box, input[type=search] {
-  background-image: url(../images/suit_sprite.png);
+  background-image: url(./images/suit_sprite.png);
   background-repeat: no-repeat;
   background-position: right -38px;
   padding-right: 36px;
@@ -4511,7 +4511,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-white a:before {
     display: none; }
@@ -4527,7 +4527,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-blue, .suit-tab .suit-tab-title-blue {
     height: 50px;
@@ -4542,7 +4542,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-blue a:before {
     display: none; }
@@ -4558,7 +4558,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-blueberry, .suit-tab .suit-tab-title-blueberry {
     height: 50px;
@@ -4573,7 +4573,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-blueberry a:before {
     display: none; }
@@ -4589,7 +4589,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-purple, .suit-tab .suit-tab-title-purple {
     height: 50px;
@@ -4604,7 +4604,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-purple a:before {
     display: none; }
@@ -4620,7 +4620,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-green, .suit-tab .suit-tab-title-green {
     height: 50px;
@@ -4635,7 +4635,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-green a:before {
     display: none; }
@@ -4651,7 +4651,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-lime, .suit-tab .suit-tab-title-lime {
     height: 50px;
@@ -4666,7 +4666,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-lime a:before {
     display: none; }
@@ -4682,7 +4682,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-yellow, .suit-tab .suit-tab-title-yellow {
     height: 50px;
@@ -4697,7 +4697,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-yellow a:before {
     display: none; }
@@ -4713,7 +4713,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-tangerine, .suit-tab .suit-tab-title-tangerine {
     height: 50px;
@@ -4728,7 +4728,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-tangerine a:before {
     display: none; }
@@ -4744,7 +4744,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-orange, .suit-tab .suit-tab-title-orange {
     height: 50px;
@@ -4759,7 +4759,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-orange a:before {
     display: none; }
@@ -4775,7 +4775,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-red, .suit-tab .suit-tab-title-red {
     height: 50px;
@@ -4790,7 +4790,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-red a:before {
     display: none; }
@@ -4806,7 +4806,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-lightest-grey, .suit-tab .suit-tab-title-lightest-grey {
     height: 50px;
@@ -4821,7 +4821,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-lightest-grey a:before {
     display: none; }
@@ -4837,7 +4837,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-darkest-grey, .suit-tab .suit-tab-title-darkest-grey {
     height: 50px;
@@ -4852,7 +4852,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-darkest-grey a:before {
     display: none; }
@@ -4868,7 +4868,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-light-grey, .suit-tab .suit-tab-title-light-grey {
     height: 50px;
@@ -4883,7 +4883,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-light-grey a:before {
     display: none; }
@@ -4899,7 +4899,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-medium-grey, .suit-tab .suit-tab-title-medium-grey {
     height: 50px;
@@ -4914,7 +4914,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-medium-grey a:before {
     display: none; }
@@ -4930,7 +4930,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-dark-grey, .suit-tab .suit-tab-title-dark-grey {
     height: 50px;
@@ -4945,7 +4945,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-dark-grey a:before {
     display: none; }
@@ -4961,7 +4961,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-default-black, .suit-tab .suit-tab-title-black {
     height: 50px;
@@ -4976,7 +4976,7 @@ textarea {
         left: 50%;
         bottom: 0px;
         margin-left: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px 0px; }
   .suit-tab .suit-tab-title-black a:before {
     display: none; }
@@ -4992,7 +4992,7 @@ textarea {
         right: 0;
         top: 50%;
         margin-top: -7px;
-        background-image: url(../images/suit_sprite.png);
+        background-image: url(./images/suit_sprite.png);
         background-position: -68px -7px; }
   .suit-tab .suit-tab-mini {
     border-top: 1px solid transparent;
@@ -5004,7 +5004,7 @@ textarea {
       left: 50%;
       bottom: -1px;
       margin-left: -6px;
-      background-image: url(../images/suit_sprite.png);
+      background-image: url(./images/suit_sprite.png);
       background-position: -82px 0px; }
 
 .suit-modal .suit-tab {
@@ -5613,12 +5613,12 @@ textarea {
     margin: 0 auto;
     width: 1040px; }
   .headers-layout a#logo {
-    background: url(../images/suit_sprite.png) no-repeat 0 7px transparent;
+    background: url(./images/suit_sprite.png) no-repeat 0 7px transparent;
     width: 68px;
     height: 50px; }
 
 a.logo {
-  background: url(../images/suit_sprite.png) no-repeat 0 7px transparent;
+  background: url(./images/suit_sprite.png) no-repeat 0 7px transparent;
   width: 68px;
   height: 50px; }
 
@@ -6221,7 +6221,7 @@ hr.divider-line {
 
 .gradient-overlay, .gradient_overlay-hover:hover {
   pointer-events: none;
-  background: url(../images/gradient_overlay.png) bottom left repeat-x;
+  background: url(./images/gradient_overlay.png) bottom left repeat-x;
   left: 0;
   position: absolute;
   top: 0;
@@ -6509,7 +6509,7 @@ g.nv-axis text {
 .loader {
   position: absolute;
   overflow: hidden;
-  background-image: url(../images/loading-dark.gif);
+  background-image: url(./images/loading-dark.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgba(51, 51, 51, 0.3);
@@ -6519,18 +6519,18 @@ g.nv-axis text {
 .loader.light {
   background-color: rgba(255, 255, 255, 0.3);
   filter: alpha(opacity=30);
-  background-image: url(../images/loading-light.gif); }
+  background-image: url(./images/loading-light.gif); }
 
 .loader.small {
   background-color: rgba(51, 51, 51, 0.3);
   filter: alpha(opacity=30);
-  background-image: url(../images/loading-dark-small.gif);
+  background-image: url(./images/loading-dark-small.gif);
   z-index: 1; }
 
 .loader.small.light {
   background-color: rgba(255, 255, 255, 0.3);
   filter: alpha(opacity=30);
-  background-image: url(../images/loading-light-small.gif);
+  background-image: url(./images/loading-light-small.gif);
   z-index: 1; }
 
 .tt-dropdown-menu {

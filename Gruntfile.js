@@ -50,6 +50,17 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
+            images: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= suit.src %>/images',
+                    dest: '<%= suit.dist %>/images',
+                    src: [
+                        '**/*.*'
+                    ]
+                }]
+            },
             awesome_fonts: {
                 files: [{
                     expand: true,
@@ -71,6 +82,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'copy:suit_fonts',
+        'copy:images',
         'copy:awesome_fonts',
         'sass',
         'build'

@@ -1,12 +1,12 @@
 body{
-    background-image: url(../images/page_background.png);
+    background-image: url(./images/page_background.png);
     @extend .font-default;
     @extend .fs-13;
     @extend .fc-darkest-grey;
     background-attachment: fixed;
 }
 body.light{
-    background-image: url(../images/page_background_light.png);
+    background-image: url(./images/page_background_light.png);
 }
 h1{
     @extend .gibson_semibold;
@@ -119,7 +119,7 @@ form label{
 // SEARCH BOX //
 ////////////////
 .search-box{
-    background-image: url(../images/suit_sprite.png);
+    background-image: url(./images/suit_sprite.png);
     background-repeat: no-repeat;
     background-position: right -38px;
     padding-right: 36px;
