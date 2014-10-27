@@ -13,7 +13,7 @@ $fonts: (Gibson_Light, 200, normal),
     @font-face {
         font-family: 'Gibson';
         src: url("./fonts/#{$font}.eot");
-        src: url("./fonts/#{$font}.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/#{$font}.woff") format("woff"), url("./conv_fonts/#{$font}.ttf") format("truetype"), url("./conv_fonts/#{$font}.svg##{$font}") format("svg");
+        src: url("./fonts/#{$font}.eot?#iefix") format("embedded-opentype"), url("./fonts/#{$font}.woff") format("woff"), url("./fonts/#{$font}.ttf") format("truetype"), url("./fonts/#{$font}.svg##{$font}") format("svg");
         font-weight: $weight;
         font-style: $style;
     }
