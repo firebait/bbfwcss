@@ -1,21 +1,22 @@
-$fonts: (Gibson_Light, 200, normal),
-        (Gibson_LightIt, 200, italic),
-        (Gibson_Regular, normal, normal),
-        (Gibson_Italic, normal, italic),
-        (Gibson_SemiBold, 700, normal),
-        (Gibson_SemiboldIt, 700, italic),
-        (Gibson_Bold, bold, normal),
-        (Gibson_BoldItalic, bold, italic);
-@each $font-props in $fonts {
-    $font: nth($font-props, 1);
-    $weight: nth($font-props, 2);
-    $style: nth($font-props, 3);
-    @font-face {
-        font-family: 'Gibson';
-        src: url("./fonts/#{$font}.eot");
-        src: url("./fonts/#{$font}.eot?#iefix") format("embedded-opentype"), url("./fonts/#{$font}.woff") format("woff"), url("./fonts/#{$font}.ttf") format("truetype"), url("./fonts/#{$font}.svg##{$font}") format("svg");
-        font-weight: $weight;
-        font-style: $style;
+////////////
+// Gibson //
+////////////
+@mixin font-gibson($weight: normal, $style: normal) {
+    font-family: 'Gibson';
+    @if $weight == light {
+        font-weight: 200;
+    } @elseif $weight == bold {
+        font-weight: 700;
+    } @elseif $weight == black {
+        font-weight: bold;
+    } @else {
+        font-weight: normal;
+    }
+
+    @if $style == italic {
+        font-style: italic;
+    } @else {
+        font-style: normal;
     }
 }
 
@@ -24,12 +25,12 @@ $fonts: (Gibson_Light, 200, normal),
 ///////////
 
 .font-default{
-    font-family: "Gibson_Regular", Arial, sans-serif;
+    font-family: "Gibson", Arial, sans-serif;
     // font-weight: normal;
     font-size: 13px;
 }
 .font-din{
-	font-family: "Gibson_Regular", "Helvetica Neue", Arial, sans-serif;
+	font-family: "Gibson", "Helvetica Neue", Arial, sans-serif;
 	// font-weight:600;
 	font-size:13px;
 }
@@ -50,28 +51,6 @@ $fonts: (Gibson_Light, 200, normal),
 //////////////////
 // FONT WEIGHTS //
 //////////////////
-
-@mixin font-gibson($weight: normal, $style: normal) {
-    font-family: 'Gibson';
-    @if $weight == light {
-        font-weight: 200;
-    } @elseif $weight == bold {
-        font-weight: 700;
-    } @elseif $weight == black {
-        font-weight: bold;
-    } @else {
-        font-weight: normal;
-    }
-
-    @if $style == italic {
-        font-style: italic;
-    } @else {
-        font-style: normal;
-    }
-}
-
-
-
 
 .fst-lighter, a.fst-lighter{
     @include font-gibson(light);
