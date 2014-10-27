@@ -52,7 +52,7 @@ module.exports = function (grunt) {
                     expand: true,
                     dot: true,
                     cwd: '<%= suit.src %>/conv_fonts',
-                    dest: '<%= suit.dist %>/conv_fonts',
+                    dest: '<%= suit.dist %>/fonts',
                     src: [
                         '*.{eot,svg,ttf,woff,otf}'
                     ]
