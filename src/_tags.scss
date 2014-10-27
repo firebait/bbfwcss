@@ -9,25 +9,25 @@ body.light{
     background-image: url(./images/page_background_light.png);
 }
 h1{
-    @extend .gibson_semibold;
+    @include font-gibson(bold);
     letter-spacing: 0.1em;
     @extend .fs-30;
     @extend .tt-uppercase;
 }
 h2{
-    @extend .gibson_semibold;
+    @include font-gibson(bold);
     letter-spacing: 0.1em;
     @extend .fs-21;
     @extend .tt-uppercase;
     letter-spacing: .07em;
 }
 h3{
-    @extend .gibson_semibold;
+    @include font-gibson(bold);
     letter-spacing: 0.1em;
     @extend .fs-16;
 }
 h4{
-    @extend .gibson_semibold;
+    @include font-gibson(bold);
     letter-spacing: 0.1em;
     @extend .fs-13;
     @extend .tt-uppercase;
@@ -37,7 +37,7 @@ h4{
 // LINKS //
 ///////////
 a{
-    @extend .gibson_regular;
+    @include font-gibson();
     font-size: inherit;
     @extend .fc-blue;
     @extend .td-none;

@@ -3,7 +3,7 @@
 /////////////
 .btn{
     @extend .d-inline-block;
-    @extend .gibson_semibold;
+    @include font-gibson(bold);
     letter-spacing: 0.1em;
     outline: none;
     cursor: pointer;

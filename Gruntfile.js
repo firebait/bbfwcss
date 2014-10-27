@@ -30,6 +30,14 @@ module.exports = function (grunt) {
             }
         },
 
+        cssmin: {
+            minify: {
+                files: {
+                    '<%= suit.dist %>/suit-styleguide.min.css': '<%= suit.dist %>/suit-styleguide.css'
+                }
+            }
+        },
+
         copy: {
             suit_fonts: {
                 files: [{
@@ -60,31 +68,16 @@ module.exports = function (grunt) {
                         '**/*.*'
                     ]
                 }]
-            },
-            awesome_fonts: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: 'node_modules/font-awesome/fonts',
-                    dest: '<%= suit.dist %>/fonts',
-                    src: [
-                        '*.{eot,svg,ttf,woff,otf}'
-                    ]
-                }]
             }
         }
 
     });
 
-    grunt.registerTask('build', function (target) {
-
-    });
 
     grunt.registerTask('default', [
         'copy:suit_fonts',
         'copy:images',
-        'copy:awesome_fonts',
         'sass',
-        'build'
+        'cssmin'
     ]);
 };

@@ -25,7 +25,7 @@
         @extend .p-absolute;
         @extend .ta-center;
         @extend .fc-white;
-        @extend .gibson_semibold;
+        @include font-gibson(bold);
         letter-spacing: 0.1em;
         right: 0;
         width: 55px;;

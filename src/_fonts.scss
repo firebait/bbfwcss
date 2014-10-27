@@ -1,39 +1,27 @@
+$fonts: (Gibson_Light, 200, normal),
+        (Gibson_LightIt, 200, italic),
+        (Gibson_Regular, normal, normal),
+        (Gibson_Italic, normal, italic),
+        (Gibson_SemiBold, 700, normal),
+        (Gibson_SemiboldIt, 700, italic),
+        (Gibson_Bold, bold, normal),
+        (Gibson_BoldItalic, bold, italic);
+@each $font-props in $fonts {
+    $font: nth($font-props, 1);
+    $weight: nth($font-props, 2);
+    $style: nth($font-props, 3);
+    @font-face {
+        font-family: 'Gibson';
+        src: url("./fonts/#{$font}.eot");
+        src: url("./fonts/#{$font}.eot?#iefix") format("embedded-opentype"), url("./conv_fonts/#{$font}.woff") format("woff"), url("./conv_fonts/#{$font}.ttf") format("truetype"), url("./conv_fonts/#{$font}.svg##{$font}") format("svg");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
 ///////////
 // FONTS //
 ///////////
-
-.gibson_regular {
-    font-family: "Gibson_Regular", "Helvetica Neue", Arial, sans-serif;
-}
-
-.gibson_regular_italic {
-    font-family: "Gibson_Regular", "Helvetica Neue", Arial, sans-serif;
-    font-style: italic;
-}
-
-.gibson_light {
-    font-family: "Gibson_Light", "Helvetica Neue", Arial, sans-serif;
-}
-
-.gibson_light_italic {
-    font-family: "Gibson_LightIt", "Helvetica Neue", Arial, sans-serif;
-}
-
-.gibson_semibold {
-    font-family: "Gibson_SemiBold", "Helvetica Neue", Arial, sans-serif;
-}
-
-.gibson_semibold_italic {
-    font-family: "Gibson_SemiboldIt", "Helvetica Neue", Arial, sans-serif;
-}
-
-.gibson_bold {
-    font-family: "Gibson_Bold", "Helvetica Neue", Arial, sans-serif;
-}
-
-.gibson_bold_italic {
-    font-family: "Gibson_BoldItalic", "Helvetica Neue", Arial, sans-serif;
-}
 
 .font-default{
     font-family: "Gibson_Regular", Arial, sans-serif;
@@ -62,55 +50,58 @@
 //////////////////
 // FONT WEIGHTS //
 //////////////////
-.fst-lighter, a.fst-lighter{
-    @extend .gibson_light;
-	// font-style: normal;
-	// font-weight: 100;
+
+@mixin font-gibson($weight: normal, $style: normal) {
+    font-family: 'Gibson';
+    @if $weight == light {
+        font-weight: 200;
+    } @elseif $weight == bold {
+        font-weight: 700;
+    } @elseif $weight == black {
+        font-weight: bold;
+    } @else {
+        font-weight: normal;
+    }
+
+    @if $style == italic {
+        font-style: italic;
+    } @else {
+        font-style: normal;
+    }
 }
-.fst-light,a.fst-light{
-    @extend .gibson_light;
-	// font-style: normal;
-	// font-weight: 300;
+
+
+
+
+.fst-lighter, a.fst-lighter{
+    @include font-gibson(light);
+}
+.fst-light, a.fst-light{
+    @include font-gibson(light);
 }
 .fst-light-italic,a.fst-light-italic{
-    @extend .gibson_light_italic;
-	// font-style: italic;
-	// font-weight: 300;
+    @include font-gibson(light, italic);
 }
 .fst-regular,a.fst-regular{
-    @extend .gibson_regular;
-	// font-style: normal;
-	// font-weight: 400;
+    @include font-gibson();
 }
 .fst-italic,a.fst-italic{
-    @extend .gibson_regular_italic;
-	// font-style: italic;
-	// font-weight: 400;
+    @include font-gibson(normal, italic);
 }
 .fst-medium,a.fst-medium{
-    @extend .gibson_regular;
-	// font-style: normal;
-	// font-weight: 600;
+    @include font-gibson();
 }
 .fst-medium-italic,a.fst-medium-italic{
-    @extend .gibson_regular_italic;
-	// font-style: italic;
-	// font-weight: 600;
+    @include font-gibson(normal, italic);
 }
 .fst-bold,a.fst-bold{
-    @extend .gibson_semibold;
-	// font-style: normal;
-	// font-weight: 700;
+    @include font-gibson(bold);
 }
 .fst-bold-italic,a.fst-bold-italic{
-    @extend .gibson_semibold_italic;
-	// font-style: italic;
-	// font-weight: 700;
+    @include font-gibson(bold, italic);
 }
 .fst-black,a.fst-black{
-    @extend .gibson_bold;
-	// font-style: normal;
-	// font-weight: 900;
+    @include font-gibson(black);
 }
 
 /////////////////

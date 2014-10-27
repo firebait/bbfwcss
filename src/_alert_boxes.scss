@@ -10,7 +10,7 @@
     @extend .fs-16;
     @extend .p-20;
     @extend .p-fixed;
-    @extend .gibson_semibold;
+    @include font-gibson(bold);
     letter-spacing: 0.1em;
     left: 50%;
     margin-left: -350px;

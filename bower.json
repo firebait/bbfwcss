@@ -2,16 +2,14 @@
   "name": "suit-styleguide",
   "description": "Styleguide Framework for Suit",
   "version": "0.0.1",
-  "devDependencies": {
-    "font-awesome": "4.2.0"
-  },
   "license": [
     "OFL-1.1",
     "MIT",
     "CC-BY-3.0"
   ],
   "main": [
-    "dist/suit-styleguide.css"
+    "dist/suit-styleguide.css",
+    "dist/suit-styleguide.min.css"
   ],
   "ignore": [
     "*.md",
