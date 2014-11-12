@@ -4488,14 +4488,14 @@ label.error {
   position: relative; }
   .date-picker:hover .date-picker-trigger, .date-picker:focus .date-picker-trigger {
     border: 1px solid #313233;
-    color: #313233; }
+    color: #313233;
+    text-decoration: none; }
   .date-picker.error .date-picker-trigger, .date-picker.error:focus .date-picker-trigger {
     border: 1px solid #c8463c;
     color: #c8463c; }
   .date-picker .date-picker-trigger {
     display: block;
     background-color: white;
-    display: none;
     color: #b3b3b3;
     border: 1px solid #b3b3b3;
     text-align: center;
@@ -5274,7 +5274,8 @@ label.error {
   position: relative; }
   .time-picker:hover .time-picker-trigger, .time-picker:focus .time-picker-trigger {
     border: 1px solid #313233;
-    color: #313233; }
+    color: #313233;
+    text-decoration: none; }
   .time-picker.disabled:hover .time-picker-trigger {
     background-color: #f7f7f7;
     color: #b3b3b3;
@@ -5285,7 +5286,6 @@ label.error {
   .time-picker .time-picker-trigger {
     display: block;
     background-color: white;
-    display: none;
     color: #b3b3b3;
     border: 1px solid #b3b3b3;
     text-align: center;

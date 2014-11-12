@@ -9,6 +9,7 @@
         .date-picker-trigger{
             @include border($darkest-grey);
             color: $darkest-grey;
+            text-decoration: none;
         }
     }
 
@@ -22,7 +23,6 @@
     .date-picker-trigger{
         display: block;
         background-color: $white;
-        display: none;
         color: $medium-grey;
         @include border($medium-grey);
         text-align: center;
@@ -155,6 +155,7 @@
         .time-picker-trigger{
             @include border($darkest-grey);
             color: $darkest-grey;
+            text-decoration: none;
         }
     }
 
@@ -176,7 +177,6 @@
     .time-picker-trigger{
         display: block;
         background-color: $white;
-        display: none;
         color: $medium-grey;
         @include border($medium-grey);
         text-align: center;
