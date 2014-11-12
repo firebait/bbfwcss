@@ -19,7 +19,7 @@
     .slider {
         position: absolute;
         left: 10px;
-        width: 180px;
+        width: 170px;
      }
     .thumbnail-duration{
         position: absolute;
@@ -28,7 +28,7 @@
         @include font-gibson(bold);
         letter-spacing: 0.1em;
         right: 0;
-        width: 55px;;
+        width: 65px;;
      }
     .gradient-overlay, .slider, .thumbnail-duration {
         opacity: 0;

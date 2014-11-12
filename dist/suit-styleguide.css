@@ -3364,6 +3364,7 @@ textarea {
     right: 0px;
     top: 0px;
     width: 34px;
+    height: 34px;
     text-align: center;
     pointer-events: none;
     background-color: transparent; }
@@ -6627,7 +6628,7 @@ hr.divider-line {
 .thumbnail .slider {
   position: absolute;
   left: 10px;
-  width: 180px; }
+  width: 170px; }
 .thumbnail .thumbnail-duration {
   position: absolute;
   text-align: center;
@@ -6637,7 +6638,7 @@ hr.divider-line {
   font-style: normal;
   letter-spacing: 0.1em;
   right: 0;
-  width: 55px; }
+  width: 65px; }
 .thumbnail .gradient-overlay, .thumbnail .slider, .thumbnail .thumbnail-duration {
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-out;
