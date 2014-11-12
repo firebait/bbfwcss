@@ -54,20 +54,20 @@ table{ @extend .font-default; }
             }
         }
         tr, th, td{
-            @extend .b-none;
-            @extend .ta-left;
-            @extend .pl-10;
-            @extend .pr-10;
+            border: none;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
             line-height: 36px;
         }
         tbody{
-            @extend .bgc-white;
+            background-color: $white;
             tr:hover{
-                @extend .bgc-#{ $key };
+                background-color: $value;
                 background-color: rgba( $r, $g, $b, .4);
             }
             td {
-                @extend .truncate;
+                @include truncate();
                 max-width: 150px;
             }
         }
