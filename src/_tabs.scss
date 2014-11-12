@@ -1,7 +1,7 @@
 //////////
 // TABS //
 //////////
-.suit-tab{
+.suit-tab, .tab{
     width: 100%;
     @each $color in $colors {
         $key: nth($color, 1);
@@ -11,27 +11,27 @@
 // DEFAULT //
 /////////////
 
-        .suit-tab-default-#{ $key }{
+        .suit-tab-default-#{ $key }, .tab-default-#{ $key }{
             height: 50px;
             line-height: 50px;
-            @extend .m-auto;
-            @extend .bgc-light-grey;
+            margin: 0 auto;
+            background-color: $light-grey;
             width: 1040px;
-            a.suit-tab-link{
-                @extend .d-inline-block;
-                @extend .pl-30;
-                @extend .pr-30;
-                @extend .p-relative;
-                @extend .fc-#{ $key };
-                @extend .fst-bold;
+            a.suit-tab-link, a.tab-link{
+                display: inline-block;
+                padding-left: 30px;
+                padding-right: 30px;
+                position: relative;
+                color: $value;
+                @include font-gibson(bold);
                 letter-spacing: 0.1em;
                 &.active{
-                    @extend .fc-white;
-                    @extend .bgc-#{ $key };
+                    color: $white;
+                    background-color: $value;
                     &:before{
                         content: " ";
-                        @extend .p-absolute;
-                        height: 7px; 
+                        position: absolute;
+                        height: 7px;
                         width: 15px;
                         left: 50%;
                         bottom: 0px;
@@ -47,14 +47,14 @@
 // TITLE //
 ///////////
 
-        .suit-tab-title-#{ $key } {
-            @extend .suit-tab-default-#{ $key };
+        .suit-tab-title-#{ $key }, .tab-title-#{ $key } {
+            @extend .tab-default-#{ $key };
             a:before{
                 display: none;
             }
         }
         &.full-width{
-            @extend .bgc-light-grey;
+            background-color: $light-grey;
         }
 
 //////////////
@@ -62,28 +62,28 @@
 //////////////
 
         .suit-tab-vertical-#{ $key } {
-            @extend .f-left;
+            float: left;
             padding: 0;
-            a.suit-tab-link{
+            a.suit-tab-link, a.tab-link{
                 @extend .grid4;
-                @extend .f-none;
-                @extend .bgc-lightest-grey;
-                @extend .bt-light-grey;
-                @extend .d-block;
-                @extend .p-relative;
-                @extend .fc-#{ $key };
+                float: none;
+                background-color: $lightest-grey;
+                @include border($light-grey, 'top');
+                display: block;
+                position: relative;
+                color: $value;
                 height: 36px;
                 line-height: 36px;
                 &:first-child{
-                    @extend .b-none;
+                    border: none;
                 }
                 &.active{
-                    @extend .fc-white;
-                    @extend .bgc-#{ $key };
+                    color: $white;
+                    background-color: $value;
                     &:before{
                         content: " ";
-                        @extend .p-absolute;
-                        height: 14px; 
+                        position: absolute;
+                        height: 14px;
                         width: 7px;
                         right: 0;
                         top: 50%;
@@ -99,22 +99,22 @@
 // MINI //
 //////////
 
-    .suit-tab-mini{
-        @extend .bb-medium-grey;
-        @extend .mb-15;
+    .suit-tab-mini, .tab-mini{
+        @include border($medium-grey, 'bottom');
+        margin-bottom: 15px;
         border-top: 1px solid transparent;
         line-height: 34px;
-        a.suit-tab-link{
-            @extend .fc-dark-grey;
-            @extend .mr-30;
-            @extend .d-inline-block;
+        a.suit-tab-link, a.tab-link{
+            color: $dark-grey;
+            margin-right: 30px;
+            display: inline-block;
             &.active{
-                @extend .fc-darkest-grey;
-                @extend .p-relative;
+                color: $darkest-grey;
+                position: relative;
                 &:before{
                     content: " ";
-                    @extend .p-absolute;
-                    height: 7px; 
+                    position: absolute;
+                    height: 7px;
                     width: 12px;
                     left: 50%;
                     bottom: -1px;
@@ -131,18 +131,18 @@
 ///////////////////
 // INSIDE MODALS //
 ///////////////////
-.suit-modal{
-    .suit-tab{
+.suit-modal, .modal{
+    .suit-tab, .tab{
         width: 100%;
         @each $color in $colors {
             $key: nth($color, 1);
             $value: nth($color, 2);
 
-    /////////////
-    // DEFAULT //
-    /////////////
+/////////////
+// DEFAULT //
+/////////////
 
-            .suit-tab-default-#{ $key }{
+            .suit-tab-default-#{ $key }, .tab-default-#{ $key }{
                 width: 100%;
             }
         }

@@ -3,22 +3,21 @@
 // MULTI SELECT //
 //////////////////
 .multi-select{
-    @extend .b-medium-grey;
-    @extend .bgc-white;
-    @extend .p-relative;
+    @include border($medium-grey);
+    background-color: $white;
+    position: relative;
     @extend .font-default;
-    @extend .darkest-grey;    
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     width: 100%;
     padding: 0px 34px 0 10px;
     line-height: 34px;
     outline: none;
-    
+
     span.icon{
-        @extend .p-absolute;
-        @extend .bgc-white;
-        @extend .ta-center;
+        position: absolute;
+        background-color: $white;
+        text-align: center;
 	right: 0px;
         top: 0px;
         width: 34px;
@@ -31,9 +30,10 @@
 }
 
 .multi-select-options{
-    @extend .b-medium-grey;
-    @extend .p-absolute;
-    @extend .bgc-white;
+    @include border($medium-grey);
+    background-color: $white;
+    position: relative;
+    background-color: $white;
     overflow-y: scroll;
     top:44px;
     left:0px;
@@ -45,11 +45,11 @@
 }
 
 .multi-select:hover{
-    @extend .b-darkest-grey;
+    @include border($darkest-grey);
 }
 
 [disabled].multi-select{
-    @extend .bgc-lightest-grey;
+    background-color: $lightest-grey;
     color:#b3b7c4;
     span.icon{
         background-color: transparent;
@@ -57,7 +57,8 @@
 }
 
 [disabled].multi-select:hover{
-    @extend .b-medium-grey;
-    @extend .bgc-lightest-grey;
-    @extend .fc-medium-grey;
+    @include border($medium-grey);
+    background-color: $white;
+    position: relative;
+    color: $medium-grey;
 }

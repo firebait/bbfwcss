@@ -5,9 +5,9 @@
     height: 50px;
     line-height: 50px;
     > ul > li{
-        @extend .p-relative;
-        @extend .f-left;
-        @extend .bgc-darkest-grey;
+        position: relative;
+        float: left;
+        background-color: $darkest-grey;
         height: 50px;
         line-height: 50px;
         > a{
@@ -19,12 +19,12 @@
         }
         &:hover{
             > a{
-                @extend .bgc-black;
+                background-color: $black;
             }
             > ul{
-                @extend .d-block;
-                @extend .bgc-darkest-grey;
-                @extend .p-absolute;
+                display: block;
+                background-color: $darkest-grey;
+                position: absolute;
                 @include box-shadow-dark;
 
                 top: 48px;
@@ -40,23 +40,23 @@
         }
     }
     li{
-        @extend .d-block;
+        display: block;
         list-style: none;
         a{
-            @extend .d-block;
-            @extend .pl-30;
-            @extend .pr-30;
-            @extend .p-relative;
-            @extend .fc-light-grey;
-            @extend .tt-capitalize;
+            display: block;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;
+            color: $light-grey;
+            text-transform: capitalize;
         }
         span.icon{
             line-height: 45px;
         }
         a:hover, a.active{
-            @extend .bgc-black;
-            @extend .fc-white;
-            @extend .td-none;
+            background-color: $black;
+            color: $white;
+            text-decoration: none;
         }
     }
 }

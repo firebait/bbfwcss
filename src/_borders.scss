@@ -7,12 +7,20 @@
 .bb-none{ border-bottom: none; }
 .bl-none{ border-left: none; }
 
+@mixin border($color, $side:null) {
+	@if $side == null {
+		border: 1px solid $color;
+	} @else {
+		border-#{$side}: 1px solid $color;
+	}
+}
+
 @each $color in $colors{
     $key: nth($color, 1);
     $value: nth($color, 2);
-    .b-#{$key}{ border: 1px solid $value;}
-    .bt-#{$key}{ border-top: 1px solid $value;}
-    .br-#{$key}{ border-right: 1px solid $value;}
-    .bb-#{$key}{ border-bottom: 1px solid $value;}
-    .bl-#{$key}{ border-left: 1px solid $value;}
+    .b-#{$key}{ @include border($value); }
+    .bt-#{$key}{ @include border($value, 'top'); }
+    .br-#{$key}{ @include border($value, 'right'); }
+    .bb-#{$key}{ @include border($value, 'bottom'); }
+    .bl-#{$key}{ @include border($value, 'left'); }
 }

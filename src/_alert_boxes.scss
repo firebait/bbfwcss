@@ -2,14 +2,12 @@
 // ALERT BOXES //
 /////////////////
 .alert-box{
-    @extend .mt-30;
-    @extend .mb-30;
-    @extend .d-block;
-    @extend .m-auto;
-    @extend .fc-white;
-    @extend .fs-16;
-    @extend .p-20;
-    @extend .p-fixed;
+    display: block;
+    margin: 30px auto 30px;
+    color: $white;
+    font-size: 16px;
+    padding: 20px;
+    position: fixed;
     @include font-gibson(bold);
     letter-spacing: 0.1em;
     left: 50%;
@@ -22,20 +20,20 @@
     width: 700px;
     padding: 15px 20px;
     z-index: 1050;
-    h6{ 
-        padding: 0px; 
+    h6{
+        padding: 0px;
         opacity: .6;
     }
     p { padding: 0 34px; }
     &:hover{
-        @extend .td-none;
+        display: none;
         color: $white;
         opacity: 1;
         h6{ opacity: 1; }
     }
 }
 .alert-box-error,.alert-box-warning,.alert-box-confirmation,.alert-box-information{ @extend .alert-box; }
-.alert-box-error{ @extend .bgc-red; }
-.alert-box-warning{ @extend .bgc-orange; }
-.alert-box-confirmation{ @extend .bgc-green; }
-.alert-box-information{ @extend .bgc-blue; }
+.alert-box-error{ background-color: $red; }
+.alert-box-warning{ background-color: $orange; }
+.alert-box-confirmation{ background-color: $green; }
+.alert-box-information{ background-color: $blue; }

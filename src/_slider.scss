@@ -1,12 +1,12 @@
 .slider {
-    @extend .bgc-light-grey;
+    background-color: $light-grey;
     position: relative;
     height: 2px;
     width: 100%;
     margin-top: 15px;
     .handle {
-        @extend .bgc-white;
-        @extend .fc-medium-grey;
+        background-color: $white;
+        color: $medium-grey;
         position: absolute;
         top: 0;
         left: 0;

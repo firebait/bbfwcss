@@ -2,7 +2,7 @@
 // BUTTONS //
 /////////////
 .btn{
-    @extend .d-inline-block;
+    display: inline-block;
     @include font-gibson(bold);
     letter-spacing: 0.1em;
     outline: none;
@@ -16,57 +16,56 @@
     $value: nth($color, 2);
     .btn-primary-#{$key} {
         @extend .btn;
-        @extend .fc-white;
-        @extend .pl-20;
-        @extend .pr-20;
-        @extend .bgc-#{$key};
-        @extend .b-#{$key};
+        color: $white;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: $value;
+        @include border($value);
         opacity: 0.9;
     }
     .btn-primary-#{$key}:hover {
-        @extend .td-none;
-        @extend .fc-white;
+        text-decoration: none;
+        color: $white;
         opacity: 1;
     }
     .btn-secondary-#{$key}{
         @extend .btn;
-        @extend .bgc-white;
-        @extend .td-none;
-        @extend .fc-#{$key};
-        @extend .b-#{$key};
+        background-color: $white;
+        text-decoration: none;
+        color: $white;
+        @include border($value);
         padding: 0 20px;
     }
     .btn-secondary-#{$key}:hover{
-        @extend .bgc-#{$key};
-        @extend .fc-white;
-        @extend .pl-20;
-        @extend .pr-20;
-        @extend .td-none;
+        background-color: $value;
+        color: $white;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
     }
     .btn-icon-#{$key}{
         @extend .btn;
-        @extend .bgc-white;
-        @extend .td-none;
-        @extend .fc-#{$key};
-        @extend .b-#{$key};
+        background-color: $white;
+        text-decoration: none;
+        color: $value;
+        @include border($value);
         padding: 0 10px;
         line-height: 34px;
     }
     .btn-icon-#{$key}:hover{
-        @extend .b-#{$key};
-        @extend .bgc-#{$key};
-        @extend .b-#{$key};
-        @extend .fc-white;
-        @extend .pl-10;
-        @extend .pr-10;
-        @extend .td-none;
+        @include border($value);
+        background-color: $value;
+        color: $white;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
     }
     .btn-toggle-#{$key}, .btn-toggle-#{$key}{
         @extend .btn;
-        @extend .bgc-white;
-        @extend .td-none;
-        @extend .fc-#{$key};
-        @extend .b-#{$key};
+        background-color: $white;
+        text-decoration: none;
+        color: $value;
+        @include border($value);
         padding: 0 20px;
         line-height: 34px;
     }
@@ -79,10 +78,10 @@
     .btn-primary-#{$key}[disabled]:hover, .btn-secondary-#{$key}[disabled]:hover, .btn-icon-#{$key}[disabled]:hover,
     .btn-primary-#{$key}.disabled:hover, .btn-secondary-#{$key}.disabled:hover, .btn-icon-#{$key}.disabled:hover{
         @extend .btn;
-        @extend .bgc-lightest-grey;
-        @extend .fc-medium-grey;
-        @extend .b-light-grey;
-        @extend .td-none;
+        background-color: $lightest-grey;
+        color: $medium-grey;
+        @include border($lightest-grey);
+        text-decoration: none;
         opacity: 1;
         padding: 0 20px;
         line-height: 34px;
@@ -92,12 +91,12 @@
     }
     .btn-link-#{ $key }{
         line-height: 36px;
-        @extend .p-10;
-        @extend .fc-#{ $key };
+        padding: 10px;
+        color: $value;
         opacity: .9;
         &:hover{
-            @extend .fc-#{ $key };
-            @extend .td-none;
+            color: $value;
+            text-decoration: none;
             opacity: 1;
         }
     }

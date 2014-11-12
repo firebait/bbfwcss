@@ -2,13 +2,13 @@
 // GRIDS //
 ///////////
 .grid1, .grid2, .grid3, .grid4, .grid6{
-    @extend .f-left;
-    @extend .p-relative;
+    float: left;
+    position: relative;
 }
 
 .content-box{
     .grid1, .grid2, .grid3, .grid4, .grid6{
-        @extend .p-15;
+        padding: 15px;
     }
 
     .grid1{
@@ -67,19 +67,19 @@
 
 .invisible-container{
     .grid1, .grid2, .grid3, .grid4, .grid6{
-        @extend .m-10;
+        margin: 10px;
     }
     .grid1{
         width: 1040px;
     }
     .grid2{
-        width: 510px; 
+        width: 510px;
         &.span2{
             width: 1040px
         }
     }
     .grid3{
-        width: 333px; 
+        width: 333px;
         &.span2{
             width: 686px
         }

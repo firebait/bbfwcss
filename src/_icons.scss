@@ -17,5 +17,5 @@
 }
 span.icon{
     @extend .font-icon;
-    @extend .d-inline;
+    display: inline;
 }

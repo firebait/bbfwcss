@@ -8,7 +8,7 @@
     z-index:3;
 
     #show-all {
-        @extend .d-none;
+        display: none;
     }
 
 
@@ -302,7 +302,7 @@
 
 .navigation-side-menu{
 
-    @extend .bgc-white;
+    background-color: $white;
     width:300px;
     padding: 10px 0;
 

@@ -38,10 +38,13 @@
 //////////////////
 // TEXT HELPERS //
 //////////////////
-.truncate {
+@mixin truncate() {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.truncate {
+    @include truncate();
 }
 
 .ws-nowrap{

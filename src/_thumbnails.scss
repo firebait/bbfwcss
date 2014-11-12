@@ -4,27 +4,27 @@
 
 .thumbnail{
     .thumb-container {
-        @extend .p-relative;
+        position: relative;
     }
     @extend .grid4;
     img {
-        @extend .d-block;
+        display: block;
         width: 100%;
     }
     .thumbnail-description{
-        @extend .bgc-white;
-        @extend .of-hidden;
+        background-color: $white;
+        overflow: hidden;
         padding: 20px 30px;
     }
     .slider {
-        @extend .p-absolute;
+        position: absolute;
         left: 10px;
         width: 180px;
      }
     .thumbnail-duration{
-        @extend .p-absolute;
-        @extend .ta-center;
-        @extend .fc-white;
+        position: absolute;
+        text-align: center;
+        color: $white;
         @include font-gibson(bold);
         letter-spacing: 0.1em;
         right: 0;
@@ -51,7 +51,7 @@
 .invisible-container {
     .thumbnail{
         .thumb-container {
-            @extend .p-relative;
+            position: relative;
         }
         .thumbnail-duration {
             top: 114px;

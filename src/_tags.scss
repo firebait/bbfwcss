@@ -1,8 +1,8 @@
 body{
     background-image: url(./images/page_background.png);
     @extend .font-default;
-    @extend .fs-13;
-    @extend .fc-darkest-grey;
+    font-size: 13px;
+    color: $darkest-grey;
     background-attachment: fixed;
 }
 body.light{
@@ -11,26 +11,26 @@ body.light{
 h1{
     @include font-gibson(bold);
     letter-spacing: 0.1em;
-    @extend .fs-30;
-    @extend .tt-uppercase;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 h2{
     @include font-gibson(bold);
     letter-spacing: 0.1em;
-    @extend .fs-21;
-    @extend .tt-uppercase;
+    font-size: 21px;
+    text-transform: uppercase;
     letter-spacing: .07em;
 }
 h3{
     @include font-gibson(bold);
     letter-spacing: 0.1em;
-    @extend .fs-16;
+    font-size: 16px;
 }
 h4{
     @include font-gibson(bold);
     letter-spacing: 0.1em;
-    @extend .fs-13;
-    @extend .tt-uppercase;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 ///////////
@@ -39,11 +39,11 @@ h4{
 a{
     @include font-gibson();
     font-size: inherit;
-    @extend .fc-blue;
-    @extend .td-none;
+    color: $blue;
+    text-decoration: none;
     &:hover{
-        @extend .td-underline;
-        @extend .fc-darkest-grey;
+        text-decoration: underline;
+        color: $darkest-grey;
     }
 }
 
@@ -51,38 +51,41 @@ a{
 // LABEL IN FORMS //
 ////////////////////
 form label{
-    @extend .mb-7;
-    @extend .d-block;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+form > label:first-of-type{
+    margin-top: 0;
 }
 
 ////////////////////
 // INPUT TEXT BOX //
 ////////////////////
 .input-box{
-    @extend .d-block;
-    @extend .bgc-white;
-    @extend .td-none;
-    @extend .fc-darkest-grey;
-    @extend .b-medium-grey;
+    display: block;
+    background-color: $white;
+    text-decoration: none;
+    color: $darkest-grey;
+    @include border($medium-grey);
     @extend .font-default;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     width: 100%;
-    padding: 0 10px; 
+    padding: 0 10px;
     height: 34px;
     outline: none;
-    
+
     &:hover{
-        @extend .b-darkest-grey;
+        @include border($darkest-grey);
     }
-    
+
     &:focus{
-        @extend .fc-darkest-grey;
+        color: $darkest-grey;
     }
 }
 .input-box.error, .input-box.error:hover{
-    @extend .fc-red;
+    color: $red;
     border: 1px solid $red;
 
     &::-webkit-input-placeholder {
@@ -90,29 +93,29 @@ form label{
     }
 
     &:-moz-placeholder { /* Firefox 18- */
-        color: $red;  
+        color: $red;
     }
 
     &::-moz-placeholder {  /* Firefox 19+ */
-        color: $red;  
+        color: $red;
     }
 
-    :-ms-input-placeholder {  
-    color: $red;  
+    :-ms-input-placeholder {
+    color: $red;
     }
-    select, option { @extend .fc-red; }
+    select, option { color: $red; }
 }
-.input-box[disabled], .input-box[disabled]:hover{ 
-    @extend .bgc-lightest-grey;
-    @extend .fc-medium-grey;
-    @extend .b-light-grey;
-    @extend .td-none;
+.input-box[disabled], .input-box[disabled]:hover{
+    background-color: $lightest-grey;
+    color: $medium-grey;
+    @include border($light-grey);
+    text-decoration: none;
 }
 .select-box select[disabled], .select-box:hover select[disabled],
 .select-box select[disabled] + h6, .select-box:hover select[disabled] + h6{
-    @extend .bgc-lightest-grey;
-    @extend .fc-medium-grey;
-    @extend .td-none;
+    background-color: $lightest-grey;
+    color: $medium-grey;
+    text-decoration: none;
 }
 ////////////////
 // SEARCH BOX //
@@ -152,19 +155,19 @@ textarea{
 ////////////////
 .select-box{
     @extend .input-box;
-    @extend .of-hidden;
-    @extend .p-relative;
+    overflow: hidden;
+    position: relative;
     padding: 0;
     select{
-        @extend .d-block;
-        @extend .bgc-white;
-        @extend .td-none;
-        @extend .fc-darkest-grey;
+        display: block;
+        background-color: $white;
+        text-decoration: none;
+        color: $darkest-grey;
         @extend .font-default;
         box-sizing: content-box;
         -moz-box-sizing: content-box;
         -webkit-box-sizing: content-box;
-        padding: 0px 34px 0 10px; 
+        padding: 0px 34px 0 10px;
         line-height: 28px;
         height: 32px;
         outline: none;
@@ -172,8 +175,8 @@ textarea{
         width: 110%;
     }
     span.icon{
-        @extend .p-absolute;
-        @extend .bgc-white;
+        position: absolute;
+        background-color: $white;
         right: 0px;
         top: 0px;
         width: 34px;
@@ -181,12 +184,12 @@ textarea{
         pointer-events:none;
         background-color:transparent;
     }
-}  
+}
 
 ////////////
 // LABELS //
 ////////////
 label.error{
-    @extend .fc-red;
+    color: $red;
 }
 

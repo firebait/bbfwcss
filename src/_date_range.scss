@@ -1,46 +1,46 @@
 .date-range {
-    
+
     padding-left: 34px;
     .date-picker, .select-box {
-        @extend .f-left;
-        @extend .m-reset;
+        float: left;
+        margin: 0;
         width: 33.33%;
         a.date-picker-trigger {
-            @extend .p-absolute;
+            position: absolute;
             left: -33px;
         }
     }
     &:hover, &:focus{
         .date-picker-trigger{
-            @extend .b-medium-grey;
-            @extend .fc-darkest-grey;
+            @include border($medium-grey);
+            color: $darkest-grey;
         }
     }
 
     .date-picker input {
-        @extend .pl-10;
+        padding-left: 10px;
         &:hover, &:focus{
-            @extend .bl-none;
-            @extend .bt-medium-grey;
-            @extend .br-medium-grey;
-            @extend .bb-medium-grey;
+            border-left: none;
+            border-top: 1px solid $medium-grey;
+            border-right: 1px solid $medium-grey;
+            border-bottom: 1px solid $medium-grey;
         }
-        @extend .bl-none;
-        @extend .bt-medium-grey;
-        @extend .br-medium-grey;
-        @extend .bb-medium-grey;
+        border-left: none;
+        border-top: 1px solid $medium-grey;
+        border-right: 1px solid $medium-grey;
+        border-bottom: 1px solid $medium-grey;
     }
 
     .select-box {
         &:hover, &:focus{
-            @extend .bl-none;
-            @extend .bt-medium-grey;
-            @extend .br-medium-grey;
-            @extend .bb-medium-grey;
+            border-left: none;
+            border-top: 1px solid $medium-grey;
+            border-right: 1px solid $medium-grey;
+            border-bottom: 1px solid $medium-grey;
         }
-        @extend .bl-none;
-        @extend .bt-medium-grey;
-        @extend .br-medium-grey;
-        @extend .bb-medium-grey;
+        border-left: none;
+        border-top: 1px solid $medium-grey;
+        border-right: 1px solid $medium-grey;
+        border-bottom: 1px solid $medium-grey;
     }
 }

@@ -20,15 +20,15 @@ table{ @extend .font-default; }
         -webkit-box-sizing: border-box;
         th{
             @extend .font-default;
-            @extend .bgc-lightest-grey;
-            @extend .fc-dark-grey;
-            @extend .fst-italic;
-            @extend .bb-light-grey;
+            background-color: $lightest-grey;
+            color: $dark-grey;
+            @include font-gibson(normal, italic);
+            @include border($light-grey, 'bottom');
             a{
                 @extend .font-default;
-                @extend .fc-dark-grey;
+                color: $dark-grey;
                 &.active, &:hover, &:active{
-                    @extend .fc-#{ $key };
+                    color: $value;
                 }
                 &:after{
                     content: '';
@@ -37,18 +37,18 @@ table{ @extend .font-default; }
                     margin-left: 27px;
                 }
                 &.active{
-                    @extend .td-none;
+                    display: none;
                     &.asc:after{
                         content: '^';
                         @extend .font-icon;
                         font-style: normal;
-                        @extend .ml-7;
+                        margin-left: 7px;
                     }
                     &.desc:after{
                         content: '/';
                         @extend .font-icon;
                         font-style: normal;
-                        @extend .ml-7;
+                        margin-left: 7px;
                     }
                 }
             }
