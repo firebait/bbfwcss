@@ -32,7 +32,7 @@
         @extend .btn;
         background-color: $white;
         text-decoration: none;
-        color: $white;
+        color: $value;
         @include border($value);
         padding: 0 20px;
     }

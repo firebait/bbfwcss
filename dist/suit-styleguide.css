@@ -1173,7 +1173,7 @@ span.icon {
 .btn-secondary-blue {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #32a1cc;
   border: 1px solid #32a1cc;
   padding: 0 20px; }
 
@@ -1255,7 +1255,7 @@ span.icon {
 .btn-secondary-blueberry {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #4e81cc;
   border: 1px solid #4e81cc;
   padding: 0 20px; }
 
@@ -1337,7 +1337,7 @@ span.icon {
 .btn-secondary-purple {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #685b8b;
   border: 1px solid #685b8b;
   padding: 0 20px; }
 
@@ -1419,7 +1419,7 @@ span.icon {
 .btn-secondary-green {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #40a880;
   border: 1px solid #40a880;
   padding: 0 20px; }
 
@@ -1501,7 +1501,7 @@ span.icon {
 .btn-secondary-lime {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #6bb26b;
   border: 1px solid #6bb26b;
   padding: 0 20px; }
 
@@ -1583,7 +1583,7 @@ span.icon {
 .btn-secondary-yellow {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #d1af50;
   border: 1px solid #d1af50;
   padding: 0 20px; }
 
@@ -1665,7 +1665,7 @@ span.icon {
 .btn-secondary-tangerine {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #d8a150;
   border: 1px solid #d8a150;
   padding: 0 20px; }
 
@@ -1747,7 +1747,7 @@ span.icon {
 .btn-secondary-orange {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #dd854e;
   border: 1px solid #dd854e;
   padding: 0 20px; }
 
@@ -1829,7 +1829,7 @@ span.icon {
 .btn-secondary-red {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #c8463c;
   border: 1px solid #c8463c;
   padding: 0 20px; }
 
@@ -1911,7 +1911,7 @@ span.icon {
 .btn-secondary-lightest-grey {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #f7f7f7;
   border: 1px solid #f7f7f7;
   padding: 0 20px; }
 
@@ -1993,7 +1993,7 @@ span.icon {
 .btn-secondary-darkest-grey {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #313233;
   border: 1px solid #313233;
   padding: 0 20px; }
 
@@ -2075,7 +2075,7 @@ span.icon {
 .btn-secondary-light-grey {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #e0e0e0;
   border: 1px solid #e0e0e0;
   padding: 0 20px; }
 
@@ -2157,7 +2157,7 @@ span.icon {
 .btn-secondary-medium-grey {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #b3b3b3;
   border: 1px solid #b3b3b3;
   padding: 0 20px; }
 
@@ -2239,7 +2239,7 @@ span.icon {
 .btn-secondary-dark-grey {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #848484;
   border: 1px solid #848484;
   padding: 0 20px; }
 
@@ -2321,7 +2321,7 @@ span.icon {
 .btn-secondary-black {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: black;
   border: 1px solid black;
   padding: 0 20px; }
 
