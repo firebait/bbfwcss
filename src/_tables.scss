@@ -30,6 +30,14 @@ table{ @extend .font-default; }
                 &.active, &:hover, &:active{
                     color: $value;
                 }
+                &:hover{
+                    &.asc:after{
+                        text-decoration: none;
+                    }
+                    &.desc:after{
+                        text-decoration: none;
+                    }
+                }
                 &:after{
                     content: '';
                     @extend .font-icon;

@@ -2405,6 +2405,10 @@ table.table-white {
       color: #848484; }
       table.table-white th a.active, table.table-white th a:hover, table.table-white th a:active {
         color: white; }
+      table.table-white th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-white th a:hover.desc:after {
+        text-decoration: none; }
       table.table-white th a:after {
         content: '';
         font-style: normal;
@@ -2452,6 +2456,10 @@ table.table-blue {
       color: #848484; }
       table.table-blue th a.active, table.table-blue th a:hover, table.table-blue th a:active {
         color: #32a1cc; }
+      table.table-blue th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-blue th a:hover.desc:after {
+        text-decoration: none; }
       table.table-blue th a:after {
         content: '';
         font-style: normal;
@@ -2499,6 +2507,10 @@ table.table-blueberry {
       color: #848484; }
       table.table-blueberry th a.active, table.table-blueberry th a:hover, table.table-blueberry th a:active {
         color: #4e81cc; }
+      table.table-blueberry th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-blueberry th a:hover.desc:after {
+        text-decoration: none; }
       table.table-blueberry th a:after {
         content: '';
         font-style: normal;
@@ -2546,6 +2558,10 @@ table.table-purple {
       color: #848484; }
       table.table-purple th a.active, table.table-purple th a:hover, table.table-purple th a:active {
         color: #685b8b; }
+      table.table-purple th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-purple th a:hover.desc:after {
+        text-decoration: none; }
       table.table-purple th a:after {
         content: '';
         font-style: normal;
@@ -2593,6 +2609,10 @@ table.table-green {
       color: #848484; }
       table.table-green th a.active, table.table-green th a:hover, table.table-green th a:active {
         color: #40a880; }
+      table.table-green th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-green th a:hover.desc:after {
+        text-decoration: none; }
       table.table-green th a:after {
         content: '';
         font-style: normal;
@@ -2640,6 +2660,10 @@ table.table-lime {
       color: #848484; }
       table.table-lime th a.active, table.table-lime th a:hover, table.table-lime th a:active {
         color: #6bb26b; }
+      table.table-lime th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-lime th a:hover.desc:after {
+        text-decoration: none; }
       table.table-lime th a:after {
         content: '';
         font-style: normal;
@@ -2687,6 +2711,10 @@ table.table-yellow {
       color: #848484; }
       table.table-yellow th a.active, table.table-yellow th a:hover, table.table-yellow th a:active {
         color: #d1af50; }
+      table.table-yellow th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-yellow th a:hover.desc:after {
+        text-decoration: none; }
       table.table-yellow th a:after {
         content: '';
         font-style: normal;
@@ -2734,6 +2762,10 @@ table.table-tangerine {
       color: #848484; }
       table.table-tangerine th a.active, table.table-tangerine th a:hover, table.table-tangerine th a:active {
         color: #d8a150; }
+      table.table-tangerine th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-tangerine th a:hover.desc:after {
+        text-decoration: none; }
       table.table-tangerine th a:after {
         content: '';
         font-style: normal;
@@ -2781,6 +2813,10 @@ table.table-orange {
       color: #848484; }
       table.table-orange th a.active, table.table-orange th a:hover, table.table-orange th a:active {
         color: #dd854e; }
+      table.table-orange th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-orange th a:hover.desc:after {
+        text-decoration: none; }
       table.table-orange th a:after {
         content: '';
         font-style: normal;
@@ -2828,6 +2864,10 @@ table.table-red {
       color: #848484; }
       table.table-red th a.active, table.table-red th a:hover, table.table-red th a:active {
         color: #c8463c; }
+      table.table-red th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-red th a:hover.desc:after {
+        text-decoration: none; }
       table.table-red th a:after {
         content: '';
         font-style: normal;
@@ -2875,6 +2915,10 @@ table.table-lightest-grey {
       color: #848484; }
       table.table-lightest-grey th a.active, table.table-lightest-grey th a:hover, table.table-lightest-grey th a:active {
         color: #f7f7f7; }
+      table.table-lightest-grey th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-lightest-grey th a:hover.desc:after {
+        text-decoration: none; }
       table.table-lightest-grey th a:after {
         content: '';
         font-style: normal;
@@ -2922,6 +2966,10 @@ table.table-darkest-grey {
       color: #848484; }
       table.table-darkest-grey th a.active, table.table-darkest-grey th a:hover, table.table-darkest-grey th a:active {
         color: #313233; }
+      table.table-darkest-grey th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-darkest-grey th a:hover.desc:after {
+        text-decoration: none; }
       table.table-darkest-grey th a:after {
         content: '';
         font-style: normal;
@@ -2969,6 +3017,10 @@ table.table-light-grey {
       color: #848484; }
       table.table-light-grey th a.active, table.table-light-grey th a:hover, table.table-light-grey th a:active {
         color: #e0e0e0; }
+      table.table-light-grey th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-light-grey th a:hover.desc:after {
+        text-decoration: none; }
       table.table-light-grey th a:after {
         content: '';
         font-style: normal;
@@ -3016,6 +3068,10 @@ table.table-medium-grey {
       color: #848484; }
       table.table-medium-grey th a.active, table.table-medium-grey th a:hover, table.table-medium-grey th a:active {
         color: #b3b3b3; }
+      table.table-medium-grey th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-medium-grey th a:hover.desc:after {
+        text-decoration: none; }
       table.table-medium-grey th a:after {
         content: '';
         font-style: normal;
@@ -3063,6 +3119,10 @@ table.table-dark-grey {
       color: #848484; }
       table.table-dark-grey th a.active, table.table-dark-grey th a:hover, table.table-dark-grey th a:active {
         color: #848484; }
+      table.table-dark-grey th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-dark-grey th a:hover.desc:after {
+        text-decoration: none; }
       table.table-dark-grey th a:after {
         content: '';
         font-style: normal;
@@ -3110,6 +3170,10 @@ table.table-black {
       color: #848484; }
       table.table-black th a.active, table.table-black th a:hover, table.table-black th a:active {
         color: black; }
+      table.table-black th a:hover.asc:after {
+        text-decoration: none; }
+      table.table-black th a:hover.desc:after {
+        text-decoration: none; }
       table.table-black th a:after {
         content: '';
         font-style: normal;
