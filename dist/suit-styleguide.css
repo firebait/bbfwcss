@@ -7003,3 +7003,6 @@ g.nv-axis text {
 
 .twitter-typeahead {
   width: 100%; }
+
+.tt-input {
+  margin-top: -36px; }
