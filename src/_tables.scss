@@ -37,7 +37,6 @@ table{ @extend .font-default; }
                     margin-left: 27px;
                 }
                 &.active{
-                    display: none;
                     &.asc:after{
                         content: '^';
                         @extend .font-icon;
