@@ -61,18 +61,15 @@
 // VERTICAL //
 //////////////
 
-        .suit-tab-vertical-#{ $key } {
-            float: left;
+        .suit-tab-vertical-#{ $key }, .tab-vertical-#{ $key } {
             padding: 0;
             a.suit-tab-link, a.tab-link{
-                @extend .grid4;
-                float: none;
                 background-color: $lightest-grey;
                 @include border($light-grey, 'top');
                 display: block;
                 position: relative;
                 color: $value;
-                height: 36px;
+                height: 66px;
                 line-height: 36px;
                 &:first-child{
                     border: none;
