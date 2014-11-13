@@ -6985,21 +6985,19 @@ g.nv-axis text {
 .tt-dropdown-menu {
   background-color: #fff;
   border: 1px solid #ccc;
+  -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-height: 150px;
   overflow-y: scroll;
   z-index: 1001;
   box-sizing: border-box; }
-  .tt-dropdown-menu .tt-dataset-name {
-    padding-left: 10px; }
 
 .tt-suggestion {
-  padding-top: 7px;
-  padding-bottom: 7px; }
-  .tt-suggestion .tt-cursor {
-    background-color: #b3b3b3;
-    margin-left: -10px;
-    padding-left: 10px; }
+  padding: 10px; }
+  .tt-suggestion.tt-cursor {
+    background-color: #b3b3b3; }
 
 .twitter-typeahead {
   width: 100%; }
