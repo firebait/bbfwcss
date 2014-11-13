@@ -6985,9 +6985,6 @@ g.nv-axis text {
 .tt-dropdown-menu {
   background-color: #fff;
   border: 1px solid #ccc;
-  -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-height: 150px;
   overflow-y: scroll;
@@ -6997,9 +6994,10 @@ g.nv-axis text {
     padding-left: 10px; }
 
 .tt-suggestion {
-  padding: 7px; }
+  padding-top: 7px;
+  padding-bottom: 7px; }
   .tt-suggestion .tt-cursor {
-    background-color: #e0e0e0;
+    background-color: #b3b3b3;
     margin-left: -10px;
     padding-left: 10px; }
 
