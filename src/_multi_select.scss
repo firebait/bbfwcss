@@ -32,10 +32,10 @@
 .multi-select-options{
     @include border($medium-grey);
     background-color: $white;
-    position: relative;
+    position: absolute;
     background-color: $white;
     overflow-y: scroll;
-    top:44px;
+    top:40px;
     left:0px;
     height:100px;
     padding: 0px 34px 0 10px;

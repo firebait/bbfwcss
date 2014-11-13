@@ -3365,6 +3365,7 @@ textarea {
     top: 0px;
     width: 34px;
     height: 34px;
+    line-height: 34px;
     text-align: center;
     pointer-events: none;
     background-color: transparent; }
@@ -6574,10 +6575,10 @@ hr.divider-line {
 .multi-select-options {
   border: 1px solid #b3b3b3;
   background-color: white;
-  position: relative;
+  position: absolute;
   background-color: white;
   overflow-y: scroll;
-  top: 44px;
+  top: 40px;
   left: 0px;
   height: 100px;
   padding: 0px 34px 0 10px;
