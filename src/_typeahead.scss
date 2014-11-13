@@ -23,6 +23,9 @@
   width: 100%;
 }
 
-.tt-input{
-  margin-top: -19px;
+span.twitter-typeahead > span.twitter-typeahead {
+  position: absolute !important;
+  .tt-hint{
+    color: $lightest-grey;
+  }
 }

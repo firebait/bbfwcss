@@ -7002,5 +7002,7 @@ g.nv-axis text {
 .twitter-typeahead {
   width: 100%; }
 
-.tt-input {
-  margin-top: -19px; }
+span.twitter-typeahead > span.twitter-typeahead {
+  position: absolute !important; }
+  span.twitter-typeahead > span.twitter-typeahead .tt-hint {
+    color: #f7f7f7; }
