@@ -3400,6 +3400,7 @@ label.error {
   .alert-box p, .alert-box-error p, .alert-box-warning p, .alert-box-confirmation p, .alert-box-information p {
     padding: 0 34px; }
   .alert-box:hover, .alert-box-error:hover, .alert-box-warning:hover, .alert-box-confirmation:hover, .alert-box-information:hover {
+    text-decoration: none;
     color: white;
     opacity: 1; }
     .alert-box:hover h6, .alert-box-error:hover h6, .alert-box-warning:hover h6, .alert-box-confirmation:hover h6, .alert-box-information:hover h6 {
