@@ -4,6 +4,9 @@
 .suit-tab, .tab{
     width: 100%;
 
+    &.full-width{
+        background-color: $light-grey;
+    }
 
     /////////////
     // DEFAULT //
@@ -48,9 +51,6 @@
         a:before{
             display: none;
         }
-    }
-    &.full-width{
-        background-color: $light-grey;
     }
 
     //////////////
@@ -119,17 +119,25 @@
     }
 }
 
-@each $color in $colors {
-    $key: nth($color, 1);
-    $value: nth($color, 2);
-    .suit-tab-default.#{ $key }, .tab-default.#{ $key }{
-        a.suit-tab-link, a.tab-link{
-            color: $value;
+.suit-tab, .tab{
+    @each $color in $colors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+        .suit-tab-default, .tab-default{
+            a.suit-tab-link, a.tab-link{
+                color: $value;
+                &.active{
+                    background-color: $value;
+                }
+            }
         }
-    }
-    .suit-tab-vertical.#{ $key }, .tab-vertical.#{ $key } {
-        a.suit-tab-link, a.tab-link{
-            color: $value;
+        .suit-tab-vertical, .tab-vertical {
+            a.suit-tab-link, a.tab-link{
+                color: $value;
+                &.active{
+                    background-color: $value;
+                }
+            }
         }
     }
 }
