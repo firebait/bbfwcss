@@ -3,10 +3,10 @@
 ////////////////
 
 .thumbnail{
+    @extend .grid4;
     .thumb-container {
         position: relative;
     }
-    @extend .grid4;
     img {
         display: block;
         width: 100%;

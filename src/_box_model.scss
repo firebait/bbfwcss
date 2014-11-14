@@ -48,7 +48,7 @@
 // MARGINS //
 /////////////
 .m-auto, .m-auto{ margin: 0 auto; }
-$margins: 5 7 10 15 20 30 40 80;
+$margins: 5 7 10 15 20 30;
 @each $margin in $margins {
     .m-#{$margin}{margin:#{$margin}px;}
     .mt-#{$margin}{margin-top:#{$margin}px;}
@@ -69,7 +69,7 @@ $margins: 5 7 10 15 20 30 40 80;
 //////////////
 // PADDINGS //
 //////////////
-$paddings:  5 7 10 15 20 30 40 65 80 134;
+$paddings:  5 7 10 15 20 30;
 @each $padding in $paddings {
     .p-#{$padding}{padding:#{$padding}px;}
     .pt-#{$padding}{padding-top:#{$padding}px;}

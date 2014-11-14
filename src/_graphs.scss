@@ -1,3 +1,6 @@
+////////////
+// GRAPHS //
+////////////
 .nvd3.nv-pie path{
     stroke: transparent;
     stroke-width: 0px;
@@ -13,6 +16,9 @@ g.nv-axis {
     }
 }
 
+.graph-set-bargraph {
+    height: inherit;
+}
 
 .graph-set-stacked-areagraph, .graph-set-linegraph {
     height: 100%;
@@ -31,37 +37,5 @@ g.nv-axis {
     line.nv-guideline {
         stroke: #333;
         stroke-width: 1;
-    }
-}
-
-#pacing-panel {
-    .pacing-graph-container  {
-        height: 40px;
-    }
-
-    .stacked-area-graph-container-area {
-        height: 55px;
-        width: 365px;
-        right: 0;
-    }
-
-    .stacked-graph-container {
-        height: 55px;
-        overflow: hidden;
-
-        #stacked-area-graph-container {
-            height: 30px;
-            overflow: hidden;
-        }
-    }
-
-    .graph-set-bulletgraph {
-        .nvd3.nv-bullet .nv-range {
-            fill: $medium-grey;
-        }
-
-        .nv-tick text {
-            fill: $dark-grey;
-        }
     }
 }

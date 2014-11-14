@@ -1,0 +1,56 @@
+////////////
+// Gibson //
+////////////
+@mixin font-gibson($weight: normal, $style: normal) {
+    font-family: 'Gibson';
+    @if $weight == light {
+        font-weight: 200;
+    } @elseif $weight == bold {
+        font-weight: 700;
+    } @elseif $weight == black {
+        font-weight: bold;
+    } @else {
+        font-weight: normal;
+    }
+
+    @if $style == italic {
+        font-style: italic;
+    } @else {
+        font-style: normal;
+    }
+}
+
+//////////////////
+// TEXT HELPERS //
+//////////////////
+@mixin truncate() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/////////////
+// BORDERS //
+/////////////
+@mixin border($color, $side:null) {
+    @if $side == null {
+        border: 1px solid $color;
+    } @else {
+        border-#{$side}: 1px solid $color;
+    }
+}
+
+/////////////////
+// BOX SHADOWS //
+/////////////////
+@mixin box-shadow($top: 0px, $left: 3px, $blur: 20px, $spread: 0px, $color: rgba(0, 0, 0, 0.3)) {
+    -moz-box-shadow: $top $left $blur $spread $color;
+    -webkit-box-shadow: $top $left $blur $spread $color;
+    box-shadow: $top $left $blur $spread $color;
+}
+
+@mixin box-shadow-dark($top: 0px, $left: 3px, $blur: 20px, $spread: 0px, $color: rgba(0, 0, 0, 0.6)) {
+    -moz-box-shadow: $top $left $blur $spread $color;
+    -webkit-box-shadow: $top $left $blur $spread $color;
+    box-shadow: $top $left $blur $spread $color;
+}

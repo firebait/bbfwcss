@@ -1,0 +1,31 @@
+//////////////
+// TOOLTIPS //
+//////////////
+
+// THIS COMPONENT IS NOT INCLUDED NOR IMPLEMENTED IN JS.
+
+.tooltip {
+    position: absolute;
+    display: none;
+    padding: 5px 0;
+    z-index: 9999; // so its on top of the modals as well
+    max-width: 500px;
+}
+.tooltip-content {
+    text-align: left;
+    background-color: $red;
+    color: $white;
+    padding: 7px 15px;
+}
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    bottom: 0;
+    left: 10px;
+
+    border-width: 5px 5px 0;
+    border-top-color: $red;
+}

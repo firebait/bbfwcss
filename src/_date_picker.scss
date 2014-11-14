@@ -49,6 +49,27 @@
         padding-left: 40px;
     }
 
+    &.active {
+        .date-picker-trigger {
+            background-color: $dark-grey;
+            color: $white;
+            @include border($light-grey);
+        }
+
+        .date-picker-date {
+            @include border($light-grey);
+        }
+    }
+
+    &.error {
+        .date-picker-date {
+            @include border($red);
+        }
+    }
+
+}
+
+.date-picker {
     @each $color in $colors {
         $key: nth($color, 1);
         $value: nth($color, 2);
@@ -56,22 +77,74 @@
         &.#{$key}.active {
             .date-picker-trigger {
                 background-color: $value;
-                color: $white;
-                @include border($light-grey);
-            }
-
-            .date-picker-date {
-                @include border($light-grey);
             }
         }
 
-        &.error {
-            .date-picker-date {
-                @include border($red);
-            }
-        }
     }
 }
+
+.pika-single {
+
+    padding: 0;
+    @include border($light-grey);
+    @include box-shadow;
+
+    margin: -1px 0;
+
+    .pika-title {
+        background-color: $dark-grey;
+
+        .pika-label {
+            background-color: $dark-grey;
+            color: $white;
+        }
+    }
+
+    .pika-table {
+        th {
+            color: $medium-grey;
+            background-color: $lightest-grey;
+            @include border($light-grey, 'bottom');
+            @include border($light-grey);
+        }
+        td{
+            vertical-align: top;
+        }
+    }
+
+    .pika-prev, .pika-next {
+        color: $white;
+        background: none;
+        text-indent: 0;
+        font-family: "suit-icons";
+        opacity: 1;
+    }
+
+    .pika-button {
+        background: $white;
+        text-align: center;
+    }
+
+    .is-today .pika-button {
+        color: $dark-grey;
+    }
+
+    .is-selected .pika-button {
+        background-color: $dark-grey;
+        color: $white !important;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    // some !importants are used just because they are used on the original
+    // Pikadate css. There's no other way to override them.
+    .pika-button:hover {
+        background-color: rgba($dark-grey-red, $dark-grey-green, $dark-grey-blue, 1) !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+}
+
 
 .pika-single {
     @each $color in $colors {
@@ -82,44 +155,13 @@
         $b: nth($color, 5);
 
         &.#{$key} {
-            padding: 0;
-            @include border($light-grey);
-            @include box-shadow;
-
-            margin: -1px 0;
 
             .pika-title {
                 background-color: $value;
 
                 .pika-label {
                     background-color: $value;
-                    color: $white;
                 }
-            }
-
-            .pika-table {
-                th {
-                    color: $medium-grey;
-                    background-color: $lightest-grey;
-                    @include border($light-grey, 'bottom');
-                    @include border($light-grey);
-                }
-                td{
-                    vertical-align: top;
-                }
-            }
-
-            .pika-prev, .pika-next {
-                color: $white;
-                background: none;
-                text-indent: 0;
-                font-family: "suit-icons";
-                opacity: 1;
-            }
-
-            .pika-button {
-                background: $white;
-                text-align: center;
             }
 
             .is-today .pika-button {
@@ -128,141 +170,12 @@
 
             .is-selected .pika-button {
                 background-color: $value;
-                color: $white !important;
-                border-radius: 0;
-                box-shadow: none;
             }
 
             // some !importants are used just because they are used on the original
             // Pikadate css. There's no other way to override them.
             .pika-button:hover {
                 background-color: rgba($r, $g, $b, 1) !important;
-                border-radius: 0 !important;
-                box-shadow: none !important;
-            }
-        }
-    }
-}
-
-/////////////////
-// TIME PICKER //
-/////////////////
-
-.time-picker{
-    position: relative;
-
-    &:hover, &:focus{
-        .time-picker-trigger{
-            @include border($darkest-grey);
-            color: $darkest-grey;
-            text-decoration: none;
-        }
-    }
-
-    &.disabled {
-        .time-picker-trigger{
-            background-color: $lightest-grey;
-            color: $medium-grey;
-            @include border($light-grey);
-            cursor: default;
-        }
-    }
-
-    &.error, &.error:focus {
-        .time-picker-trigger{
-            @include border($red);
-            color: $red;
-        }
-    }
-
-    .time-picker-trigger{
-        display: block;
-        background-color: $white;
-        color: $medium-grey;
-        @include border($medium-grey);
-        text-align: center;
-        position: absolute;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        padding: 0px;
-        line-height: 34px;
-        height: 34px;
-        outline: none;
-        left: 0px;
-        top: 0px;
-        width: 34px;
-
-        &.disabled {
-            background-color: $lightest-grey;
-            color: $medium-grey;
-            @include border($light-grey);
-        }
-    }
-
-    .time-picker-time{
-        padding-left: 40px;
-    }
-
-    @each $color in $colors {
-        $key: nth($color, 1);
-        $value: nth($color, 2);
-
-        &.#{$key}.active {
-            .time-picker-trigger {
-                background-color: $value;
-                color: $white;
-                @include border($light-grey);
-            }
-
-            .time-picker-time {
-                @include border($light-grey);
-            }
-        }
-
-        &.#{$key}.error {
-            .time-picker-time {
-                @include border($red);
-            }
-        }
-    }
-}
-
-.ui-timepicker-wrapper {
-    z-index: 1100;
-
-    @each $color in $colors {
-        $key: nth($color, 1);
-        $value: nth($color, 2);
-        $r: nth($color, 3);
-        $g: nth($color, 4);
-        $b: nth($color, 5);
-
-        background-color: $white;
-        @include box-shadow;
-
-        overflow-y: auto;
-        height: 150px;
-        width: 120px;
-        outline: none;
-        margin-left: 34px;
-
-        &.#{$key} {
-            > ul {
-                list-style: none;
-
-                > li {
-                    color: $darkest-grey;
-
-                    &:hover, &.ui-timepicker-selected {
-                        background-color: $value;
-                        color: $white;
-                    }
-
-                    &.ui-timepicker-selected {
-                        @include font-gibson(bold);
-                    }
-                }
             }
         }
     }

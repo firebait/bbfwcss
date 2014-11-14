@@ -7,14 +7,6 @@
 .bb-none{ border-bottom: none; }
 .bl-none{ border-left: none; }
 
-@mixin border($color, $side:null) {
-	@if $side == null {
-		border: 1px solid $color;
-	} @else {
-		border-#{$side}: 1px solid $color;
-	}
-}
-
 @each $color in $colors{
     $key: nth($color, 1);
     $value: nth($color, 2);

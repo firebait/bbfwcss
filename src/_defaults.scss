@@ -1,0 +1,48 @@
+body{
+    background-image: url(./images/page_background.png);
+    @extend .font-default;
+    font-size: 13px;
+    color: $darkest-grey;
+    background-attachment: fixed;
+}
+body.light{
+    background-image: url(./images/page_background_light.png);
+}
+h1{
+    @include font-gibson(bold);
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h2{
+    @include font-gibson(bold);
+    letter-spacing: 0.1em;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+h3{
+    @include font-gibson(bold);
+    letter-spacing: 0.1em;
+    font-size: 16px;
+}
+h4{
+    @include font-gibson(bold);
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+///////////
+// LINKS //
+///////////
+a{
+    @include font-gibson();
+    font-size: inherit;
+    color: $blue;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: $darkest-grey;
+    }
+}

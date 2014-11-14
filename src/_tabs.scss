@@ -1,7 +1,7 @@
 //////////
 // TABS //
 //////////
-.suit-tab, .tab{
+.suit-tab{
     width: 100%;
 
     &.full-width{
@@ -11,13 +11,13 @@
     /////////////
     // DEFAULT //
     /////////////
-    .suit-tab-default, .tab-default{
+    .suit-tab-default{
         height: 50px;
         line-height: 50px;
         margin: 0 auto;
         background-color: $light-grey;
         width: 1040px;
-        a.suit-tab-link, a.tab-link{
+        a.suit-tab-link{
             display: inline-block;
             padding-left: 30px;
             padding-right: 30px;
@@ -46,8 +46,8 @@
     ///////////
     // TITLE //
     ///////////
-    .suit-tab-title, .tab-title {
-        @extend .tab-default;
+    .suit-tab-title {
+        @extend .suit-tab-default;
         a:before{
             display: none;
         }
@@ -56,9 +56,9 @@
     //////////////
     // VERTICAL //
     //////////////
-    .suit-tab-vertical, .tab-vertical {
+    .suit-tab-vertical {
         padding: 0;
-        a.suit-tab-link, a.tab-link{
+        a.suit-tab-link{
             background-color: $lightest-grey;
             @include border($light-grey, 'top');
             display: block;
@@ -91,12 +91,12 @@
     //////////
     // MINI //
     //////////
-    .suit-tab-mini, .tab-mini{
+    .suit-tab-mini{
         @include border($medium-grey, 'bottom');
         margin-bottom: 15px;
         border-top: 1px solid transparent;
         line-height: 34px;
-        a.suit-tab-link, a.tab-link{
+        a.suit-tab-link{
             color: $dark-grey;
             margin-right: 30px;
             display: inline-block;
@@ -119,12 +119,12 @@
     }
 }
 
-.suit-tab, .tab{
+.suit-tab{
     @each $color in $colors {
         $key: nth($color, 1);
         $value: nth($color, 2);
-        .suit-tab-default.#{$key}, .tab-default.#{$key}{
-            a.suit-tab-link, a.tab-link{
+        .suit-tab-default.#{$key}{
+            a.suit-tab-link{
                 color: $value;
                 &.active{
                     color: $white;
@@ -132,8 +132,8 @@
                 }
             }
         }
-        .suit-tab-vertical.#{$key}, .tab-vertical.#{$key} {
-            a.suit-tab-link, a.tab-link{
+        .suit-tab-vertical.#{$key} {
+            a.suit-tab-link{
                 color: $value;
                 &.active{
                     color: $white;
@@ -153,7 +153,7 @@
         /////////////
         // DEFAULT //
         /////////////
-        .suit-tab-default, .tab-default{
+        .suit-tab-default{
             width: 100%;
         }
     }

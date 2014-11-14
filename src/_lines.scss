@@ -1,0 +1,26 @@
+////////////////
+// TITLE LINE //
+////////////////
+hr.title-line {
+    border: 0;
+    border-top: 5px solid $dark-grey;
+    margin: 0;
+    padding: 0;
+}
+@each $color in $colors {
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    hr.title-line.#{ $key } {
+        border-top: 5px solid $value;
+    }
+}
+
+//////////////////
+// DIVIDER LINE //
+//////////////////
+hr.divider-line {
+    border: 0;
+    border-top: 1px solid $light-grey;
+    margin: 0;
+    padding: 0;
+}

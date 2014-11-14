@@ -8,18 +8,16 @@ table.table{
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    @extend .font-default;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     th{
-        @extend .font-default;
         background-color: $lightest-grey;
         color: $dark-grey;
         @include font-gibson(normal, italic);
         @include border($light-grey, 'bottom');
         a{
-            @extend .font-default;
+            @include font-gibson();
             color: $dark-grey;
             &.active, &:hover, &:active{
                 color: $darkest-grey;
@@ -76,7 +74,6 @@ table.table{
     table.table.#{$key}{
         th{
             a{
-                color: $dark-grey;
                 &.active, &:hover, &:active{
                     color: $value;
                 }

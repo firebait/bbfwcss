@@ -11,93 +11,130 @@
     height: 34px;
     box-sizing: border-box;
 }
+
+.btn-primary {
+    @extend .btn;
+    color: $white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $dark-grey;
+    @include border($dark-grey);
+    opacity: 0.9;
+}
+.btn-primary:hover {
+    text-decoration: none;
+    color: $white;
+    opacity: 1;
+}
+.btn-secondary{
+    @extend .btn;
+    background-color: $white;
+    text-decoration: none;
+    color: $dark-grey;
+    @include border($dark-grey);
+    padding: 0 20px;
+}
+.btn-secondary:hover{
+    background-color: $dark-grey;
+    color: $white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.btn-icon{
+    @extend .btn;
+    background-color: $white;
+    text-decoration: none;
+    color: $dark-grey;
+    @include border($dark-grey);
+    padding: 0 10px;
+    line-height: 34px;
+}
+.btn-icon:hover{
+    @include border($dark-grey);
+    background-color: $dark-grey;
+    color: $white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+.btn-toggle {
+    @extend .btn;
+    background-color: $white;
+    text-decoration: none;
+    color: $dark-grey;
+    @include border($dark-grey);
+    padding: 0 20px;
+    line-height: 34px;
+}
+.btn-toggle.active, .btn-toggle.active:hover{
+    @extend .btn-primary;
+    line-height: 34px;
+}
+.btn-primary[disabled], .btn-secondary[disabled], .btn-icon[disabled],
+.btn-primary.disabled, .btn-secondary.disabled, .btn-icon.disabled,
+.btn-primary[disabled]:hover, .btn-secondary[disabled]:hover, .btn-icon[disabled]:hover,
+.btn-primary.disabled:hover, .btn-secondary.disabled:hover, .btn-icon.disabled:hover{
+    @extend .btn;
+    background-color: $lightest-grey;
+    color: $medium-grey;
+    @include border($lightest-grey);
+    text-decoration: none;
+    opacity: 1;
+    padding: 0 20px;
+    line-height: 34px;
+}
+.btn-icon[disabled]{
+    padding: 0 10px;
+}
+.btn-link{
+    line-height: 36px;
+    padding: 10px;
+    color: $dark-grey;
+    opacity: .9;
+    &:hover{
+        color: $dark-grey;
+        text-decoration: none;
+        opacity: 1;
+    }
+}
+
 @each $color in $colors {
     $key: nth($color, 1);
     $value: nth($color, 2);
-    .btn-primary-#{$key} {
-        @extend .btn;
-        color: $white;
-        padding-left: 20px;
-        padding-right: 20px;
+    .btn-primary.#{$key} {
         background-color: $value;
         @include border($value);
-        opacity: 0.9;
     }
-    .btn-primary-#{$key}:hover {
-        text-decoration: none;
-        color: $white;
-        opacity: 1;
-    }
-    .btn-secondary-#{$key}{
-        @extend .btn;
-        background-color: $white;
-        text-decoration: none;
+    .btn-secondary.#{$key}{
         color: $value;
         @include border($value);
-        padding: 0 20px;
     }
-    .btn-secondary-#{$key}:hover{
+    .btn-secondary.#{$key}:hover{
         background-color: $value;
-        color: $white;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-decoration: none;
     }
-    .btn-icon-#{$key}{
-        @extend .btn;
-        background-color: $white;
-        text-decoration: none;
+    .btn-icon.#{$key}{
         color: $value;
         @include border($value);
-        padding: 0 10px;
-        line-height: 34px;
     }
-    .btn-icon-#{$key}:hover{
+    .btn-icon.#{$key}:hover{
         @include border($value);
         background-color: $value;
-        color: $white;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-decoration: none;
     }
-    .btn-toggle-#{$key}, .btn-toggle-#{$key}{
-        @extend .btn;
-        background-color: $white;
-        text-decoration: none;
+    .btn-toggle.#{$key}, .btn-toggle.#{$key}{
         color: $value;
         @include border($value);
-        padding: 0 20px;
-        line-height: 34px;
     }
-    .btn-toggle-#{$key}.active, .btn-toggle-#{$key}.active:hover{
-        @extend .btn-primary-#{$key};
-        line-height: 34px;
+    .btn-toggle.#{$key}.active, .btn-toggle.#{$key}.active:hover{
+        @extend .btn-primary.#{$key};
     }
-    .btn-primary-#{$key}[disabled], .btn-secondary-#{$key}[disabled], .btn-icon-#{$key}[disabled],
-    .btn-primary-#{$key}.disabled, .btn-secondary-#{$key}.disabled, .btn-icon-#{$key}.disabled,
-    .btn-primary-#{$key}[disabled]:hover, .btn-secondary-#{$key}[disabled]:hover, .btn-icon-#{$key}[disabled]:hover,
-    .btn-primary-#{$key}.disabled:hover, .btn-secondary-#{$key}.disabled:hover, .btn-icon-#{$key}.disabled:hover{
-        @extend .btn;
-        background-color: $lightest-grey;
-        color: $medium-grey;
-        @include border($lightest-grey);
-        text-decoration: none;
-        opacity: 1;
-        padding: 0 20px;
-        line-height: 34px;
-    }
-    .btn-icon-#{$key}[disabled], .btn-icon-#{$key}[disabled]{
-        padding: 0 10px;
-    }
-    .btn-link-#{ $key }{
-        line-height: 36px;
-        padding: 10px;
+    .btn-link.#{ $key }{
         color: $value;
-        opacity: .9;
         &:hover{
             color: $value;
-            text-decoration: none;
-            opacity: 1;
         }
     }
 }
+
+
+

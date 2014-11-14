@@ -1,56 +1,14 @@
-body{
-    background-image: url(./images/page_background.png);
-    @extend .font-default;
-    font-size: 13px;
-    color: $darkest-grey;
-    background-attachment: fixed;
-}
-body.light{
-    background-image: url(./images/page_background_light.png);
-}
-h1{
-    @include font-gibson(bold);
-    letter-spacing: 0.1em;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-h2{
-    @include font-gibson(bold);
-    letter-spacing: 0.1em;
-    font-size: 21px;
-    text-transform: uppercase;
-    letter-spacing: .07em;
-}
-h3{
-    @include font-gibson(bold);
-    letter-spacing: 0.1em;
-    font-size: 16px;
-}
-h4{
-    @include font-gibson(bold);
-    letter-spacing: 0.1em;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-///////////
-// LINKS //
-///////////
-a{
-    @include font-gibson();
-    font-size: inherit;
-    color: $blue;
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-        color: $darkest-grey;
-    }
+////////////
+// LABELS //
+////////////
+label.error{
+    color: $red;
 }
 
 ////////////////////
 // LABEL IN FORMS //
 ////////////////////
-form label{
+form > label {
     margin-bottom: 7px;
     margin-top: 7px;
 }
@@ -117,6 +75,7 @@ form > label:first-of-type{
     color: $medium-grey;
     text-decoration: none;
 }
+
 ////////////////
 // SEARCH BOX //
 ////////////////
@@ -188,10 +147,67 @@ textarea{
     }
 }
 
-////////////
-// LABELS //
-////////////
-label.error{
-    color: $red;
+
+//////////////////
+// MULTI SELECT //
+//////////////////
+.multi-select{
+    @include border($medium-grey);
+    background-color: $white;
+    position: relative;
+    @extend .font-default;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    padding: 0px 34px 0 10px;
+    line-height: 34px;
+    outline: none;
+
+    span.icon{
+        position: absolute;
+        background-color: $white;
+        text-align: center;
+    right: 0px;
+        top: 0px;
+        width: 34px;
+        cursor: pointer;
+    }
 }
 
+.multi-select.error{
+    border:solid red 1px;
+}
+
+.multi-select-options{
+    @include border($medium-grey);
+    background-color: $white;
+    position: absolute;
+    background-color: $white;
+    overflow-y: scroll;
+    top:40px;
+    left:0px;
+    height:100px;
+    padding: 0px 34px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.multi-select:hover{
+    @include border($darkest-grey);
+}
+
+[disabled].multi-select{
+    background-color: $lightest-grey;
+    color:#b3b7c4;
+    span.icon{
+        background-color: transparent;
+    }
+}
+
+[disabled].multi-select:hover{
+    @include border($medium-grey);
+    background-color: $white;
+    position: relative;
+    color: $medium-grey;
+}
