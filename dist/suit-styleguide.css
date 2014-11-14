@@ -816,10 +816,7 @@
 .bl-black {
   border-left: 1px solid black; }
 
-.btn, .btn-primary, .btn-secondary, .btn-icon, .btn-toggle, .btn-primary[disabled], .btn-secondary[disabled], .btn-icon[disabled],
-.btn-primary.disabled, .btn-secondary.disabled, .btn-icon.disabled,
-.btn-primary[disabled]:hover, .btn-secondary[disabled]:hover, .btn-icon[disabled]:hover,
-.btn-primary.disabled:hover, .btn-secondary.disabled:hover, .btn-icon.disabled:hover {
+.btn, .btn-primary, .btn-secondary, .btn-icon, .btn-toggle {
   display: inline-block;
   font-family: 'Gibson';
   font-weight: 700;
