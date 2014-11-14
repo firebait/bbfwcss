@@ -895,7 +895,8 @@
   text-decoration: none !important;
   opacity: 1 !important;
   padding: 0 20px !important;
-  line-height: 34px !important; }
+  line-height: 34px !important;
+  cursor: default !important; }
 
 .btn-icon[disabled] {
   padding: 0 10px; }
@@ -1786,6 +1787,7 @@ textarea {
   border: 1px solid #b3b3b3;
   background-color: white;
   position: relative;
+  box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   width: 100%;

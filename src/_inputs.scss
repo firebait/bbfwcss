@@ -156,6 +156,7 @@ textarea{
     background-color: $white;
     position: relative;
     @extend .font-default;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     width: 100%;
