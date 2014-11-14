@@ -48,13 +48,11 @@ a.logo{
     $key: nth($color, 1);
     $value: nth($color, 2);
 
-    .title-box-#{ $key } {
-        @extend .title-box;
+    .title-box.#{ $key } {
         background-color: $value;
     }
 
-    .full-width-title-box-#{ $key } {
-        @extend .full-width-title-box;
+    .full-width-title-box.#{ $key } {
         background-color: $value;
     }
 }
@@ -103,16 +101,23 @@ a.logo{
 ////////////////
 // TITLE LINE //
 ////////////////
+hr.title-line {
+    border: 0;
+    border-top: 5px solid $dark-grey;
+    margin: 0;
+    padding: 0;
+}
 @each $color in $colors {
     $key: nth($color, 1);
     $value: nth($color, 2);
-    hr.title-line-#{ $key } {
-        border: 0;
+    hr.title-line.#{ $key } {
         border-top: 5px solid $value;
-        margin: 0;
-        padding: 0;
     }
 }
+
+//////////////////
+// DIVIDER LINE //
+//////////////////
 hr.divider-line {
     border: 0;
     border-top: 1px solid $light-grey;
@@ -150,12 +155,13 @@ hr.divider-line {
 
             > a:not(.btn-icon-blue){
                 display: block;
-                @extend .truncate;
+                @include truncate();
                 height: 50px;
             }
 
             @each $color in $colors {
                 $key: nth($color, 1);
+                $value: nth($color, 2);
                 $r: nth($color, 3);
                 $g: nth($color, 4);
                 $b: nth($color, 5);
@@ -164,7 +170,7 @@ hr.divider-line {
                 > a.active.section-#{$key} {
                     color: $darkest-grey;
                     span {
-                        @extend .fc-#{$key};
+                        color: $value;
                     }
                 }
             }
