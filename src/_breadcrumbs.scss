@@ -19,7 +19,7 @@
             line-height: 50px;
             max-width: 221px;
 
-            > a:not(.btn-icon-blue){
+            > a:not(.btn-icon){
                 display: block;
                 @include truncate();
                 height: 50px;

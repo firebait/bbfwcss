@@ -112,6 +112,7 @@
     }
     .btn-secondary.#{$key}:hover{
         background-color: $value;
+        color: $white
     }
     .btn-icon.#{$key}{
         color: $value;
