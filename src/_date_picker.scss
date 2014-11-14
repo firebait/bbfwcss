@@ -89,10 +89,10 @@
             margin: -1px 0;
 
             .pika-title {
-                background-color: $value;
+                background-color: $dark-grey;
 
                 .pika-label {
-                    background-color: $value;
+                    background-color: $dark-grey;
                     color: $white;
                 }
             }
@@ -123,11 +123,11 @@
             }
 
             .is-today .pika-button {
-                color: $value;
+                color: $dark-grey;
             }
 
             .is-selected .pika-button {
-                background-color: $value;
+                background-color: $dark-grey;
                 color: $white !important;
                 border-radius: 0;
                 box-shadow: none;
@@ -136,10 +136,41 @@
             // some !importants are used just because they are used on the original
             // Pikadate css. There's no other way to override them.
             .pika-button:hover {
-                background-color: rgba($r, $g, $b, 1) !important;
+                background-color: rgba($dark-grey-red, $dark-grey-green, $dark-grey-blue, 1) !important;
                 border-radius: 0 !important;
                 box-shadow: none !important;
             }
+        }
+    }
+}
+
+@each $color in $colors {
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    $r: nth($color, 3);
+    $g: nth($color, 4);
+    $b: nth($color, 5);
+
+    .pika-single.#{$key} {
+        .pika-title {
+            background-color: $value;
+            .pika-label {
+                background-color: $value;
+            }
+        }
+
+        .is-today .pika-button {
+            color: $value;
+        }
+
+        .is-selected .pika-button {
+            background-color: $value;
+        }
+
+        // some !importants are used just because they are used on the original
+        // Pikadate css. There's no other way to override them.
+        .pika-button:hover {
+            background-color: rgba($r, $g, $b, 1) !important;
         }
     }
 }
