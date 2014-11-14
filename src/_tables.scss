@@ -4,71 +4,88 @@
 
 table{ @extend .font-default; }
 
+table.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    @extend .font-default;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    th{
+        @extend .font-default;
+        background-color: $lightest-grey;
+        color: $dark-grey;
+        @include font-gibson(normal, italic);
+        @include border($light-grey, 'bottom');
+        a{
+            @extend .font-default;
+            color: $dark-grey;
+            &.active, &:hover, &:active{
+                color: $darkest-grey;
+            }
+            &:after{
+                content: '';
+                @extend .font-icon;
+                font-style: normal;
+                margin-left: 27px;
+            }
+            &.active{
+                text-decoration: none;
+                &.asc:after{
+                    content: '^';
+                    @extend .font-icon;
+                    font-style: normal;
+                    margin-left: 7px;
+                }
+                &.desc:after{
+                    content: '/';
+                    @extend .font-icon;
+                    font-style: normal;
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+    tr, th, td{
+        border: none;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 36px;
+    }
+    tbody{
+        background-color: $white;
+        tr:hover{
+            background-color: $dark-grey;
+            background-color: rgba( $dark-grey-red, $dark-grey-green, $dark-grey-blue, .4);
+        }
+        td {
+            @include truncate();
+            max-width: 150px;
+        }
+    }
+}
+
 @each $color in $colors{
     $key: nth($color, 1);
     $value: nth($color, 2);
     $r: nth($color, 3);
     $g: nth($color, 4);
     $b: nth($color, 5);
-    table.table-#{$key}{
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        @extend .font-default;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
+    table.table.#{$key}{
         th{
-            @extend .font-default;
-            background-color: $lightest-grey;
-            color: $dark-grey;
-            @include font-gibson(normal, italic);
-            @include border($light-grey, 'bottom');
             a{
-                @extend .font-default;
                 color: $dark-grey;
                 &.active, &:hover, &:active{
                     color: $value;
                 }
-                &:after{
-                    content: '';
-                    @extend .font-icon;
-                    font-style: normal;
-                    margin-left: 27px;
-                }
-                &.active{
-                    text-decoration: none;
-                    &.asc:after{
-                        content: '^';
-                        @extend .font-icon;
-                        font-style: normal;
-                        margin-left: 7px;
-                    }
-                    &.desc:after{
-                        content: '/';
-                        @extend .font-icon;
-                        font-style: normal;
-                        margin-left: 7px;
-                    }
-                }
             }
         }
-        tr, th, td{
-            border: none;
-            text-align: left;
-            padding-left: 10px;
-            padding-right: 10px;
-            line-height: 36px;
-        }
         tbody{
-            background-color: $white;
             tr:hover{
                 background-color: $value;
                 background-color: rgba( $r, $g, $b, .4);
-            }
-            td {
-                @include truncate();
-                max-width: 150px;
             }
         }
     }
