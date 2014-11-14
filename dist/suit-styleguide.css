@@ -894,7 +894,7 @@
 .disabled.btn-toggle.active:hover, .btn-secondary.disabled:hover, .btn-icon.disabled:hover {
   background-color: #f7f7f7;
   color: #b3b3b3;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #e0e0e0;
   text-decoration: none;
   opacity: 1;
   padding: 0 20px;
@@ -931,6 +931,7 @@
 
 .btn-icon.white:hover {
   border: 1px solid white;
+  color: white;
   background-color: white; }
 
 .btn-toggle.white, .btn-toggle.white {
@@ -960,6 +961,7 @@
 
 .btn-icon.blue:hover {
   border: 1px solid #32a1cc;
+  color: white;
   background-color: #32a1cc; }
 
 .btn-toggle.blue, .btn-toggle.blue {
@@ -989,6 +991,7 @@
 
 .btn-icon.blueberry:hover {
   border: 1px solid #4e81cc;
+  color: white;
   background-color: #4e81cc; }
 
 .btn-toggle.blueberry, .btn-toggle.blueberry {
@@ -1018,6 +1021,7 @@
 
 .btn-icon.purple:hover {
   border: 1px solid #685b8b;
+  color: white;
   background-color: #685b8b; }
 
 .btn-toggle.purple, .btn-toggle.purple {
@@ -1047,6 +1051,7 @@
 
 .btn-icon.green:hover {
   border: 1px solid #40a880;
+  color: white;
   background-color: #40a880; }
 
 .btn-toggle.green, .btn-toggle.green {
@@ -1076,6 +1081,7 @@
 
 .btn-icon.lime:hover {
   border: 1px solid #6bb26b;
+  color: white;
   background-color: #6bb26b; }
 
 .btn-toggle.lime, .btn-toggle.lime {
@@ -1105,6 +1111,7 @@
 
 .btn-icon.yellow:hover {
   border: 1px solid #d1af50;
+  color: white;
   background-color: #d1af50; }
 
 .btn-toggle.yellow, .btn-toggle.yellow {
@@ -1134,6 +1141,7 @@
 
 .btn-icon.tangerine:hover {
   border: 1px solid #d8a150;
+  color: white;
   background-color: #d8a150; }
 
 .btn-toggle.tangerine, .btn-toggle.tangerine {
@@ -1163,6 +1171,7 @@
 
 .btn-icon.orange:hover {
   border: 1px solid #dd854e;
+  color: white;
   background-color: #dd854e; }
 
 .btn-toggle.orange, .btn-toggle.orange {
@@ -1192,6 +1201,7 @@
 
 .btn-icon.red:hover {
   border: 1px solid #c8463c;
+  color: white;
   background-color: #c8463c; }
 
 .btn-toggle.red, .btn-toggle.red {
@@ -1221,6 +1231,7 @@
 
 .btn-icon.lightest-grey:hover {
   border: 1px solid #f7f7f7;
+  color: white;
   background-color: #f7f7f7; }
 
 .btn-toggle.lightest-grey, .btn-toggle.lightest-grey {
@@ -1250,6 +1261,7 @@
 
 .btn-icon.darkest-grey:hover {
   border: 1px solid #313233;
+  color: white;
   background-color: #313233; }
 
 .btn-toggle.darkest-grey, .btn-toggle.darkest-grey {
@@ -1279,6 +1291,7 @@
 
 .btn-icon.light-grey:hover {
   border: 1px solid #e0e0e0;
+  color: white;
   background-color: #e0e0e0; }
 
 .btn-toggle.light-grey, .btn-toggle.light-grey {
@@ -1308,6 +1321,7 @@
 
 .btn-icon.medium-grey:hover {
   border: 1px solid #b3b3b3;
+  color: white;
   background-color: #b3b3b3; }
 
 .btn-toggle.medium-grey, .btn-toggle.medium-grey {
@@ -1337,6 +1351,7 @@
 
 .btn-icon.dark-grey:hover {
   border: 1px solid #848484;
+  color: white;
   background-color: #848484; }
 
 .btn-toggle.dark-grey, .btn-toggle.dark-grey {
@@ -1366,6 +1381,7 @@
 
 .btn-icon.black:hover {
   border: 1px solid black;
+  color: white;
   background-color: black; }
 
 .btn-toggle.black, .btn-toggle.black {
