@@ -160,12 +160,10 @@
     }
 
     &.disabled {
-        background-color: $lightest-grey;
-        &:hover {
-            .time-picker-trigger{
-                color: $medium-grey;
-                @include border($light-grey);
-            }
+        .time-picker-trigger{
+            background-color: $lightest-grey;
+            color: $medium-grey;
+            @include border($light-grey);
         }
     }
 

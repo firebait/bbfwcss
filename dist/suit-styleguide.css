@@ -3901,11 +3901,10 @@ label.error {
     border: 1px solid #313233;
     color: #313233;
     text-decoration: none; }
-  .time-picker.disabled {
-    background-color: #f7f7f7; }
-    .time-picker.disabled:hover .time-picker-trigger {
-      color: #b3b3b3;
-      border: 1px solid #e0e0e0; }
+  .time-picker.disabled .time-picker-trigger {
+    background-color: #f7f7f7;
+    color: #b3b3b3;
+    border: 1px solid #e0e0e0; }
   .time-picker.error .time-picker-trigger, .time-picker.error:focus .time-picker-trigger {
     border: 1px solid #c8463c;
     color: #c8463c; }
