@@ -75,13 +75,14 @@
 .btn-primary.disabled, .btn-secondary.disabled, .btn-icon.disabled,
 .btn-primary[disabled]:hover, .btn-secondary[disabled]:hover, .btn-icon[disabled]:hover,
 .btn-primary.disabled:hover, .btn-secondary.disabled:hover, .btn-icon.disabled:hover{
-    background-color: $lightest-grey;
-    color: $medium-grey;
-    @include border($light-grey);
-    text-decoration: none;
-    opacity: 1;
-    padding: 0 20px;
-    line-height: 34px;
+    // Make disable the most important configuration.
+    background-color: $lightest-grey !important;
+    color: $medium-grey !important;
+    border: 1px solid $light-grey !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+    padding: 0 20px !important;
+    line-height: 34px !important;
 }
 .btn-icon[disabled]{
     padding: 0 10px;
