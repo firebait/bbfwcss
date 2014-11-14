@@ -127,6 +127,7 @@
             a.suit-tab-link, a.tab-link{
                 color: $value;
                 &.active{
+                    color: $white;
                     background-color: $value;
                 }
             }
@@ -135,6 +136,7 @@
             a.suit-tab-link, a.tab-link{
                 color: $value;
                 &.active{
+                    color: $white;
                     background-color: $value;
                 }
             }
