@@ -3,100 +3,94 @@
 //////////
 .suit-tab, .tab{
     width: 100%;
-    @each $color in $colors {
-        $key: nth($color, 1);
-        $value: nth($color, 2);
 
-/////////////
-// DEFAULT //
-/////////////
 
-        .suit-tab-default-#{ $key }, .tab-default-#{ $key }{
-            height: 50px;
-            line-height: 50px;
-            margin: 0 auto;
-            background-color: $light-grey;
-            width: 1040px;
-            a.suit-tab-link, a.tab-link{
-                display: inline-block;
-                padding-left: 30px;
-                padding-right: 30px;
-                position: relative;
-                color: $value;
-                @include font-gibson(bold);
-                letter-spacing: 0.1em;
-                &.active{
-                    color: $white;
-                    background-color: $value;
-                    &:before{
-                        content: " ";
-                        position: absolute;
-                        height: 7px;
-                        width: 15px;
-                        left: 50%;
-                        bottom: 0px;
-                        margin-left: -7px;
-                        background-image: url(./images/suit_sprite.png);
-                        background-position: -68px 0px;
-                    }
-                }
-            }
-        }
-
-///////////
-// TITLE //
-///////////
-
-        .suit-tab-title-#{ $key }, .tab-title-#{ $key } {
-            @extend .tab-default-#{ $key };
-            a:before{
-                display: none;
-            }
-        }
-        &.full-width{
-            background-color: $light-grey;
-        }
-
-//////////////
-// VERTICAL //
-//////////////
-
-        .suit-tab-vertical-#{ $key }, .tab-vertical-#{ $key } {
-            padding: 0;
-            a.suit-tab-link, a.tab-link{
-                background-color: $lightest-grey;
-                @include border($light-grey, 'top');
-                display: block;
-                position: relative;
-                color: $value;
-                padding: 15px;
-                height: 36px;
-                line-height: 36px;
-                &:first-child{
-                    border: none;
-                }
-                &.active{
-                    color: $white;
-                    background-color: $value;
-                    &:before{
-                        content: " ";
-                        position: absolute;
-                        height: 14px;
-                        width: 7px;
-                        right: 0;
-                        top: 50%;
-                        margin-top: -7px;
-                        background-image: url(./images/suit_sprite.png);
-                        background-position: -68px -7px;
-                    }
+    /////////////
+    // DEFAULT //
+    /////////////
+    .suit-tab-default, .tab-default{
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto;
+        background-color: $light-grey;
+        width: 1040px;
+        a.suit-tab-link, a.tab-link{
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;
+            color: $dark-grey;
+            @include font-gibson(bold);
+            letter-spacing: 0.1em;
+            &.active{
+                color: $white;
+                background-color: $dark-grey;
+                &:before{
+                    content: " ";
+                    position: absolute;
+                    height: 7px;
+                    width: 15px;
+                    left: 50%;
+                    bottom: 0px;
+                    margin-left: -7px;
+                    background-image: url(./images/suit_sprite.png);
+                    background-position: -68px 0px;
                 }
             }
         }
     }
-//////////
-// MINI //
-//////////
 
+    ///////////
+    // TITLE //
+    ///////////
+    .suit-tab-title, .tab-title {
+        @extend .tab-default;
+        a:before{
+            display: none;
+        }
+    }
+    &.full-width{
+        background-color: $light-grey;
+    }
+
+    //////////////
+    // VERTICAL //
+    //////////////
+    .suit-tab-vertical, .tab-vertical {
+        padding: 0;
+        a.suit-tab-link, a.tab-link{
+            background-color: $lightest-grey;
+            @include border($light-grey, 'top');
+            display: block;
+            position: relative;
+            color: $dark-grey;
+            padding: 15px;
+            height: 36px;
+            line-height: 36px;
+            &:first-child{
+                border: none;
+            }
+            &.active{
+                color: $white;
+                background-color: $dark-grey;
+                &:before{
+                    content: " ";
+                    position: absolute;
+                    height: 14px;
+                    width: 7px;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -7px;
+                    background-image: url(./images/suit_sprite.png);
+                    background-position: -68px -7px;
+                }
+            }
+        }
+    }
+
+    //////////
+    // MINI //
+    //////////
     .suit-tab-mini, .tab-mini{
         @include border($medium-grey, 'bottom');
         margin-bottom: 15px;
@@ -123,7 +117,21 @@
             }
         }
     }
+}
 
+@each $color in $colors {
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    .suit-tab-default.#{ $key }, .tab-default.#{ $key }{
+        a.suit-tab-link, a.tab-link{
+            color: $value;
+        }
+    }
+    .suit-tab-vertical.#{ $key }, .tab-vertical.#{ $key } {
+        a.suit-tab-link, a.tab-link{
+            color: $value;
+        }
+    }
 }
 
 ///////////////////
@@ -132,17 +140,11 @@
 .suit-modal, .modal{
     .suit-tab, .tab{
         width: 100%;
-        @each $color in $colors {
-            $key: nth($color, 1);
-            $value: nth($color, 2);
-
-/////////////
-// DEFAULT //
-/////////////
-
-            .suit-tab-default-#{ $key }, .tab-default-#{ $key }{
-                width: 100%;
-            }
+        /////////////
+        // DEFAULT //
+        /////////////
+        .suit-tab-default, .tab-default{
+            width: 100%;
         }
     }
 }
