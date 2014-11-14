@@ -3904,7 +3904,8 @@ label.error {
   .time-picker.disabled .time-picker-trigger {
     background-color: #f7f7f7;
     color: #b3b3b3;
-    border: 1px solid #e0e0e0; }
+    border: 1px solid #e0e0e0;
+    cursor: none; }
   .time-picker.error .time-picker-trigger, .time-picker.error:focus .time-picker-trigger {
     border: 1px solid #c8463c;
     color: #c8463c; }

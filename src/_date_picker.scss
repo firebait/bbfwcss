@@ -164,6 +164,7 @@
             background-color: $lightest-grey;
             color: $medium-grey;
             @include border($light-grey);
+            cursor: none;
         }
     }
 
