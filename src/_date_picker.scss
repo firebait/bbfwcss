@@ -139,9 +139,12 @@
     // some !importants are used just because they are used on the original
     // Pikadate css. There's no other way to override them.
     .pika-button:hover {
+        background-color: rgba($dark-grey-red, $dark-grey-green, $dark-grey-blue, 1) !important;
         border-radius: 0 !important;
         box-shadow: none !important;
     }
+
+    &:hover { background-color: $white; }
 }
 
 
