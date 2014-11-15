@@ -10,20 +10,10 @@
             left: -33px;
         }
     }
-
     &:hover, &:focus{
         .date-picker-trigger{
             @include border($medium-grey);
             color: $darkest-grey;
-        }
-    }
-
-    .date-picker.active {
-        &:hover, &:focus{
-            .date-picker-trigger{
-                color: $white;
-                @include border($medium-grey);
-            }
         }
     }
 
