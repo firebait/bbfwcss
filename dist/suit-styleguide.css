@@ -2212,37 +2212,37 @@ textarea {
         font-weight: 700;
         font-style: normal; }
 
-.ui-timepicker-wrapper.white > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.white > ul > li:hover, .ui-timepicker-wrapper.white > ul > li.ui-timepicker-selected {
   background-color: white; }
-.ui-timepicker-wrapper.blue > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.blue > ul > li:hover, .ui-timepicker-wrapper.blue > ul > li.ui-timepicker-selected {
   background-color: #32a1cc; }
-.ui-timepicker-wrapper.blueberry > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.blueberry > ul > li:hover, .ui-timepicker-wrapper.blueberry > ul > li.ui-timepicker-selected {
   background-color: #4e81cc; }
-.ui-timepicker-wrapper.purple > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.purple > ul > li:hover, .ui-timepicker-wrapper.purple > ul > li.ui-timepicker-selected {
   background-color: #685b8b; }
-.ui-timepicker-wrapper.green > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.green > ul > li:hover, .ui-timepicker-wrapper.green > ul > li.ui-timepicker-selected {
   background-color: #40a880; }
-.ui-timepicker-wrapper.lime > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.lime > ul > li:hover, .ui-timepicker-wrapper.lime > ul > li.ui-timepicker-selected {
   background-color: #6bb26b; }
-.ui-timepicker-wrapper.yellow > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.yellow > ul > li:hover, .ui-timepicker-wrapper.yellow > ul > li.ui-timepicker-selected {
   background-color: #d1af50; }
-.ui-timepicker-wrapper.tangerine > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.tangerine > ul > li:hover, .ui-timepicker-wrapper.tangerine > ul > li.ui-timepicker-selected {
   background-color: #d8a150; }
-.ui-timepicker-wrapper.orange > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.orange > ul > li:hover, .ui-timepicker-wrapper.orange > ul > li.ui-timepicker-selected {
   background-color: #dd854e; }
-.ui-timepicker-wrapper.red > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.red > ul > li:hover, .ui-timepicker-wrapper.red > ul > li.ui-timepicker-selected {
   background-color: #c8463c; }
-.ui-timepicker-wrapper.lightest-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.lightest-grey > ul > li:hover, .ui-timepicker-wrapper.lightest-grey > ul > li.ui-timepicker-selected {
   background-color: #f7f7f7; }
-.ui-timepicker-wrapper.darkest-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.darkest-grey > ul > li:hover, .ui-timepicker-wrapper.darkest-grey > ul > li.ui-timepicker-selected {
   background-color: #313233; }
-.ui-timepicker-wrapper.light-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.light-grey > ul > li:hover, .ui-timepicker-wrapper.light-grey > ul > li.ui-timepicker-selected {
   background-color: #e0e0e0; }
-.ui-timepicker-wrapper.medium-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.medium-grey > ul > li:hover, .ui-timepicker-wrapper.medium-grey > ul > li.ui-timepicker-selected {
   background-color: #b3b3b3; }
-.ui-timepicker-wrapper.dark-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.dark-grey > ul > li:hover, .ui-timepicker-wrapper.dark-grey > ul > li.ui-timepicker-selected {
   background-color: #848484; }
-.ui-timepicker-wrapper.black > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
+.ui-timepicker-wrapper.black > ul > li:hover, .ui-timepicker-wrapper.black > ul > li.ui-timepicker-selected {
   background-color: black; }
 
 .date-range {

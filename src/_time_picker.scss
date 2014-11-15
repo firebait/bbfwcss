@@ -128,7 +128,8 @@
 
         &.#{$key} > ul > li{
             &:hover, &.ui-timepicker-selected {
-            background-color: $value;
+                background-color: $value;
+            }
         }
     }
 }
