@@ -4,7 +4,7 @@
 
 table{ @extend .font-default; }
 
-table.table{
+table{
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -71,7 +71,7 @@ table.table{
     $r: nth($color, 3);
     $g: nth($color, 4);
     $b: nth($color, 5);
-    table.table.#{$key}{
+    table.#{$key}{
         th{
             a{
                 &.active, &:hover, &:active{

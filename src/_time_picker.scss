@@ -126,10 +126,8 @@
         $g: nth($color, 4);
         $b: nth($color, 5);
 
-        &.#{$key} {
-            > ul > li:hover, &.ui-timepicker-selected {
-                background-color: $value;
-            }
+        &.#{$key} > ul > li:hover, &.ui-timepicker-selected {
+            background-color: $value;
         }
     }
 }

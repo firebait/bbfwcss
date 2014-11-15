@@ -239,7 +239,7 @@
   src: url("./fonts/set-icons4.eot");
   src: url("./fonts/set-icons4.eot?#iefix") format("embedded-opentype"), url("./fonts/set-icons4.woff") format("woff"), url("./fonts/set-icons4.ttf") format("truetype"), url("./fonts/set-icons4.svg#set-icons4") format("svg"); }
 
-.font-icon, span.icon, table.table th a:after, table.table th a.active.asc:after, table.table th a.active.desc:after {
+.font-icon, span.icon, table th a:after, table th a.active.asc:after, table th a.active.desc:after {
   font-family: "suit-icons";
   font-weight: normal;
   font-size: 19px;
@@ -2212,37 +2212,37 @@ textarea {
         font-weight: 700;
         font-style: normal; }
 
-.ui-timepicker-wrapper.white > ul > li:hover, .ui-timepicker-wrapper.white.ui-timepicker-selected {
+.ui-timepicker-wrapper.white > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: white; }
-.ui-timepicker-wrapper.blue > ul > li:hover, .ui-timepicker-wrapper.blue.ui-timepicker-selected {
+.ui-timepicker-wrapper.blue > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #32a1cc; }
-.ui-timepicker-wrapper.blueberry > ul > li:hover, .ui-timepicker-wrapper.blueberry.ui-timepicker-selected {
+.ui-timepicker-wrapper.blueberry > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #4e81cc; }
-.ui-timepicker-wrapper.purple > ul > li:hover, .ui-timepicker-wrapper.purple.ui-timepicker-selected {
+.ui-timepicker-wrapper.purple > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #685b8b; }
-.ui-timepicker-wrapper.green > ul > li:hover, .ui-timepicker-wrapper.green.ui-timepicker-selected {
+.ui-timepicker-wrapper.green > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #40a880; }
-.ui-timepicker-wrapper.lime > ul > li:hover, .ui-timepicker-wrapper.lime.ui-timepicker-selected {
+.ui-timepicker-wrapper.lime > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #6bb26b; }
-.ui-timepicker-wrapper.yellow > ul > li:hover, .ui-timepicker-wrapper.yellow.ui-timepicker-selected {
+.ui-timepicker-wrapper.yellow > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #d1af50; }
-.ui-timepicker-wrapper.tangerine > ul > li:hover, .ui-timepicker-wrapper.tangerine.ui-timepicker-selected {
+.ui-timepicker-wrapper.tangerine > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #d8a150; }
-.ui-timepicker-wrapper.orange > ul > li:hover, .ui-timepicker-wrapper.orange.ui-timepicker-selected {
+.ui-timepicker-wrapper.orange > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #dd854e; }
-.ui-timepicker-wrapper.red > ul > li:hover, .ui-timepicker-wrapper.red.ui-timepicker-selected {
+.ui-timepicker-wrapper.red > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #c8463c; }
-.ui-timepicker-wrapper.lightest-grey > ul > li:hover, .ui-timepicker-wrapper.lightest-grey.ui-timepicker-selected {
+.ui-timepicker-wrapper.lightest-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #f7f7f7; }
-.ui-timepicker-wrapper.darkest-grey > ul > li:hover, .ui-timepicker-wrapper.darkest-grey.ui-timepicker-selected {
+.ui-timepicker-wrapper.darkest-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #313233; }
-.ui-timepicker-wrapper.light-grey > ul > li:hover, .ui-timepicker-wrapper.light-grey.ui-timepicker-selected {
+.ui-timepicker-wrapper.light-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #e0e0e0; }
-.ui-timepicker-wrapper.medium-grey > ul > li:hover, .ui-timepicker-wrapper.medium-grey.ui-timepicker-selected {
+.ui-timepicker-wrapper.medium-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #b3b3b3; }
-.ui-timepicker-wrapper.dark-grey > ul > li:hover, .ui-timepicker-wrapper.dark-grey.ui-timepicker-selected {
+.ui-timepicker-wrapper.dark-grey > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: #848484; }
-.ui-timepicker-wrapper.black > ul > li:hover, .ui-timepicker-wrapper.black.ui-timepicker-selected {
+.ui-timepicker-wrapper.black > ul > li:hover, .ui-timepicker-wrapper.ui-timepicker-selected {
   background-color: black; }
 
 .date-range {
@@ -2326,151 +2326,151 @@ span.twitter-typeahead > span.twitter-typeahead {
   .slider .disabled {
     background: #898989; }
 
-table.table {
+table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
-  table.table th {
+  table th {
     background-color: #f7f7f7;
     color: #848484;
     font-family: 'Gibson';
     font-weight: normal;
     font-style: italic;
     border-bottom: 1px solid #e0e0e0; }
-    table.table th a {
+    table th a {
       font-family: 'Gibson';
       font-weight: normal;
       font-style: normal;
       color: #848484; }
-      table.table th a.active, table.table th a:hover, table.table th a:active {
+      table th a.active, table th a:hover, table th a:active {
         color: #313233; }
-      table.table th a:after {
+      table th a:after {
         content: '';
         font-style: normal;
         margin-left: 27px; }
-      table.table th a.active {
+      table th a.active {
         text-decoration: none; }
-        table.table th a.active.asc:after {
+        table th a.active.asc:after {
           content: '^';
           font-style: normal;
           margin-left: 7px; }
-        table.table th a.active.desc:after {
+        table th a.active.desc:after {
           content: '/';
           font-style: normal;
           margin-left: 7px; }
-  table.table tr, table.table th, table.table td {
+  table tr, table th, table td {
     border: none;
     text-align: left;
     padding-left: 10px;
     padding-right: 10px;
     line-height: 36px; }
-  table.table tbody {
+  table tbody {
     background-color: white; }
-    table.table tbody tr:hover {
+    table tbody tr:hover {
       background-color: #848484;
       background-color: rgba(132, 132, 132, 0.4); }
-    table.table tbody td {
+    table tbody td {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 150px; }
 
-table.table.white th a.active, table.table.white th a:hover, table.table.white th a:active {
+table.white th a.active, table.white th a:hover, table.white th a:active {
   color: white; }
-table.table.white tbody tr:hover {
+table.white tbody tr:hover {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.4); }
 
-table.table.blue th a.active, table.table.blue th a:hover, table.table.blue th a:active {
+table.blue th a.active, table.blue th a:hover, table.blue th a:active {
   color: #32a1cc; }
-table.table.blue tbody tr:hover {
+table.blue tbody tr:hover {
   background-color: #32a1cc;
   background-color: rgba(54, 160, 209, 0.4); }
 
-table.table.blueberry th a.active, table.table.blueberry th a:hover, table.table.blueberry th a:active {
+table.blueberry th a.active, table.blueberry th a:hover, table.blueberry th a:active {
   color: #4e81cc; }
-table.table.blueberry tbody tr:hover {
+table.blueberry tbody tr:hover {
   background-color: #4e81cc;
   background-color: rgba(78, 129, 204, 0.4); }
 
-table.table.purple th a.active, table.table.purple th a:hover, table.table.purple th a:active {
+table.purple th a.active, table.purple th a:hover, table.purple th a:active {
   color: #685b8b; }
-table.table.purple tbody tr:hover {
+table.purple tbody tr:hover {
   background-color: #685b8b;
   background-color: rgba(104, 90, 143, 0.4); }
 
-table.table.green th a.active, table.table.green th a:hover, table.table.green th a:active {
+table.green th a.active, table.green th a:hover, table.green th a:active {
   color: #40a880; }
-table.table.green tbody tr:hover {
+table.green tbody tr:hover {
   background-color: #40a880;
   background-color: rgba(65, 169, 129, 0.4); }
 
-table.table.lime th a.active, table.table.lime th a:hover, table.table.lime th a:active {
+table.lime th a.active, table.lime th a:hover, table.lime th a:active {
   color: #6bb26b; }
-table.table.lime tbody tr:hover {
+table.lime tbody tr:hover {
   background-color: #6bb26b;
   background-color: rgba(107, 178, 107, 0.4); }
 
-table.table.yellow th a.active, table.table.yellow th a:hover, table.table.yellow th a:active {
+table.yellow th a.active, table.yellow th a:hover, table.yellow th a:active {
   color: #d1af50; }
-table.table.yellow tbody tr:hover {
+table.yellow tbody tr:hover {
   background-color: #d1af50;
   background-color: rgba(209, 175, 80, 0.4); }
 
-table.table.tangerine th a.active, table.table.tangerine th a:hover, table.table.tangerine th a:active {
+table.tangerine th a.active, table.tangerine th a:hover, table.tangerine th a:active {
   color: #d8a150; }
-table.table.tangerine tbody tr:hover {
+table.tangerine tbody tr:hover {
   background-color: #d8a150;
   background-color: rgba(216, 161, 80, 0.4); }
 
-table.table.orange th a.active, table.table.orange th a:hover, table.table.orange th a:active {
+table.orange th a.active, table.orange th a:hover, table.orange th a:active {
   color: #dd854e; }
-table.table.orange tbody tr:hover {
+table.orange tbody tr:hover {
   background-color: #dd854e;
   background-color: rgba(220, 134, 65, 0.4); }
 
-table.table.red th a.active, table.table.red th a:hover, table.table.red th a:active {
+table.red th a.active, table.red th a:hover, table.red th a:active {
   color: #c8463c; }
-table.table.red tbody tr:hover {
+table.red tbody tr:hover {
   background-color: #c8463c;
   background-color: rgba(199, 71, 54, 0.4); }
 
-table.table.lightest-grey th a.active, table.table.lightest-grey th a:hover, table.table.lightest-grey th a:active {
+table.lightest-grey th a.active, table.lightest-grey th a:hover, table.lightest-grey th a:active {
   color: #f7f7f7; }
-table.table.lightest-grey tbody tr:hover {
+table.lightest-grey tbody tr:hover {
   background-color: #f7f7f7;
   background-color: rgba(247, 247, 247, 0.4); }
 
-table.table.darkest-grey th a.active, table.table.darkest-grey th a:hover, table.table.darkest-grey th a:active {
+table.darkest-grey th a.active, table.darkest-grey th a:hover, table.darkest-grey th a:active {
   color: #313233; }
-table.table.darkest-grey tbody tr:hover {
+table.darkest-grey tbody tr:hover {
   background-color: #313233;
   background-color: rgba(49, 50, 51, 0.4); }
 
-table.table.light-grey th a.active, table.table.light-grey th a:hover, table.table.light-grey th a:active {
+table.light-grey th a.active, table.light-grey th a:hover, table.light-grey th a:active {
   color: #e0e0e0; }
-table.table.light-grey tbody tr:hover {
+table.light-grey tbody tr:hover {
   background-color: #e0e0e0;
   background-color: rgba(224, 224, 224, 0.4); }
 
-table.table.medium-grey th a.active, table.table.medium-grey th a:hover, table.table.medium-grey th a:active {
+table.medium-grey th a.active, table.medium-grey th a:hover, table.medium-grey th a:active {
   color: #b3b3b3; }
-table.table.medium-grey tbody tr:hover {
+table.medium-grey tbody tr:hover {
   background-color: #b3b3b3;
   background-color: rgba(179, 179, 179, 0.4); }
 
-table.table.dark-grey th a.active, table.table.dark-grey th a:hover, table.table.dark-grey th a:active {
+table.dark-grey th a.active, table.dark-grey th a:hover, table.dark-grey th a:active {
   color: #848484; }
-table.table.dark-grey tbody tr:hover {
+table.dark-grey tbody tr:hover {
   background-color: #848484;
   background-color: rgba(132, 132, 132, 0.4); }
 
-table.table.black th a.active, table.table.black th a:hover, table.table.black th a:active {
+table.black th a.active, table.black th a:hover, table.black th a:active {
   color: black; }
-table.table.black tbody tr:hover {
+table.black tbody tr:hover {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4); }
 
