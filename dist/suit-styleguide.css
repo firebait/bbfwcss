@@ -2274,7 +2274,8 @@ textarea {
     border: 1px solid #b3b3b3;
     color: #313233; }
   .date-range .date-picker.active:hover .date-picker-trigger, .date-range .date-picker.active:focus .date-picker-trigger {
-    color: white; }
+    color: white;
+    border: 1px solid #b3b3b3; }
   .date-range .date-picker input {
     padding-left: 10px;
     border-left: none;
