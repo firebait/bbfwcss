@@ -1960,6 +1960,7 @@ textarea {
 .pika-single.white .is-selected .pika-button {
   background-color: white; }
 .pika-single.white .pika-button:hover {
+  color: white;
   background-color: white !important; }
 .pika-single.blue .pika-title {
   background-color: #32a1cc; }
@@ -1970,6 +1971,7 @@ textarea {
 .pika-single.blue .is-selected .pika-button {
   background-color: #32a1cc; }
 .pika-single.blue .pika-button:hover {
+  color: white;
   background-color: #36a0d1 !important; }
 .pika-single.blueberry .pika-title {
   background-color: #4e81cc; }
@@ -1980,6 +1982,7 @@ textarea {
 .pika-single.blueberry .is-selected .pika-button {
   background-color: #4e81cc; }
 .pika-single.blueberry .pika-button:hover {
+  color: white;
   background-color: #4e81cc !important; }
 .pika-single.purple .pika-title {
   background-color: #685b8b; }
@@ -1990,6 +1993,7 @@ textarea {
 .pika-single.purple .is-selected .pika-button {
   background-color: #685b8b; }
 .pika-single.purple .pika-button:hover {
+  color: white;
   background-color: #685a8f !important; }
 .pika-single.green .pika-title {
   background-color: #40a880; }
@@ -2000,6 +2004,7 @@ textarea {
 .pika-single.green .is-selected .pika-button {
   background-color: #40a880; }
 .pika-single.green .pika-button:hover {
+  color: white;
   background-color: #41a981 !important; }
 .pika-single.lime .pika-title {
   background-color: #6bb26b; }
@@ -2010,6 +2015,7 @@ textarea {
 .pika-single.lime .is-selected .pika-button {
   background-color: #6bb26b; }
 .pika-single.lime .pika-button:hover {
+  color: white;
   background-color: #6bb26b !important; }
 .pika-single.yellow .pika-title {
   background-color: #d1af50; }
@@ -2020,6 +2026,7 @@ textarea {
 .pika-single.yellow .is-selected .pika-button {
   background-color: #d1af50; }
 .pika-single.yellow .pika-button:hover {
+  color: white;
   background-color: #d1af50 !important; }
 .pika-single.tangerine .pika-title {
   background-color: #d8a150; }
@@ -2030,6 +2037,7 @@ textarea {
 .pika-single.tangerine .is-selected .pika-button {
   background-color: #d8a150; }
 .pika-single.tangerine .pika-button:hover {
+  color: white;
   background-color: #d8a150 !important; }
 .pika-single.orange .pika-title {
   background-color: #dd854e; }
@@ -2040,6 +2048,7 @@ textarea {
 .pika-single.orange .is-selected .pika-button {
   background-color: #dd854e; }
 .pika-single.orange .pika-button:hover {
+  color: white;
   background-color: #dc8641 !important; }
 .pika-single.red .pika-title {
   background-color: #c8463c; }
@@ -2050,6 +2059,7 @@ textarea {
 .pika-single.red .is-selected .pika-button {
   background-color: #c8463c; }
 .pika-single.red .pika-button:hover {
+  color: white;
   background-color: #c74736 !important; }
 .pika-single.lightest-grey .pika-title {
   background-color: #f7f7f7; }
@@ -2060,6 +2070,7 @@ textarea {
 .pika-single.lightest-grey .is-selected .pika-button {
   background-color: #f7f7f7; }
 .pika-single.lightest-grey .pika-button:hover {
+  color: white;
   background-color: #f7f7f7 !important; }
 .pika-single.darkest-grey .pika-title {
   background-color: #313233; }
@@ -2070,6 +2081,7 @@ textarea {
 .pika-single.darkest-grey .is-selected .pika-button {
   background-color: #313233; }
 .pika-single.darkest-grey .pika-button:hover {
+  color: white;
   background-color: #313233 !important; }
 .pika-single.light-grey .pika-title {
   background-color: #e0e0e0; }
@@ -2080,6 +2092,7 @@ textarea {
 .pika-single.light-grey .is-selected .pika-button {
   background-color: #e0e0e0; }
 .pika-single.light-grey .pika-button:hover {
+  color: white;
   background-color: #e0e0e0 !important; }
 .pika-single.medium-grey .pika-title {
   background-color: #b3b3b3; }
@@ -2090,6 +2103,7 @@ textarea {
 .pika-single.medium-grey .is-selected .pika-button {
   background-color: #b3b3b3; }
 .pika-single.medium-grey .pika-button:hover {
+  color: white;
   background-color: #b3b3b3 !important; }
 .pika-single.dark-grey .pika-title {
   background-color: #848484; }
@@ -2100,6 +2114,7 @@ textarea {
 .pika-single.dark-grey .is-selected .pika-button {
   background-color: #848484; }
 .pika-single.dark-grey .pika-button:hover {
+  color: white;
   background-color: #848484 !important; }
 .pika-single.black .pika-title {
   background-color: black; }
@@ -2110,6 +2125,7 @@ textarea {
 .pika-single.black .is-selected .pika-button {
   background-color: black; }
 .pika-single.black .pika-button:hover {
+  color: white;
   background-color: black !important; }
 
 .time-picker {
