@@ -2544,7 +2544,8 @@ table.black tbody tr:hover {
   .suit-tab .suit-tab-title a:before {
     display: none; }
   .suit-tab .suit-tab-vertical {
-    padding: 0; }
+    padding: 0;
+    width: 252px; }
     .suit-tab .suit-tab-vertical a.suit-tab-link {
       background-color: #f7f7f7;
       border-top: 1px solid #e0e0e0;

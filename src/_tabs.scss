@@ -58,6 +58,7 @@
     //////////////
     .suit-tab-vertical {
         padding: 0;
+        width: 252px;
         a.suit-tab-link{
             background-color: $lightest-grey;
             @include border($light-grey, 'top');
