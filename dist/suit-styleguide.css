@@ -1571,30 +1571,30 @@ a {
     width: 1040px; }
 
 .suit-modal .grid1 {
-  width: 660px; }
+  width: 690px; }
 .suit-modal .grid2 {
-  width: 309px; }
+  width: 345px; }
   .suit-modal .grid2.span2 {
-    width: 660px; }
+    width: 690px; }
 .suit-modal .grid3 {
-  width: 200px; }
+  width: 230px; }
   .suit-modal .grid3.span2 {
-    width: 430px; }
+    width: 460px; }
   .suit-modal .grid3.span3 {
-    width: 660px; }
+    width: 690px; }
 .suit-modal .grid4, .suit-modal .thumbnail {
-  width: 140px; }
+  width: 172px; }
   .suit-modal .grid4.span2, .suit-modal .span2.thumbnail {
-    width: 210px; }
+    width: 345px; }
   .suit-modal .grid4.span3, .suit-modal .span3.thumbnail {
-    width: 480px; }
+    width: 517px; }
   .suit-modal .grid4.span4, .suit-modal .span4.thumbnail {
-    width: 660px; }
+    width: 690px; }
 
 .suit-modal.small .grid1 {
-  width: 297px; }
+  width: 338px; }
 .suit-modal.small .grid2 {
-  width: 139px; }
+  width: 169px; }
 
 .suit-modal.large .grid1 {
   width: 90%; }
