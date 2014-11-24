@@ -3445,3 +3445,27 @@ a.logo, #logo {
   background: url(./images/suit_sprite.png) no-repeat 0 7px transparent;
   width: 68px;
   height: 50px; }
+
+.tooltip {
+  position: absolute;
+  display: none;
+  padding: 5px 0;
+  z-index: 9999;
+  max-width: 500px; }
+
+.tooltip-content {
+  text-align: left;
+  background-color: #c8463c;
+  color: white;
+  padding: 7px 15px; }
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  bottom: 0;
+  left: 10px;
+  border-width: 5px 5px 0;
+  border-top-color: #c8463c; }
