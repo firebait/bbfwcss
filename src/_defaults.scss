@@ -3,7 +3,6 @@ body{
     @extend .font-default;
     font-size: 13px;
     color: $darkest-grey;
-    background-attachment: fixed;
 }
 body.light{
     background-image: url(./images/page_background_light.png);

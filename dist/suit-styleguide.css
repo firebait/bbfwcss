@@ -1446,8 +1446,7 @@ button::-moz-focus-inner {
 body {
   background-image: url(./images/page_background.png);
   font-size: 13px;
-  color: #313233;
-  background-attachment: fixed; }
+  color: #313233; }
 
 body.light {
   background-image: url(./images/page_background_light.png); }
