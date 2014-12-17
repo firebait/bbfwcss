@@ -902,6 +902,7 @@
 
 .btn-primary.white, .white.btn-toggle.active {
   background-color: white;
+  color: white;
   border: 1px solid white; }
 
 .btn-secondary.white {
@@ -932,6 +933,7 @@
 
 .btn-primary.blue, .blue.btn-toggle.active {
   background-color: #32a1cc;
+  color: white;
   border: 1px solid #32a1cc; }
 
 .btn-secondary.blue {
@@ -962,6 +964,7 @@
 
 .btn-primary.blueberry, .blueberry.btn-toggle.active {
   background-color: #4e81cc;
+  color: white;
   border: 1px solid #4e81cc; }
 
 .btn-secondary.blueberry {
@@ -992,6 +995,7 @@
 
 .btn-primary.purple, .purple.btn-toggle.active {
   background-color: #685b8b;
+  color: white;
   border: 1px solid #685b8b; }
 
 .btn-secondary.purple {
@@ -1022,6 +1026,7 @@
 
 .btn-primary.green, .green.btn-toggle.active {
   background-color: #40a880;
+  color: white;
   border: 1px solid #40a880; }
 
 .btn-secondary.green {
@@ -1052,6 +1057,7 @@
 
 .btn-primary.lime, .lime.btn-toggle.active {
   background-color: #6bb26b;
+  color: white;
   border: 1px solid #6bb26b; }
 
 .btn-secondary.lime {
@@ -1082,6 +1088,7 @@
 
 .btn-primary.yellow, .yellow.btn-toggle.active {
   background-color: #d1af50;
+  color: white;
   border: 1px solid #d1af50; }
 
 .btn-secondary.yellow {
@@ -1112,6 +1119,7 @@
 
 .btn-primary.tangerine, .tangerine.btn-toggle.active {
   background-color: #d8a150;
+  color: white;
   border: 1px solid #d8a150; }
 
 .btn-secondary.tangerine {
@@ -1142,6 +1150,7 @@
 
 .btn-primary.orange, .orange.btn-toggle.active {
   background-color: #dd854e;
+  color: white;
   border: 1px solid #dd854e; }
 
 .btn-secondary.orange {
@@ -1172,6 +1181,7 @@
 
 .btn-primary.red, .red.btn-toggle.active {
   background-color: #c8463c;
+  color: white;
   border: 1px solid #c8463c; }
 
 .btn-secondary.red {
@@ -1202,6 +1212,7 @@
 
 .btn-primary.lightest-grey, .lightest-grey.btn-toggle.active {
   background-color: #f7f7f7;
+  color: white;
   border: 1px solid #f7f7f7; }
 
 .btn-secondary.lightest-grey {
@@ -1232,6 +1243,7 @@
 
 .btn-primary.darkest-grey, .darkest-grey.btn-toggle.active {
   background-color: #313233;
+  color: white;
   border: 1px solid #313233; }
 
 .btn-secondary.darkest-grey {
@@ -1262,6 +1274,7 @@
 
 .btn-primary.light-grey, .light-grey.btn-toggle.active {
   background-color: #e0e0e0;
+  color: white;
   border: 1px solid #e0e0e0; }
 
 .btn-secondary.light-grey {
@@ -1292,6 +1305,7 @@
 
 .btn-primary.medium-grey, .medium-grey.btn-toggle.active {
   background-color: #b3b3b3;
+  color: white;
   border: 1px solid #b3b3b3; }
 
 .btn-secondary.medium-grey {
@@ -1322,6 +1336,7 @@
 
 .btn-primary.dark-grey, .dark-grey.btn-toggle.active {
   background-color: #848484;
+  color: white;
   border: 1px solid #848484; }
 
 .btn-secondary.dark-grey {
@@ -1352,6 +1367,7 @@
 
 .btn-primary.black, .black.btn-toggle.active {
   background-color: black;
+  color: white;
   border: 1px solid black; }
 
 .btn-secondary.black {

@@ -96,6 +96,7 @@
     $value: nth($color, 2);
     .btn-primary.#{$key} {
         background-color: $value;
+        color: $white;
         @include border($value);
     }
     .btn-secondary.#{$key}{
@@ -129,6 +130,3 @@
         }
     }
 }
-
-
-
