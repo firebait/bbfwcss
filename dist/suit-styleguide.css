@@ -830,8 +830,7 @@
 
 .btn-primary, .btn-toggle.active, .btn-toggle.active:hover {
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   background-color: #848484;
   border: 1px solid #848484;
   opacity: 0.9; }
@@ -851,8 +850,7 @@
 .btn-secondary:hover {
   background-color: #848484;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   text-decoration: none; }
 
 .btn-icon {
@@ -860,15 +858,12 @@
   text-decoration: none;
   color: #848484;
   border: 1px solid #848484;
-  padding: 0 10px;
-  line-height: 34px; }
+  padding: 0 10px; }
 
 .btn-icon:hover {
   border: 1px solid #848484;
   background-color: #848484;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
   text-decoration: none; }
 
 .btn-toggle {
@@ -876,11 +871,7 @@
   text-decoration: none;
   color: #848484;
   border: 1px solid #848484;
-  padding: 0 20px;
-  line-height: 34px; }
-
-.btn-toggle.active, .btn-toggle.active:hover {
-  line-height: 34px; }
+  padding: 0 20px; }
 
 .btn-primary[disabled], [disabled].btn-toggle.active, .btn-secondary[disabled], .btn-icon[disabled],
 .btn-primary.disabled,
@@ -895,14 +886,12 @@
   text-decoration: none !important;
   opacity: 1 !important;
   padding: 0 20px !important;
-  line-height: 34px !important;
   cursor: default !important; }
 
 .btn-icon[disabled] {
   padding: 0 10px; }
 
 .btn-link {
-  line-height: 36px;
   padding: 10px;
   color: #848484;
   opacity: .9; }
