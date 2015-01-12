@@ -3295,96 +3295,128 @@ hr.divider-line {
   color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.white > a.section.white {
   background-color: white; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.white > a.section.white span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.white > ul a:hover {
   background-color: rgba(255, 255, 255, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.blue span {
   color: #32a1cc; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.blue > a.section.blue {
   background-color: #32a1cc; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.blue > a.section.blue span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.blue > ul a:hover {
   background-color: rgba(54, 160, 209, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.blueberry span {
   color: #4e81cc; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.blueberry > a.section.blueberry {
   background-color: #4e81cc; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.blueberry > a.section.blueberry span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.blueberry > ul a:hover {
   background-color: rgba(78, 129, 204, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.purple span {
   color: #685b8b; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.purple > a.section.purple {
   background-color: #685b8b; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.purple > a.section.purple span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.purple > ul a:hover {
   background-color: rgba(104, 90, 143, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.green span {
   color: #40a880; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.green > a.section.green {
   background-color: #40a880; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.green > a.section.green span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.green > ul a:hover {
   background-color: rgba(65, 169, 129, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.lime span {
   color: #6bb26b; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.lime > a.section.lime {
   background-color: #6bb26b; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.lime > a.section.lime span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.lime > ul a:hover {
   background-color: rgba(107, 178, 107, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.yellow span {
   color: #d1af50; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.yellow > a.section.yellow {
   background-color: #d1af50; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.yellow > a.section.yellow span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.yellow > ul a:hover {
   background-color: rgba(209, 175, 80, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.tangerine span {
   color: #d8a150; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.tangerine > a.section.tangerine {
   background-color: #d8a150; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.tangerine > a.section.tangerine span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.tangerine > ul a:hover {
   background-color: rgba(216, 161, 80, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.orange span {
   color: #dd854e; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.orange > a.section.orange {
   background-color: #dd854e; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.orange > a.section.orange span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.orange > ul a:hover {
   background-color: rgba(220, 134, 65, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.red span {
   color: #c8463c; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.red > a.section.red {
   background-color: #c8463c; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.red > a.section.red span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.red > ul a:hover {
   background-color: rgba(199, 71, 54, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.lightest-grey span {
   color: #f7f7f7; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.lightest-grey > a.section.lightest-grey {
   background-color: #f7f7f7; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.lightest-grey > a.section.lightest-grey span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.lightest-grey > ul a:hover {
   background-color: rgba(247, 247, 247, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.darkest-grey span {
   color: #313233; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.darkest-grey > a.section.darkest-grey {
   background-color: #313233; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.darkest-grey > a.section.darkest-grey span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.darkest-grey > ul a:hover {
   background-color: rgba(49, 50, 51, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.light-grey span {
   color: #e0e0e0; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.light-grey > a.section.light-grey {
   background-color: #e0e0e0; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.light-grey > a.section.light-grey span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.light-grey > ul a:hover {
   background-color: rgba(224, 224, 224, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.medium-grey span {
   color: #b3b3b3; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.medium-grey > a.section.medium-grey {
   background-color: #b3b3b3; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.medium-grey > a.section.medium-grey span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.medium-grey > ul a:hover {
   background-color: rgba(179, 179, 179, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.dark-grey span {
   color: #848484; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.dark-grey > a.section.dark-grey {
   background-color: #848484; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.dark-grey > a.section.dark-grey span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.dark-grey > ul a:hover {
   background-color: rgba(132, 132, 132, 0.4); }
 .suit-breadcrumbs > ul > li:hover > a.section.black span {
   color: black; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.black > a.section.black {
   background-color: black; }
+  .suit-breadcrumbs > ul > li:hover.dropdown-menu.black > a.section.black span {
+    color: white; }
 .suit-breadcrumbs > ul > li:hover.dropdown-menu.black > ul a:hover {
   background-color: rgba(0, 0, 0, 0.4); }
 

@@ -145,7 +145,11 @@
             &.dropdown-menu.#{$key} {
                 > a.section.#{$key} {
                     background-color: $value;
+                    span {
+                        color: $white;
+                    }
                 }
+
                 >ul a:hover {
                     background-color: rgba($r, $g, $b, .4);
                 }
