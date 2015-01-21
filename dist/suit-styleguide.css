@@ -2984,9 +2984,12 @@ g.nv-axis text {
     background-color: rgba(0, 0, 0, 0.8);
     color: white; }
     .graph-set-stacked-areagraph .nvtooltip table, .graph-set-linegraph .nvtooltip table, .chart-theme-dark .nvtooltip table {
+      background-color: transparent;
       width: 100%; }
-      .graph-set-stacked-areagraph .nvtooltip table tbody td.value, .graph-set-linegraph .nvtooltip table tbody td.value, .chart-theme-dark .nvtooltip table tbody td.value {
-        font-weight: 200; }
+      .graph-set-stacked-areagraph .nvtooltip table tbody, .graph-set-linegraph .nvtooltip table tbody, .chart-theme-dark .nvtooltip table tbody {
+        background-color: transparent; }
+        .graph-set-stacked-areagraph .nvtooltip table tbody td.value, .graph-set-linegraph .nvtooltip table tbody td.value, .chart-theme-dark .nvtooltip table tbody td.value {
+          font-weight: 200; }
   .graph-set-stacked-areagraph line.nv-guideline, .graph-set-linegraph line.nv-guideline, .chart-theme-dark line.nv-guideline {
     stroke: #333;
     stroke-width: 1; }
