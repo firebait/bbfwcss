@@ -2969,16 +2969,25 @@ g.nv-axis text {
 .graph-set-bargraph {
   height: inherit; }
 
-.graph-set-stacked-areagraph, .graph-set-linegraph {
+.graph-set-stacked-areagraph, .graph-set-linegraph, .chart-theme-dark {
   height: 100%;
   width: 100%; }
-  .graph-set-stacked-areagraph .nv-x .tick line, .graph-set-linegraph .nv-x .tick line {
+  .graph-set-stacked-areagraph .nv-x .nv-axisMaxMin:first-child, .graph-set-linegraph .nv-x .nv-axisMaxMin:first-child, .chart-theme-dark .nv-x .nv-axisMaxMin:first-child {
+    margin-left: 50%; }
+  .graph-set-stacked-areagraph .nv-x .nv-axisMaxMin:last-child, .graph-set-linegraph .nv-x .nv-axisMaxMin:last-child, .chart-theme-dark .nv-x .nv-axisMaxMin:last-child {
+    margin-right: 50%; }
+  .graph-set-stacked-areagraph .nv-x .tick line, .graph-set-linegraph .nv-x .tick line, .chart-theme-dark .nv-x .tick line {
     display: none; }
-  .graph-set-stacked-areagraph .nvtooltip, .graph-set-linegraph .nvtooltip {
+  .graph-set-stacked-areagraph .nvtooltip, .graph-set-linegraph .nvtooltip, .chart-theme-dark .nvtooltip {
+    min-width: 150px;
     padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white; }
-  .graph-set-stacked-areagraph line.nv-guideline, .graph-set-linegraph line.nv-guideline {
+    .graph-set-stacked-areagraph .nvtooltip table, .graph-set-linegraph .nvtooltip table, .chart-theme-dark .nvtooltip table {
+      width: 100%; }
+      .graph-set-stacked-areagraph .nvtooltip table tbody td.value, .graph-set-linegraph .nvtooltip table tbody td.value, .chart-theme-dark .nvtooltip table tbody td.value {
+        font-weight: 200; }
+  .graph-set-stacked-areagraph line.nv-guideline, .graph-set-linegraph line.nv-guideline, .chart-theme-dark line.nv-guideline {
     stroke: #333;
     stroke-width: 1; }
 
