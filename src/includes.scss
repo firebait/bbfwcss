@@ -6,9 +6,9 @@
     @if $weight == light {
         font-weight: 200;
     } @elseif $weight == bold {
-        font-weight: 700;
+        font-weight: 500;
     } @elseif $weight == black {
-        font-weight: bold;
+        font-weight: 500;
     } @else {
         font-weight: normal;
     }

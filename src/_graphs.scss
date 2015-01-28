@@ -20,18 +20,39 @@ g.nv-axis {
     height: inherit;
 }
 
-.graph-set-stacked-areagraph, .graph-set-linegraph {
+.graph-set-stacked-areagraph, .graph-set-linegraph, .chart-theme-dark {
     height: 100%;
     width: 100%;
 
-    .nv-x .tick line {
-        display: none;
+    .nv-x {
+        .nv-axisMaxMin {
+            &:first-child {
+                margin-left: 50%;
+            }
+            &:last-child {
+                margin-right: 50%;
+            }
+        }
+        .tick line {
+            display: none;
+        }
     }
 
     .nvtooltip {
+        min-width: 150px;
         padding: 5px 10px;
         background-color: rgba(0,0,0,0.8);
         color: white;
+        table {
+            background-color: transparent;
+            width: 100%;
+            tbody {
+                background-color: transparent;
+                td.value {
+                    font-weight: 200;
+                }
+            }
+        }
     }
 
     line.nv-guideline {

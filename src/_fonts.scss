@@ -5,8 +5,8 @@ $fonts: (Gibson_Light, 200, normal),
         (Gibson_LightIt, 200, italic),
         (Gibson_Regular, normal, normal),
         (Gibson_Italic, normal, italic),
-        (Gibson_SemiBold, 700, normal),
-        (Gibson_SemiboldIt, 700, italic),
+        (Gibson_SemiBold, 500, normal),
+        (Gibson_SemiboldIt, 500, italic),
         (Gibson_Bold, bold, normal),
         (Gibson_BoldItalic, bold, italic);
 @each $font-props in $fonts {

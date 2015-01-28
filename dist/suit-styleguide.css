@@ -30,14 +30,14 @@
   font-family: 'Gibson';
   src: url("fonts/Gibson_SemiBold.eot");
   src: url("fonts/Gibson_SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson_SemiBold.woff") format("woff"), url("fonts/Gibson_SemiBold.ttf") format("truetype"), url("fonts/Gibson_SemiBold.svg#Gibson_SemiBold") format("svg");
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gibson';
   src: url("fonts/Gibson_SemiboldIt.eot");
   src: url("fonts/Gibson_SemiboldIt.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson_SemiboldIt.woff") format("woff"), url("fonts/Gibson_SemiboldIt.ttf") format("truetype"), url("fonts/Gibson_SemiboldIt.svg#Gibson_SemiboldIt") format("svg");
-  font-weight: 700;
+  font-weight: 500;
   font-style: italic; }
 
 @font-face {
@@ -99,17 +99,17 @@
 
 .fst-bold, a.fst-bold {
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal; }
 
 .fst-bold-italic, a.fst-bold-italic {
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: italic; }
 
 .fst-black, a.fst-black {
   font-family: 'Gibson';
-  font-weight: bold;
+  font-weight: 500;
   font-style: normal; }
 
 .fc-white, .fc-white-hover {
@@ -819,7 +819,7 @@
 .btn, .btn-primary, .btn-secondary, .btn-icon, .btn-toggle {
   display: inline-block;
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   outline: none;
@@ -1458,7 +1458,7 @@ body.light {
 
 h1 {
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   font-size: 30px;
@@ -1466,7 +1466,7 @@ h1 {
 
 h2 {
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   font-size: 21px;
@@ -1475,14 +1475,14 @@ h2 {
 
 h3 {
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   font-size: 16px; }
 
 h4 {
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   font-size: 13px;
@@ -2232,7 +2232,7 @@ textarea {
         color: white; }
       .ui-timepicker-wrapper > ul > li.ui-timepicker-selected {
         font-family: 'Gibson';
-        font-weight: 700;
+        font-weight: 500;
         font-style: normal; }
 
 .ui-timepicker-wrapper.white > ul > li:hover, .ui-timepicker-wrapper.white > ul > li.ui-timepicker-selected {
@@ -2530,7 +2530,7 @@ table.black tbody tr:hover {
       position: relative;
       color: #848484;
       font-family: 'Gibson';
-      font-weight: 700;
+      font-weight: 500;
       font-style: normal;
       letter-spacing: 0.1em; }
       .suit-tab .suit-tab-default a.suit-tab-link.active, .suit-tab .suit-tab-title a.suit-tab-link.active {
@@ -2820,7 +2820,7 @@ table.black tbody tr:hover {
   padding: 20px;
   position: fixed;
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   left: 50%;
@@ -2875,7 +2875,7 @@ table.black tbody tr:hover {
   text-align: center;
   color: white;
   font-family: 'Gibson';
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
   right: 0;
@@ -2969,16 +2969,28 @@ g.nv-axis text {
 .graph-set-bargraph {
   height: inherit; }
 
-.graph-set-stacked-areagraph, .graph-set-linegraph {
+.graph-set-stacked-areagraph, .graph-set-linegraph, .chart-theme-dark {
   height: 100%;
   width: 100%; }
-  .graph-set-stacked-areagraph .nv-x .tick line, .graph-set-linegraph .nv-x .tick line {
+  .graph-set-stacked-areagraph .nv-x .nv-axisMaxMin:first-child, .graph-set-linegraph .nv-x .nv-axisMaxMin:first-child, .chart-theme-dark .nv-x .nv-axisMaxMin:first-child {
+    margin-left: 50%; }
+  .graph-set-stacked-areagraph .nv-x .nv-axisMaxMin:last-child, .graph-set-linegraph .nv-x .nv-axisMaxMin:last-child, .chart-theme-dark .nv-x .nv-axisMaxMin:last-child {
+    margin-right: 50%; }
+  .graph-set-stacked-areagraph .nv-x .tick line, .graph-set-linegraph .nv-x .tick line, .chart-theme-dark .nv-x .tick line {
     display: none; }
-  .graph-set-stacked-areagraph .nvtooltip, .graph-set-linegraph .nvtooltip {
+  .graph-set-stacked-areagraph .nvtooltip, .graph-set-linegraph .nvtooltip, .chart-theme-dark .nvtooltip {
+    min-width: 150px;
     padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white; }
-  .graph-set-stacked-areagraph line.nv-guideline, .graph-set-linegraph line.nv-guideline {
+    .graph-set-stacked-areagraph .nvtooltip table, .graph-set-linegraph .nvtooltip table, .chart-theme-dark .nvtooltip table {
+      background-color: transparent;
+      width: 100%; }
+      .graph-set-stacked-areagraph .nvtooltip table tbody, .graph-set-linegraph .nvtooltip table tbody, .chart-theme-dark .nvtooltip table tbody {
+        background-color: transparent; }
+        .graph-set-stacked-areagraph .nvtooltip table tbody td.value, .graph-set-linegraph .nvtooltip table tbody td.value, .chart-theme-dark .nvtooltip table tbody td.value {
+          font-weight: 200; }
+  .graph-set-stacked-areagraph line.nv-guideline, .graph-set-linegraph line.nv-guideline, .chart-theme-dark line.nv-guideline {
     stroke: #333;
     stroke-width: 1; }
 
