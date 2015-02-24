@@ -40,9 +40,6 @@ g.nv-axis {
 
     .nvtooltip {
         min-width: 150px;
-        padding: 5px 10px;
-        background-color: rgba(0,0,0,0.8);
-        color: white;
         table {
             background-color: transparent;
             width: 100%;
@@ -58,5 +55,17 @@ g.nv-axis {
     line.nv-guideline {
         stroke: #333;
         stroke-width: 1;
+    }
+}
+
+.chart-theme-dark {
+    .nvtooltip {
+        h3 {
+            background: none;
+            border-radius: 0;
+        }
+        padding: 5px 10px;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
     }
 }
