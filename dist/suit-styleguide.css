@@ -2979,10 +2979,7 @@ g.nv-axis text {
   .graph-set-stacked-areagraph .nv-x .tick line, .graph-set-linegraph .nv-x .tick line, .chart-theme-dark .nv-x .tick line {
     display: none; }
   .graph-set-stacked-areagraph .nvtooltip, .graph-set-linegraph .nvtooltip, .chart-theme-dark .nvtooltip {
-    min-width: 150px;
-    padding: 5px 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white; }
+    min-width: 150px; }
     .graph-set-stacked-areagraph .nvtooltip table, .graph-set-linegraph .nvtooltip table, .chart-theme-dark .nvtooltip table {
       background-color: transparent;
       width: 100%; }
@@ -2993,6 +2990,14 @@ g.nv-axis text {
   .graph-set-stacked-areagraph line.nv-guideline, .graph-set-linegraph line.nv-guideline, .chart-theme-dark line.nv-guideline {
     stroke: #333;
     stroke-width: 1; }
+
+.chart-theme-dark .nvtooltip {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white; }
+  .chart-theme-dark .nvtooltip h3 {
+    background: none;
+    border-radius: 0; }
 
 hr.title-line {
   border: 0;
