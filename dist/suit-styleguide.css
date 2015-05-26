@@ -3523,3 +3523,83 @@ a.logo, #logo {
   left: 10px;
   border-width: 5px 5px 0;
   border-top-color: #c8463c; }
+
+.tooltip.white .tooltip-content {
+  background-color: white !important; }
+.tooltip.white .tooltip-arrow {
+  border-top-color: white !important; }
+
+.tooltip.blue .tooltip-content {
+  background-color: #32a1cc !important; }
+.tooltip.blue .tooltip-arrow {
+  border-top-color: #32a1cc !important; }
+
+.tooltip.blueberry .tooltip-content {
+  background-color: #4e81cc !important; }
+.tooltip.blueberry .tooltip-arrow {
+  border-top-color: #4e81cc !important; }
+
+.tooltip.purple .tooltip-content {
+  background-color: #685b8b !important; }
+.tooltip.purple .tooltip-arrow {
+  border-top-color: #685b8b !important; }
+
+.tooltip.green .tooltip-content {
+  background-color: #40a880 !important; }
+.tooltip.green .tooltip-arrow {
+  border-top-color: #40a880 !important; }
+
+.tooltip.lime .tooltip-content {
+  background-color: #6bb26b !important; }
+.tooltip.lime .tooltip-arrow {
+  border-top-color: #6bb26b !important; }
+
+.tooltip.yellow .tooltip-content {
+  background-color: #d1af50 !important; }
+.tooltip.yellow .tooltip-arrow {
+  border-top-color: #d1af50 !important; }
+
+.tooltip.tangerine .tooltip-content {
+  background-color: #d8a150 !important; }
+.tooltip.tangerine .tooltip-arrow {
+  border-top-color: #d8a150 !important; }
+
+.tooltip.orange .tooltip-content {
+  background-color: #dd854e !important; }
+.tooltip.orange .tooltip-arrow {
+  border-top-color: #dd854e !important; }
+
+.tooltip.red .tooltip-content {
+  background-color: #c8463c !important; }
+.tooltip.red .tooltip-arrow {
+  border-top-color: #c8463c !important; }
+
+.tooltip.lightest-grey .tooltip-content {
+  background-color: #f7f7f7 !important; }
+.tooltip.lightest-grey .tooltip-arrow {
+  border-top-color: #f7f7f7 !important; }
+
+.tooltip.darkest-grey .tooltip-content {
+  background-color: #313233 !important; }
+.tooltip.darkest-grey .tooltip-arrow {
+  border-top-color: #313233 !important; }
+
+.tooltip.light-grey .tooltip-content {
+  background-color: #e0e0e0 !important; }
+.tooltip.light-grey .tooltip-arrow {
+  border-top-color: #e0e0e0 !important; }
+
+.tooltip.medium-grey .tooltip-content {
+  background-color: #b3b3b3 !important; }
+.tooltip.medium-grey .tooltip-arrow {
+  border-top-color: #b3b3b3 !important; }
+
+.tooltip.dark-grey .tooltip-content {
+  background-color: #848484 !important; }
+.tooltip.dark-grey .tooltip-arrow {
+  border-top-color: #848484 !important; }
+
+.tooltip.black .tooltip-content {
+  background-color: black !important; }
+.tooltip.black .tooltip-arrow {
+  border-top-color: black !important; }

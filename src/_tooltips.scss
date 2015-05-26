@@ -29,3 +29,16 @@
     border-width: 5px 5px 0;
     border-top-color: $red;
 }
+
+@each $color in $colors{
+    $key: nth($color, 1);
+    $value: nth($color, 2);
+    .tooltip.#{$key}{
+        .tooltip-content {
+            background-color: $value !important;
+        }
+        .tooltip-arrow {
+            border-top-color: $value !important;
+        }
+    }
+}
