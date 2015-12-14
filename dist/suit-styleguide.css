@@ -3509,6 +3509,7 @@ a.logo, #logo {
 
 .tooltip-content {
   text-align: left;
+  white-space: pre-line;
   background-color: #c8463c;
   color: white;
   padding: 7px 15px; }
